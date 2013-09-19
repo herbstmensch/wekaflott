@@ -1,0 +1,8 @@
+JPanel(name=erfassungPanel):
+    - JScrollPane(name=scrollPane1, vScrollBar=always, hScrollBar=asNeeded):
+        ErfassungTable(name=table, fillsViewportHeight=true)
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        scrollPane1 [grow]
+        {toolBar: dock north}

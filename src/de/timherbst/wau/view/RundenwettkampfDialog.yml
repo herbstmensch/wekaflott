@@ -1,0 +1,46 @@
+JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung", iconImage=/icons/r16/auswertung.png):
+    - Action(name=addWKTag, text="Wettkampftag hinzufügen", toolTipText="Wettkampftag hinzufügen", onAction=addWKTag, icon=/icons/r24/wettkampftag_add.png)
+    - Action(name=removeWKTag, text="Wettkampftag entfernen", toolTipText="Wettkampftag entfernen", onAction=removeWKTag, icon=/icons/r24/wettkampftag_delete.png)
+    - Action(name=printUrkunden, text="Urkunden drucken", toolTipText="Urkunden drucken", onAction=printUrkunden, icon=/icons/r24/urkunden_drucken.png)
+    - JToolBar(name=toolbar, floatable=false, orientation=HORIZONTAL, rollover=true):
+        - JButton(action=addWKTag, hideActionText=true)
+        - JButton(action=removeWKTag, hideActionText=true)
+        - ToolBarSeparator()
+        - JButton(action=printUrkunden, hideActionText=true)
+        - ToolBarSeparator()
+        - JLabel(name=lblVeranstaltung, text='  Veranstaltung:')
+        - JTextField(name=tfVeranstaltung, preferredSize=300x28)
+    - JSplitPane(name=split1,orientation=verticalSplit):
+        - JPanel(name=panel1):
+            - JSplitPane(name=split2,orientation=horizontalSplit):
+                - JPanel(name=tablePanelWettkampftage):
+                    - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
+                        JTable(name=tableWettkampftage, fillsViewportHeight=true)
+                    - MigLayout: |
+                        [[insets 0, gap 0]]
+                        [grow]
+                        scrollPane1 [grow]
+                - JPanel(name=tablePanelWettkaempfe):
+                    - JScrollPane(name=scrollPane2, vScrollBar=asNeeded, hScrollBar=asNeeded):
+                        JTable(name=tableWettkaempfe, fillsViewportHeight=true)
+                    - MigLayout: |
+                        [[insets 0, gap 0]]
+                        [grow]
+                        scrollPane2 [grow]
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                split2 [grow]
+        - JPanel(name=tablePanelTabelle):
+            - JScrollPane(name=scrollPane3, vScrollBar=asNeeded, hScrollBar=asNeeded):
+                JTable(name=tableTabelle, fillsViewportHeight=true)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                scrollPane3 [grow]
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        toolbar     [min!]
+        split1      [grow]
+        {toolbar: dock north}

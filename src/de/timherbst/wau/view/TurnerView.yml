@@ -1,0 +1,32 @@
+JPanel(name=turnerPanel):
+    - Action(name=newTurner, text="&neuer Turner", onAction=newTurner, icon=/icons/r24/turner_add.png)
+    - Action(name=deleteTurner, text="Turner &löschen", onAction=deleteTurner, icon=/icons/r24/turner_delete.png, enabled=false)
+    - Action(name=zuMannschaft, text="Zu &Mannschaft hinzufügen", onAction=zuMannschaft, icon=/icons/r24/add_to_mannschaft.png, enabled=false)
+    - Action(name=zuWettkampf, text="Zu &Wettkampf hinzufügen", onAction=zuWettkampf, icon=/icons/r24/add_to_wettkampf.png, enabled=false)
+    - Action(name=zuRiege, text="Zu &Riege hinzufügen", onAction=zuRiege, icon=/icons/r24/add_to_riege.png, enabled=false)
+    - JPopupMenu(name=tablePopUp):
+        - JMenuItem(action=zuMannschaft)
+        - JMenuItem(action=zuWettkampf)
+        - JMenuItem(action=zuRiege)
+    - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
+        - JButton(action=newTurner, hideActionText=true, focusPainted=false)
+        - JButton(action=deleteTurner, hideActionText=true, focusPainted=false)
+        - ToolBarSeparator()
+        - JButton(name=btnZuMannschaft, action=zuMannschaft, focusPainted=false)
+        - ToolBarSeparator()
+        - JButton(name=btnZuWettkampf, action=zuWettkampf, focusPainted=false)
+        - ToolBarSeparator()
+        - JButton(name=btnZuRiege, action=zuRiege, focusPainted=false)
+    - JPanel(name=tablePanel):
+        - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
+            JTable(name=table, fillsViewportHeight=true)
+        - MigLayout: |
+            [[insets 0, gap 0]]
+            [grow]
+            scrollPane1 [grow]
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        toolBar [min!]
+        tablePanel [grow]
+        {toolBar: dock north}

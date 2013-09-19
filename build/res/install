@@ -1,0 +1,21 @@
+#!/bin/bash
+
+cp -R WeKaFlott /opt
+touch /opt/WeKaFlott/WeKaFlottLog.log
+chmod 777 /opt/WeKaFlott/WeKaFlottLog.log
+cp wekaflott /usr/bin/
+cp icons/app_16.png /usr/share/icons/gnome/16x16/apps/wekaflott.png
+cp icons/app_24.png /usr/share/icons/gnome/24x24/apps/wekaflott.png
+cp icons/app_32.png /usr/share/icons/gnome/32x32/apps/wekaflott.png
+cp icons/app_48.png /usr/share/icons/gnome/48x48/apps/wekaflott.png
+cp icons/app_128.png /usr/share/icons/gnome/128x128/apps/wekaflott.png
+chmod 644 /usr/share/icons/gnome/16x16/apps/wekaflott.png
+chmod 644 /usr/share/icons/gnome/24x24/apps/wekaflott.png
+chmod 644 /usr/share/icons/gnome/32x32/apps/wekaflott.png
+chmod 644 /usr/share/icons/gnome/48x48/apps/wekaflott.png
+chmod 644 /usr/share/icons/gnome/128x128/apps/wekaflott.png
+gtk-update-icon-cache /usr/share/icons/gnome
+chmod +x /usr/bin/wekaflott
+cp WeKaFlott.desktop /usr/share/applications
+xdg-mime install wkt-mimetype.xml
+

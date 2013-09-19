@@ -1,0 +1,31 @@
+JFrame(name=einzelAuswertung, size=800x400, title=Auswertung, iconImage=/icons/r16/auswertung.png):
+    - Action(name=printAuswertungPDF, text="Auswertung als PDF drucken", toolTipText="Auswertung als PDF drucken", onAction=printAuswertungPDF, icon=/icons/r24/auswertung_pdf.png)
+    - Action(name=printAuswertungXLS, text="Auswertung als XLS drucken", toolTipText="Auswertung als XLS drucken", onAction=printAuswertungXLS, icon=/icons/r24/auswertung_xls.png)
+    - Action(name=printUrkunden, text="Urkunden drucken", toolTipText="Urkunden drucken", onAction=printUrkunden, icon=/icons/r24/urkunden_drucken.png)
+    - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
+        - JButton(action=printAuswertungPDF, hideActionText=true)
+        - JButton(action=printAuswertungXLS, hideActionText=true)
+        - JButton(action=printUrkunden, hideActionText=true)
+    - JPanel(name=infoPanel):
+        - JLabel(name=wkName)
+        - JLabel(name=wkGeraete)
+        - JLabel(name=wkKlasse)
+        - JLabel(name=wkJahrgaenge)
+        - MigLayout: |
+            [[insets 2, gap 25]]
+            [min!]  [min!]      [min!]      [min!]
+            wkName  wkGeraete   wkKlasse    wkJahrgaenge [min!]
+    - JPanel(name=tablePanel):
+        - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
+            JTable(name=table, fillsViewportHeight=true)
+        - MigLayout: |
+            [[insets 0, gap 0]]
+            [grow]
+            scrollPane1 [grow]
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        toolBar [min!]
+        infoPanel [min!]
+        tablePanel [grow]
+        {toolBar: dock north}

@@ -1,0 +1,26 @@
+JPanel(name=riegenPanel):
+    - Action(name=newEinzelRiege, text="&neue Einzelriege", onAction=newEinzelriege, icon=/icons/r24/riege_add.png)
+    - Action(name=newMannschaftsRiege, text="neue &Mannschaftsriege", onAction=newMannschaftsriege, icon=/icons/r24/riege_add.png)
+    - Action(name=deleteRiege, text="Riege &löschen", onAction=deleteRiege, icon=/icons/r24/riege_delete.png, enabled=false)
+    - Action(name=openErfassung, text="&Erfassungsfenster öffnen", onAction=openErfassung, icon=/icons/r24/erfassung.png, enabled=false)
+    - JPopupMenu(name=tablePopUp):
+        - JMenuItem(action=openErfassung)
+    - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
+        - JButton(action=newEinzelRiege, focusPainted=false)
+        - JButton(action=newMannschaftsRiege, focusPainted=false)
+        - JButton(action=deleteRiege, hideActionText=true, focusPainted=false)
+        - ToolBarSeparator()
+        - JButton(action=openErfassung, focusPainted=false)
+    - JPanel(name=tablePanel):
+        - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
+            JTable(name=table, fillsViewportHeight=true)
+        - MigLayout: |
+            [[insets 0, gap 0]]
+            [grow]
+            scrollPane1 [grow]
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        toolBar [min!]
+        tablePanel [grow]
+        {toolBar: dock north}

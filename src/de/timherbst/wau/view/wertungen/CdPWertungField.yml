@@ -1,0 +1,11 @@
+JPanel(name=cellRenderer):
+    - TabulatorTextField(name=difficulty)
+    - TabulatorTextField(name=execution)
+    - TabulatorTextField(name=missing)
+    - JLabel(name=endwert)
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]      [grow]
+        difficulty  execution    [min!]
+        missing     >endwert      [min!]
+        {endwert: gapright 8}

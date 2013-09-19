@@ -1,0 +1,43 @@
+JDialog(name=dialog, resizable=true, title='Einstellungen'):
+    - Action(name=ok, text="&OK", onAction=ok, icon=/icons/r16/ok.png)
+    - Action(name=cancel, text="&Abbrechen", onAction=cancel, icon=/icons/r16/cancel.png)
+    - Action(name=lafSelect, onAction=lafSelect)
+    - Action(name=lafReset, onAction=resetLaf, text="Reset")
+    - JTabbedPane(name=tabs):
+        - JPanel(tabTitle="Aussehen"):
+            - JLabel(name=lblLAF, text='Skin:')
+            - JComboBox(name=cbLAF)
+            - JButton(name=btnResetLaf, action=lafReset)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [pref]          [grow,400]
+                lblLAF          cbLAF,btnResetLaf [min!]
+        - JPanel(tabTitle="Pfade"):
+            - JLabel(name=lblOutPath, text='Output Pfad:')
+            - JTextField(name=txtOutPath)
+            - JLabel(name=lblStdOutDir, text='Standard Output Verzeichnis:')
+            - JTextField(name=txtStdOutDir)
+            - JLabel(name=lblTemplatePath, text='Template Pfad:')
+            - JTextField(name=txtTemplatePath)
+            - JLabel(name=lblASPath, text='Standard Autosave Pfad:')
+            - JTextField(name=txtASPath)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [pref]          [grow,400]
+                lblOutPath      txtOutPath [min!]
+                lblStdOutDir    txtStdOutDir [min!]
+                lblTemplatePath txtTemplatePath [min!]
+                lblASPath       txtASPath [min!]
+        - JPanel(tabTitle="Extras"):
+            - JLabel(name=lblAS, text='Autosave Interval:')
+            - JSpinner(name=asSpin)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                lblAS,asSpin [min!]
+    - JButton(name=btnOk, action=ok)
+    - JButton(name=btnCancel, action=cancel)
+    - MigLayout: |
+        [grow]
+        tabs                    [grow]
+        >btnCancel=1,btnOk=1   [min!]

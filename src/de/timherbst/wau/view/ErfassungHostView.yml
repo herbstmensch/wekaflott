@@ -1,0 +1,8 @@
+JPanel(name=erfassungPanel):
+    - Action(name=addTab, text="", onAction=_addAuswertungTab, icon=/icons/r16/add.png)
+    - JButton(name=btnAddTab, hideActionText=true, action=addTab, border=0, borderPainted=false, focusPainted=false, contentAreaFilled=false, opaque=false)
+    - JTabbedPane(name=tabs):
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        tabs [grow]

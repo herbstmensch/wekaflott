@@ -1,0 +1,70 @@
+<project name="WeKaFlott" default="dist" basedir="..">
+	<description>
+        simple example build file
+    </description>
+	<!-- set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="res" location="res" />
+	<property name="bin" location="bin" />
+	<property name="dist" location="build/out" />
+	<property name="main.class" value="de.timherbst.wau.application.Application" />
+
+	<path id="class.path">
+		<fileset dir="${basedir}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${bin}" />
+
+
+	</target>
+
+	<target name="compile" depends="init" description="compile the source ">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${bin}" classpathref="class.path" />
+		<javac srcdir="${res}" destdir="${bin}" classpath="${class-path}" />
+	</target>
+
+	<target name="dist" depends="compile" description="generate the distribution">
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist}" />
+
+		<copy todir="${dist}/WeKaFlott/templates">
+			<fileset dir="${basedir}/templates">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+		<copy todir="${dist}/WeKaFlott/lib">
+            <fileset dir="${basedir}/lib">
+                <include name="**/*" />
+            </fileset>
+        </copy>
+		<copy todir="${dist}/WeKaFlott" file="application.properties" />
+		<copy todir="${dist}/" file="build/res/wekaflott" />
+		<copy todir="${dist}/" file="build/res/WeKaFlott.desktop" />
+		<copy todir="${dist}/" file="build/res/install" />
+		<copy todir="${dist}/" file="res/icons/r32/app.png" />
+
+		<pathconvert property="class-path" dirsep="/" pathsep=" " refid="class.path">
+			<map from="${basedir}/lib" to="lib" />
+		</pathconvert>
+
+		<jar destfile="${dist}/WeKaFlott/WeKaFlott.jar" basedir="${bin}">
+			<manifest>
+				<attribute name="Class-Path" value="${class-path}" />
+				<attribute name="Main-Class" value="${main.class}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${bin}" />
+		<delete dir="${dist}" />
+	</target>
+</project>

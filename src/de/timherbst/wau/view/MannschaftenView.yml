@@ -1,0 +1,33 @@
+JPanel(name=mannschaftenPanel):
+    - Action(name=newMannschaft, text="&neue Mannschaft", onAction=newMannschaft, icon=/icons/r24/mannschaft_add.png)
+    - Action(name=deleteMannschaft, text="Mannschaft &löschen", onAction=deleteMannschaft, icon=/icons/r24/mannschaft_delete.png, enabled=false)
+    - Action(name=zuWettkampf, text="Zu &Wettkampf hinzufügen", onAction=zuWettkampf, icon=/icons/r24/add_to_wettkampf.png, enabled=false)
+    - Action(name=zuRiege, text="Zu &Riege hinzufügen", onAction=zuRiege, icon=/icons/r24/add_to_riege.png, enabled=false)
+    - Action(name=openErfassung, text="&Erfassungsfenster öffnen", onAction=openErfassung, icon=/icons/r24/erfassung.png, enabled=false)
+    - JPopupMenu(name=tablePopUp):
+        - JMenuItem(action=zuWettkampf)
+        - JMenuItem(action=zuRiege)
+        - JSeparator()
+        - JMenuItem(action=openErfassung)
+    - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
+        - JButton(action=newMannschaft, hideActionText=true, focusPainted=false)
+        - JButton(action=deleteMannschaft, hideActionText=true, enabled=false, focusPainted=false)
+        - ToolBarSeparator()
+        - JButton(name=btnZuWettkampf, action=zuWettkampf, enabled=false, focusPainted=false)
+        - ToolBarSeparator()
+        - JButton(name=btnZuRiege, action=zuRiege, enabled=false, focusPainted=false)
+        - ToolBarSeparator()
+        - JButton(name=btnOpenErfassung, action=openErfassung, enabled=false, focusPainted=false)
+    - JPanel(name=tablePanel):
+        - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
+            JTable(name=table, fillsViewportHeight=true)
+        - MigLayout: |
+            [[insets 0, gap 0]]
+            [grow]
+            scrollPane1 [grow]
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        toolBar [min!]
+        tablePanel [grow]
+        {toolBar: dock north}

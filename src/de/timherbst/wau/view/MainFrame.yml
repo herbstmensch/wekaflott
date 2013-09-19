@@ -1,0 +1,78 @@
+JFrame(name=dialog, size=800x600, defaultCloseOperation=doNothingOnClose, iconImage=/icons/r32/app.png):
+    - Action(name=newWkt, text="&neuer Wettkampftag", onAction=newWettkampftag, icon=/icons/r24/new.png)
+    - Action(name=openWkt, text="Wettkampftag ö&ffnen", onAction=openWettkampftag, icon=/icons/r24/open.png)
+    - Action(name=saveWkt, text="Wettkampftag &speichern", onAction=saveWettkampftag, icon=/icons/r24/save.png)
+    - Action(name=saveAsWkt, text="Wettkampftag speichern unter...", onAction=saveAsWettkampftag)
+    - Action(name=beenden, text="&Beenden", onAction=beenden)
+    - Action(name=renameWkt, text="Wettkampftag &umbenennen", onAction=renameWettkampftag, icon=/icons/r24/rename_wkt.png)
+    - Action(name=openEinstellungen, text="&Einstellungen", onAction=openSettings, icon=/icons/r24/settings.png)
+    - Action(name=openRundenAuswertung, text="&Rundenwettkampf auswerten", onAction=openRundenAuswertung, icon=/icons/r24/auswertung_anzeigen.png)
+    - Action(name=initWertungen, text="&Alle Wertungen neu initialisieren", onAction=initWertungen, icon=/icons/r24/delete_wertungen.png)
+    - Action(name=openInfo, text="&Info...", onAction=openInfo, icon=/icons/r24/info.png)
+    - JMenuBar:
+        - JMenu(name=fileMenu,text=Datei):
+            - JMenuItem(action=newWkt)
+            - JMenuItem(action=openWkt)
+            - JSeparator()
+            - JMenuItem(action=saveWkt)
+            - JMenuItem(action=saveAsWkt)
+            - JSeparator()
+            - JMenuItem(action=beenden)
+        - JMenu(name=editMenu,text=Bearbeiten):
+            - JMenuItem(action=renameWkt)
+        - JMenu(name=optionMenu,text=Optionen):
+            - JMenuItem(action=openEinstellungen)
+        - JMenu(name=extrasMenu,text=Extras):
+            - JMenuItem(action=openRundenAuswertung)
+            - JSeparator()
+            - JMenuItem(action=initWertungen)
+        - JMenu(name=infoMenu,text=Info):
+            - JMenuItem(action=openInfo)
+    - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
+        - JButton(name=new, hideActionText=true, action=newWkt, focusPainted=false)
+        - JButton(name=save, hideActionText=true, action=saveWkt, focusPainted=false)
+        - JButton(name=open, hideActionText=true, action=openWkt, focusPainted=false)
+    - JTabbedPane(name=tabs):
+        - JPanel(tabTitle="Turner   ", tabIcon=/icons/r16/turner.png):
+            - TurnerView(name=turner)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                turner [grow]
+        - JPanel(tabTitle="Mannschaften   ", tabIcon=/icons/r16/mannschaft.png):
+            - MannschaftenView(name=mannschaften)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                mannschaften [grow]
+        - JPanel(tabTitle="Wettkämpfe   ", tabIcon=/icons/r16/wettkampf.png):
+            - WettkaempfeView(name=wettkaempfe)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                wettkaempfe [grow]
+        - JPanel(tabTitle="Riegen   ", tabIcon=/icons/r16/riege.png):
+            - RiegenView(name=riegen)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                riegen [grow]
+        - JPanel(tabTitle="Erfassung   ", tabIcon=/icons/r16/erfassung.png):
+            - ErfassungHostView(name=pimpedErfassung)
+            - MigLayout: |
+                [[insets 0, gap 0]]
+                [grow]
+                pimpedErfassung [grow]
+    - JPanel(name=statusBar, border=loweredEtched):
+        - JLabel(name=status)
+        - MigLayout: |
+            [[insets 0, gap 0]]
+            [grow]
+            status [grow]
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]
+        toolBar [min!]
+        tabs [grow]
+        statusBar [20]
+        {toolBar: dock north}

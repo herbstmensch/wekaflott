@@ -1,0 +1,11 @@
+JPanel(name=cellRenderer):
+    - JLabel(name=difficulty)
+    - JLabel(name=execution)
+    - JLabel(name=missing)
+    - JLabel(name=endwert)
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]      [grow]
+        >difficulty  >execution    [min!]
+        >missing     >endwert      [min!]
+        {difficulty: gapright 8, missing: gapright 8}

@@ -1,0 +1,10 @@
+JPanel(name=cellRenderer):
+    - TabulatorTextField(name=ausgang)
+    - TabulatorTextField(name=abzug)
+    - JLabel(name=endwert)
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]      [grow]
+        ausgang     abzug   [min!]
+        >endwert+*           [min!]
+        {endwert: gapright 4}

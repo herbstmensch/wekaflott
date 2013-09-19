@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WeKaFlott 
+Type=Application
+Exec=wekaflott %U
+Terminal=false
+Icon=wekaflott
+Comment=Wettkampfauswertung
+NoDisplay=false
+MimeType=application/x-wettkampftag

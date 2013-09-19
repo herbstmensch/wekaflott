@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MannschaftsSiegerliste_sub" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_EINZEL" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SUBREPORT_MANNSCHAFT" class="net.sf.jasperreports.engine.JasperReport"/>
+	<field name="listMannschaft" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="listEinzel" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="wettkampf" class="java.lang.String"/>
+	<field name="art" class="java.lang.String"/>
+	<field name="modus" class="java.lang.String"/>
+	<field name="jahrgaenge" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="164" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="802" height="68"/>
+				<subreportParameter name="modus">
+					<subreportParameterExpression><![CDATA[$F{modus}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="art">
+					<subreportParameterExpression><![CDATA[$F{art}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="wettkampf">
+					<subreportParameterExpression><![CDATA[$F{wettkampf}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="jahrgaenge">
+					<subreportParameterExpression><![CDATA[$F{jahrgaenge}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$F{listMannschaft}]]></dataSourceExpression>
+				<subreportExpression class="net.sf.jasperreports.engine.JasperReport"><![CDATA[]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="0" y="96" width="802" height="68"/>
+				<subreportParameter name="modus">
+					<subreportParameterExpression><![CDATA[$F{modus}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="art">
+					<subreportParameterExpression><![CDATA[$F{art}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="wettkampf">
+					<subreportParameterExpression><![CDATA[$F{wettkampf}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="jahrgaenge">
+					<subreportParameterExpression><![CDATA[$F{jahrgaenge}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$F{listEinzel}]]></dataSourceExpression>
+				<subreportExpression class="net.sf.jasperreports.engine.JasperReport"><![CDATA[]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

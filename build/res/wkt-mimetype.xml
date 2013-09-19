@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+ <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+   <mime-type type="application/x-wettkampftag">  
+   <comment>WeKaFlott Wettkampftag Files</comment>
+   <glob pattern="*.wkt"/>
+  </mime-type>
+ </mime-info>

@@ -1,0 +1,10 @@
+JPanel(name=cellRenderer):
+    - JLabel(name=ausgang)
+    - JLabel(name=abzug)
+    - JLabel(name=endwert)
+    - MigLayout: |
+        [[insets 0, gap 0]]
+        [grow]      [grow]
+        >ausgang     >abzug   [min!]
+        >endwert+*           [min!]
+        {ausgang: gapright 8}

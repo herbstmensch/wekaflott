@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="siegerliste" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="veranstaltung" class="java.lang.String"/>
+	<parameter name="datum" class="java.lang.String"/>
+	<parameter name="ort" class="java.lang.String"/>
+	<parameter name="SUBREPORT_MANNSCHAFT" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_EINZEL" class="net.sf.jasperreports.engine.JasperReport"/>
+	<field name="listMannschaft" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="listEinzel" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="wettkampf" class="java.lang.String"/>
+	<field name="art" class="java.lang.String"/>
+	<field name="modus" class="java.lang.String"/>
+	<field name="jahrgaenge" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="802" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{veranstaltung}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="802" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{datum} + " in " + $P{ort}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="245" splitType="Prevent">
+			<elementGroup>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="71" width="802" height="142"/>
+					<subreportParameter name="modus">
+						<subreportParameterExpression><![CDATA[$F{modus}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="art">
+						<subreportParameterExpression><![CDATA[$F{art}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="wettkampf">
+						<subreportParameterExpression><![CDATA[$F{wettkampf}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="jahrgaenge">
+						<subreportParameterExpression><![CDATA[$F{jahrgaenge}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[$F{listEinzel}]]></dataSourceExpression>
+					<subreportExpression class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SUBREPORT_EINZEL}]]></subreportExpression>
+				</subreport>
+				<subreport>
+					<reportElement positionType="Float" x="0" y="0" width="802" height="56"/>
+					<subreportParameter name="modus">
+						<subreportParameterExpression><![CDATA[$F{modus}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="art">
+						<subreportParameterExpression><![CDATA[$F{art}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="wettkampf">
+						<subreportParameterExpression><![CDATA[$F{wettkampf}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="jahrgaenge">
+						<subreportParameterExpression><![CDATA[$F{jahrgaenge}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[$F{listMannschaft}]]></dataSourceExpression>
+					<subreportExpression class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SUBREPORT_MANNSCHAFT}]]></subreportExpression>
+				</subreport>
+			</elementGroup>
+			<break>
+				<reportElement x="0" y="244" width="100" height="1"/>
+			</break>
+		</band>
+	</detail>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
