@@ -40,15 +40,20 @@
 			</fileset>
 		</copy>
 		<copy todir="${dist}/WeKaFlott/lib">
-            <fileset dir="${basedir}/lib">
-                <include name="**/*" />
-            </fileset>
-        </copy>
+			<fileset dir="${basedir}/lib">
+				<include name="**/*" />
+			</fileset>
+		</copy>
 		<copy todir="${dist}/WeKaFlott" file="application.properties" />
 		<copy todir="${dist}/" file="build/res/wekaflott" />
 		<copy todir="${dist}/" file="build/res/WeKaFlott.desktop" />
+		<copy todir="${dist}/" file="build/res/wkt-mimetype.xml" />
 		<copy todir="${dist}/" file="build/res/install" />
-		<copy todir="${dist}/" file="res/icons/r32/app.png" />
+		<copy todir="${dist}/icons">
+			<fileset dir="${basedir}/build/res/icons">
+				<include name="**/*" />
+			</fileset>
+		</copy>
 
 		<pathconvert property="class-path" dirsep="/" pathsep=" " refid="class.path">
 			<map from="${basedir}/lib" to="lib" />

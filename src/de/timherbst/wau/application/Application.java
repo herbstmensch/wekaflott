@@ -75,9 +75,11 @@ public class Application {
 
 					if (args.length > 0) {
 						for (String s : args) {
-							AxtresLogger.info("Application arg: " + s);
+							if (!"".equals(s)) {
+								AxtresLogger.info("Application arg: " + s);
+								StorageService.loadWettkampftag(args[0]);
+							}
 						}
-						StorageService.loadWettkampftag(args[0]);
 					} else {
 						StorageService.newWettkampftag();
 						renameWettkampftag();
@@ -125,6 +127,7 @@ public class Application {
 	}
 
 	private void setFontPolicy() {
+		try{
 		SubstanceLookAndFeel.setFontPolicy(null);
 		// Get the default font set
 		final FontSet substanceCoreFontSet = SubstanceLookAndFeel.getFontPolicy().getFontSet("Substance", null);
@@ -135,7 +138,7 @@ public class Application {
 			}
 		};
 
-		try {
+		
 
 			// set the new font policy
 			SubstanceLookAndFeel.setFontPolicy(newFontPolicy);

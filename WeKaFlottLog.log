@@ -21994,3 +21994,68 @@ Caused by: java.lang.IllegalArgumentException: argument type mismatch
 2013-09-19 17:48:25,366 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
 2013-09-19 17:48:25,367 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
 2013-09-19 17:48:25,495 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-20 13:24:35,026 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-20 13:24:35.025****************
+2013-09-20 13:24:35,057 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-20 13:24:35,057 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-20 13:24:35,243 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-20 13:24:35,243 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-20 13:24:35,386 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-20 13:25:41,499 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-20 13:25:41.499****************
+2013-09-20 13:25:41,500 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-20 13:25:41,500 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-20 13:25:41,619 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-20 13:25:41,619 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-20 13:25:41,755 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-20 13:29:19,403 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-20 13:29:19.402****************
+2013-09-20 13:29:19,405 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-20 13:29:19,406 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-09-20 13:29:19,604 ERROR [AWT-EventQueue-0] - 
+java.lang.NullPointerException
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2150)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2264)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setFontPolicy(SubstanceLookAndFeel.java:1565)
+	at de.timherbst.wau.application.Application.setFontPolicy(Application.java:130)
+	at de.timherbst.wau.application.Application.access$000(Application.java:32)
+	at de.timherbst.wau.application.Application$1.run(Application.java:59)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-20 13:30:56,297 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-20 13:30:56.296****************
+2013-09-20 13:30:56,298 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-20 13:30:56,298 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-09-20 13:30:56,409 ERROR [AWT-EventQueue-0] - 
+java.lang.NullPointerException
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2150)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2264)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setFontPolicy(SubstanceLookAndFeel.java:1565)
+	at de.timherbst.wau.application.Application.setFontPolicy(Application.java:131)
+	at de.timherbst.wau.application.Application.access$0(Application.java:129)
+	at de.timherbst.wau.application.Application$1.run(Application.java:59)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-20 13:30:56,412 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-09-20 13:30:56,412 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-20 13:30:56,538 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
