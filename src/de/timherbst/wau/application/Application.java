@@ -58,6 +58,11 @@ public class Application {
 						UIManager.setLookAndFeel(AppProperties.getProperty("LOOK_AND_FEEL"));
 						setFontPolicy();
 					}
+					
+					if ("GTK look and feel".equals(UIManager.getLookAndFeel().getName())){
+						  UIManager.put("FileChooserUI", "eu.kostia.gtkjfilechooser.ui.GtkFileChooserUI");
+						}
+					
 					AxtresLogger.info("Setted Look And Feel to: " + UIManager.getLookAndFeel().getName());
 					AxtresLogger.info("Setting Locale: " + AppProperties.getProperty("LOCALE_LANGUAGE") + "," + AppProperties.getProperty("LOCALE_COUNTRY"));
 					// Set the default locale to custom locale

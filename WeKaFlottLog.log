@@ -22059,3 +22059,82 @@ java.lang.NullPointerException
 2013-09-20 13:30:56,412 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
 2013-09-20 13:30:56,412 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
 2013-09-20 13:30:56,538 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-21 09:23:06,574 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-21 09:23:06.573****************
+2013-09-21 09:23:06,576 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-21 09:23:06,576 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-09-21 09:23:06,676 ERROR [AWT-EventQueue-0] - 
+java.lang.NullPointerException
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2150)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2264)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setFontPolicy(SubstanceLookAndFeel.java:1565)
+	at de.timherbst.wau.application.Application.setFontPolicy(Application.java:131)
+	at de.timherbst.wau.application.Application.access$0(Application.java:129)
+	at de.timherbst.wau.application.Application$1.run(Application.java:59)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-21 09:23:06,678 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-09-21 09:23:06,678 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-21 09:23:06,800 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-21 09:23:42,887 INFO  [AWT-EventQueue-0] - Open Erfassung for: Wettkampf 3
+2013-09-21 09:23:42,908 INFO  [AWT-EventQueue-0] - Created new tab
+2013-09-21 09:23:46,490 INFO  [AWT-EventQueue-0] - Tab WK: Wettkampf 3 closed
+2013-09-22 23:05:31,799 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-22 23:05:31.799****************
+2013-09-22 23:05:31,814 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-22 23:05:31,814 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-09-22 23:05:32,185 ERROR [AWT-EventQueue-0] - 
+java.lang.NullPointerException
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2150)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setSkin(SubstanceLookAndFeel.java:2264)
+	at org.pushingpixels.substance.api.SubstanceLookAndFeel.setFontPolicy(SubstanceLookAndFeel.java:1565)
+	at de.timherbst.wau.application.Application.setFontPolicy(Application.java:131)
+	at de.timherbst.wau.application.Application.access$0(Application.java:129)
+	at de.timherbst.wau.application.Application$1.run(Application.java:59)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-22 23:05:32,187 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-09-22 23:05:32,187 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-22 23:05:32,440 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-22 23:09:36,566 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-22 23:09:36.566****************
+2013-09-22 23:09:36,567 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-22 23:09:36,567 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-22 23:09:36,672 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-22 23:09:36,673 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-22 23:09:36,797 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-22 23:11:01,429 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-22 23:11:01.429****************
+2013-09-22 23:11:01,430 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-22 23:11:01,430 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-22 23:11:01,545 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-22 23:11:01,545 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-22 23:11:01,686 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-22 23:11:32,145 INFO  [AWT-EventQueue-0] - Open Erfassung for: Wettkampf 1
+2013-09-22 23:11:32,256 INFO  [AWT-EventQueue-0] - Created new tab
+2013-09-22 23:27:17,811 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-22 23:27:17.81****************
+2013-09-22 23:27:17,812 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-22 23:27:17,812 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-22 23:27:17,920 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-22 23:27:17,920 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-22 23:27:18,044 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu

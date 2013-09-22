@@ -138,6 +138,7 @@ public class MannschaftenView extends JPanel {
 					if (mw == null) {
 						if (((Mannschaft) table.getValueAt(i, -1)).getWettkampf() != null)
 							((Mannschaft) table.getValueAt(i, -1)).getWettkampf().getMannschaften().remove((Mannschaft) table.getValueAt(i, -1));
+						((Mannschaft) table.getValueAt(i, -1)).setWettkampf(null);
 						((Mannschaft) table.getValueAt(i, -1)).setRiege(null);
 					} else
 						mw.addMannschaft(((Mannschaft) table.getValueAt(i, -1)));

@@ -1,601 +1,601 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="siegerliste_sub" language="groovy" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
-	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
-	<parameter name="wettkampf" class="java.lang.String"/>
-	<parameter name="art" class="java.lang.String"/>
-	<parameter name="modus" class="java.lang.String"/>
-	<parameter name="jahrgaenge" class="java.lang.String"/>
-	<field name="name" class="java.lang.String"/>
-	<field name="vorname" class="java.lang.String"/>
-	<field name="mannschaft" class="java.lang.String"/>
-	<field name="jahrgang" class="java.lang.String"/>
-	<field name="boden" class="de.timhaller.wau.domain.wertungen.Wertung"/>
-	<field name="seitpferd" class="de.timhaller.wau.domain.wertungen.Wertung"/>
-	<field name="ringe" class="de.timhaller.wau.domain.wertungen.Wertung"/>
-	<field name="sprung" class="de.timhaller.wau.domain.wertungen.Wertung"/>
-	<field name="barren" class="de.timhaller.wau.domain.wertungen.Wertung"/>
-	<field name="reck" class="de.timhaller.wau.domain.wertungen.Wertung"/>
-	<field name="gesamt" class="java.lang.Double"/>
-	<field name="platz" class="java.lang.Integer"/>
-	<background>
-		<band splitType="Stretch"/>
-	</background>
-	<columnHeader>
-		<band height="40" splitType="Stretch">
-			<staticText>
-				<reportElement x="0" y="20" width="90" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Name]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="90" y="20" width="70" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Vorname]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="160" y="20" width="80" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Mannschaft]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="240" y="20" width="51" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Jahrg.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="291" y="20" width="72" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Boden]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="363" y="20" width="72" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[P.-Pferd]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="435" y="20" width="72" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Ringe]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="507" y="20" width="72" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Sprung]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="579" y="20" width="72" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Barren]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="651" y="20" width="72" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Reck]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="723" y="20" width="45" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Gesamt]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="768" y="20" width="34" height="20"/>
-				<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
-					<topPen lineWidth="1.0" lineStyle="Solid"/>
-					<leftPen lineWidth="1.0" lineStyle="Solid"/>
-					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="9" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Platz]]></text>
-			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="0" width="160" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$P{wettkampf}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="160" y="0" width="203" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="0.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$P{art}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="363" y="0" width="72" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="0.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$P{modus}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="435" y="0" width="367" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="0.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$P{jahrgaenge}]]></textFieldExpression>
-			</textField>
-		</band>
-	</columnHeader>
-	<detail>
-		<band height="40" splitType="Stretch">
-			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="0" width="90" height="40"/>
-				<box leftPadding="2" rightPadding="2">
-					<leftPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="160" y="0" width="80" height="40"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{mannschaft}]]></textFieldExpression>
-			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="240" y="0" width="51" height="40"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{jahrgang}]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="291" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{boden} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{boden}).getDifficulty():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{boden}).getAusgang())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="327" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{boden} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{boden}).getExecution():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{boden}).getAbzug())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="363" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{seitpferd} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{seitpferd}).getDifficulty():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{seitpferd}).getAusgang())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="399" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{seitpferd} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{seitpferd}).getExecution():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{seitpferd}).getAbzug())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="435" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{ringe} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{ringe}).getDifficulty():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{ringe}).getAusgang())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="471" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{ringe} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{ringe}).getExecution():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{ringe}).getAbzug())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="507" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{sprung} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{sprung}).getDifficulty():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{sprung}).getAusgang())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="543" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{sprung} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{sprung}).getExecution():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{sprung}).getAbzug())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="579" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{barren} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{barren}).getDifficulty():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{barren}).getAusgang())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="615" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{barren} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{barren}).getExecution():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{barren}).getAbzug())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="651" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{reck} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{reck}).getDifficulty():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{reck}).getAusgang())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="687" y="0" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{reck} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{reck}).getExecution():
-    ((de.timhaller.wau.domain.wertungen.PStufenWertung)$F{reck}).getAbzug())]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="723" y="0" width="45" height="40"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[$F{gesamt}]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="507" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{sprung} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{sprung}).getMissingElements():
+    <property name="ireport.zoom" value="1.0"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <parameter name="wettkampf" class="java.lang.String"/>
+    <parameter name="art" class="java.lang.String"/>
+    <parameter name="modus" class="java.lang.String"/>
+    <parameter name="jahrgaenge" class="java.lang.String"/>
+    <field name="name" class="java.lang.String"/>
+    <field name="vorname" class="java.lang.String"/>
+    <field name="mannschaft" class="java.lang.String"/>
+    <field name="jahrgang" class="java.lang.String"/>
+    <field name="boden" class="de.timherbst.wau.domain.wertungen.Wertung"/>
+    <field name="seitpferd" class="de.timherbst.wau.domain.wertungen.Wertung"/>
+    <field name="ringe" class="de.timherbst.wau.domain.wertungen.Wertung"/>
+    <field name="sprung" class="de.timherbst.wau.domain.wertungen.Wertung"/>
+    <field name="barren" class="de.timherbst.wau.domain.wertungen.Wertung"/>
+    <field name="reck" class="de.timherbst.wau.domain.wertungen.Wertung"/>
+    <field name="gesamt" class="java.lang.Double"/>
+    <field name="platz" class="java.lang.Integer"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <columnHeader>
+        <band height="40" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="20" width="90" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="90" y="20" width="70" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Vorname]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="160" y="20" width="80" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Mannschaft]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="240" y="20" width="51" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Jahrg.]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="291" y="20" width="72" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Boden]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="363" y="20" width="72" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[P.-Pferd]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="435" y="20" width="72" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Ringe]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="507" y="20" width="72" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Sprung]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="579" y="20" width="72" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Barren]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="651" y="20" width="72" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Reck]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="723" y="20" width="45" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Gesamt]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="768" y="20" width="34" height="20"/>
+                <box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+                    <topPen lineWidth="1.0" lineStyle="Solid"/>
+                    <leftPen lineWidth="1.0" lineStyle="Solid"/>
+                    <bottomPen lineWidth="1.0" lineStyle="Solid"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Platz]]></text>
+            </staticText>
+            <textField isBlankWhenNull="true">
+                <reportElement x="0" y="0" width="160" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <topPen lineWidth="1.0"/>
+                    <leftPen lineWidth="1.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$P{wettkampf}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="160" y="0" width="203" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <topPen lineWidth="1.0"/>
+                    <leftPen lineWidth="0.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$P{art}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="363" y="0" width="72" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <topPen lineWidth="1.0"/>
+                    <leftPen lineWidth="0.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$P{modus}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="435" y="0" width="367" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <topPen lineWidth="1.0"/>
+                    <leftPen lineWidth="0.0"/>
+                    <rightPen lineWidth="1.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$P{jahrgaenge}]]></textFieldExpression>
+            </textField>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="40" splitType="Stretch">
+            <textField isBlankWhenNull="true">
+                <reportElement x="0" y="0" width="90" height="40"/>
+                <box leftPadding="2" rightPadding="2">
+                    <leftPen lineWidth="1.0"/>
+                    <bottomPen lineWidth="1.0"/>
+                    <rightPen lineWidth="1.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="160" y="0" width="80" height="40"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0"/>
+                    <rightPen lineWidth="1.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{mannschaft}]]></textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                <reportElement x="240" y="0" width="51" height="40"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0"/>
+                    <rightPen lineWidth="1.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{jahrgang}]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="291" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{boden} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{boden}).getDifficulty():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{boden}).getAusgang())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="327" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{boden} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{boden}).getExecution():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{boden}).getAbzug())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="363" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{seitpferd} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{seitpferd}).getDifficulty():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{seitpferd}).getAusgang())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="399" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{seitpferd} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{seitpferd}).getExecution():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{seitpferd}).getAbzug())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="435" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{ringe} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{ringe}).getDifficulty():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{ringe}).getAusgang())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="471" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{ringe} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{ringe}).getExecution():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{ringe}).getAbzug())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="507" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{sprung} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{sprung}).getDifficulty():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{sprung}).getAusgang())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="543" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{sprung} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{sprung}).getExecution():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{sprung}).getAbzug())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="579" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{barren} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{barren}).getDifficulty():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{barren}).getAusgang())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="615" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{barren} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{barren}).getExecution():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{barren}).getAbzug())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="651" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{reck} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{reck}).getDifficulty():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{reck}).getAusgang())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="687" y="0" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{reck} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{reck}).getExecution():
+    ((de.timherbst.wau.domain.wertungen.PStufenWertung)$F{reck}).getAbzug())]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="723" y="0" width="45" height="40"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0"/>
+                    <rightPen lineWidth="1.0"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{gesamt}]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="507" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{sprung} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{sprung}).getMissingElements():
     null)]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="615" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[$F{barren}.getEndwert()]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="471" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[$F{ringe}.getEndwert()]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="435" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{ringe} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{ringe}).getMissingElements():
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="615" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{barren}.getEndwert()]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="471" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{ringe}.getEndwert()]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="435" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{ringe} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{ringe}).getMissingElements():
     null)]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="543" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[$F{sprung}.getEndwert()]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="291" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{boden} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{boden}).getMissingElements():
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="543" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{sprung}.getEndwert()]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="291" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{boden} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{boden}).getMissingElements():
     null)]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="687" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[$F{reck}.getEndwert()]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="579" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{barren} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{barren}).getMissingElements():
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="687" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{reck}.getEndwert()]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="579" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{barren} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{barren}).getMissingElements():
     null)]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="363" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{seitpferd} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{seitpferd}).getMissingElements():
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="363" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{seitpferd} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{seitpferd}).getMissingElements():
     null)]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="399" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[$F{seitpferd}.getEndwert()]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="327" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Solid"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[$F{boden}.getEndwert()]]></textFieldExpression>
-			</textField>
-			<textField pattern="#0.00" isBlankWhenNull="true">
-				<reportElement x="651" y="20" width="36" height="20"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.Double"><![CDATA[($F{reck} instanceof de.timhaller.wau.domain.wertungen.CdPWertung?
-    ((de.timhaller.wau.domain.wertungen.CdPWertung)$F{reck}).getMissingElements():
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="399" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{seitpferd}.getEndwert()]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="327" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Solid"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{boden}.getEndwert()]]></textFieldExpression>
+            </textField>
+            <textField pattern="#0.00" isBlankWhenNull="true">
+                <reportElement x="651" y="20" width="36" height="20"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dotted" lineColor="#CCCCCC"/>
+                </box>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[($F{reck} instanceof de.timherbst.wau.domain.wertungen.CdPWertung?
+    ((de.timherbst.wau.domain.wertungen.CdPWertung)$F{reck}).getMissingElements():
     null)]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="768" y="0" width="34" height="40"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" isBold="true"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{platz}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="90" y="0" width="70" height="40"/>
-				<box leftPadding="2" rightPadding="2">
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="DejaVu Sans"/>
-				</textElement>
-				<textFieldExpression class="java.lang.String"><![CDATA[$F{vorname}]]></textFieldExpression>
-			</textField>
-		</band>
-	</detail>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="768" y="0" width="34" height="40"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0"/>
+                    <rightPen lineWidth="1.0"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" isBold="true"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{platz}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement x="90" y="0" width="70" height="40"/>
+                <box leftPadding="2" rightPadding="2">
+                    <bottomPen lineWidth="1.0"/>
+                    <rightPen lineWidth="1.0"/>
+                </box>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{vorname}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
 </jasperReport>
