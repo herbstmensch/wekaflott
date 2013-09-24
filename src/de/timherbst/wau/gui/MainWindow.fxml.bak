@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane prefHeight="612.0" prefWidth="1029.0" xmlns:fx="http://javafx.com/fxml" fx:controller="de.timherbst.wau.gui.MainWindowController">
+  <bottom>
+    <GridPane prefHeight="20.0" style="-fx-background-color: lightgrey;">
+      <children>
+        <Label fx:id="statusLabel" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+      </columnConstraints>
+      <padding>
+        <Insets left="10.0" right="10.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </bottom>
+  <center>
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <center>
+        <TabPane prefHeight="506.0" prefWidth="836.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="30.0" tabMinHeight="30.0">
+          <tabs>
+            <Tab text="Turner">
+              <content>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                  <center>
+                    <TableView fx:id="turnerTable">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" />
+                        <TableColumn prefWidth="75.0" text="Name" />
+                        <TableColumn prefWidth="75.0" text="Vorname" />
+                        <TableColumn prefWidth="75.0" text="Jahrgang" />
+                        <TableColumn prefWidth="75.0" text="Verein" />
+                        <TableColumn prefWidth="75.0" text="AK?" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Mannschaft" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Wettkampf" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Riege" />
+                      </columns>
+                    </TableView>
+                  </center>
+                  <top>
+                    <ToolBar>
+                      <items>
+                        <Button fx:id="newTurner" defaultButton="true" mnemonicParsing="false" onAction="#addTurner" prefHeight="30.0" style=" &#10;" text="Neuer Turner" />
+                        <Button fx:id="deleteTurner" mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Turner löschen" />
+                        <Separator orientation="VERTICAL" prefHeight="21.0" />
+                        <SplitMenuButton fx:id="addTurnerToMannschaft" mnemonicParsing="false" prefHeight="30.0" text="zu Mannschaft hinzufügen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Users24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                          <items>
+                            <MenuItem disable="true" mnemonicParsing="false" text="Mannschaftszuordnung löschen" fx:id="removeTurnerFromMannschaft" />
+                          </items>
+                        </SplitMenuButton>
+                        <SplitMenuButton fx:id="addTurnerToWettkampf" mnemonicParsing="false" prefHeight="30.0" text="zu Wettkampf hinzufügen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/play-an-order24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                          <items>
+                            <MenuItem disable="true" mnemonicParsing="false" text="Wettkampfzuordnung löschen" fx:id="removeTurnerFromWettkampf" />
+                          </items>
+                        </SplitMenuButton>
+                        <SplitMenuButton fx:id="addTurnerToRiege" mnemonicParsing="false" prefHeight="30.0" text="zu Riege hinzufügen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Flag-green24_1.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                          <items>
+                            <MenuItem disable="true" mnemonicParsing="false" text="Riegenzuordnung entfernen" fx:id="removeTurnerFromRiege" />
+                          </items>
+                        </SplitMenuButton>
+                      </items>
+                    </ToolBar>
+                  </top>
+                </BorderPane>
+              </content>
+              <graphic>
+                <ImageView>
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/User-blue24.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Tab>
+            <Tab text="Mannschaften">
+              <content>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                  <center>
+                    <TableView fx:id="mannschaftenTable" prefHeight="200.0" prefWidth="200.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" />
+                        <TableColumn prefWidth="75.0" text="Name" />
+                        <TableColumn prefWidth="75.0" text="Vorname" />
+                        <TableColumn prefWidth="75.0" text="Jahrgang" />
+                        <TableColumn prefWidth="75.0" text="Verein" />
+                        <TableColumn prefWidth="75.0" text="AK?" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Mannschaft" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Wettkampf" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Riege" />
+                      </columns>
+                    </TableView>
+                  </center>
+                  <top>
+                    <ToolBar>
+                      <items>
+                        <Button fx:id="newMannschaft" defaultButton="true" mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Neue Mannschaft" />
+                        <Button fx:id="deleteMannschaft" mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Mannschaft löschen" />
+                        <Separator orientation="VERTICAL" prefHeight="21.0" />
+                        <SplitMenuButton fx:id="addMannschftToWettkampf" mnemonicParsing="false" prefHeight="30.0" text="zu Wettkampf hinzufügen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/play-an-order24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Wettkampfzuordnung entfernen" fx:id="removeMannschaftFromWettkampf" />
+                          </items>
+                        </SplitMenuButton>
+                        <SplitMenuButton fx:id="addMannschaftToRiege" mnemonicParsing="false" prefHeight="30.0" text="zu Riege hinzufügen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Flag-green24_1.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Riegenzuordnung entfernen" fx:id="removeMannschaftFromRiege" />
+                          </items>
+                        </SplitMenuButton>
+                        <Separator orientation="VERTICAL" prefHeight="21.0" />
+                        <Button fx:id="openErfassungForMannschaft" mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Erfassung öffnen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/calculator24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                        </Button>
+                      </items>
+                    </ToolBar>
+                  </top>
+                </BorderPane>
+              </content>
+              <graphic>
+                <ImageView>
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Users24.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Tab>
+            <Tab text="Wettkämpfe">
+              <content>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                  <center>
+                    <TableView prefHeight="200.0" prefWidth="200.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" />
+                        <TableColumn prefWidth="75.0" text="Name" />
+                        <TableColumn prefWidth="75.0" text="Vorname" />
+                        <TableColumn prefWidth="75.0" text="Jahrgang" />
+                        <TableColumn prefWidth="75.0" text="Verein" />
+                        <TableColumn prefWidth="75.0" text="AK?" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Mannschaft" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Wettkampf" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Riege" />
+                      </columns>
+                    </TableView>
+                  </center>
+                  <top>
+                    <ToolBar>
+                      <items>
+                        <Button defaultButton="true" minWidth="145.0" mnemonicParsing="false" prefHeight="30.0" text="Neuer Einzelwettkampf" />
+                        <Button defaultButton="true" minWidth="180.0" mnemonicParsing="false" prefHeight="30.0" text="Neuer Mannschaftswettkampf" />
+                        <Button minWidth="65.0" mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Löschen" />
+                        <Separator orientation="VERTICAL" prefHeight="21.0" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" text="Auswertung anzeigen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Order-history24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                        </Button>
+                        <SplitMenuButton mnemonicParsing="false" prefHeight="30.0" text="Auswertung drucken">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/printer-blue24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="als Excel exportieren" />
+                          </items>
+                        </SplitMenuButton>
+                        <Separator orientation="VERTICAL" prefHeight="21.0" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" text="Urkunden drucken">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Gold-metal-red24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                        </Button>
+                        <Separator orientation="VERTICAL" prefHeight="21.0" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" text="Erfassung öffnen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/calculator24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                        </Button>
+                      </items>
+                    </ToolBar>
+                  </top>
+                </BorderPane>
+              </content>
+              <graphic>
+                <ImageView>
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/play-an-order24.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Tab>
+            <Tab style="" text="Riegen">
+              <content>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                  <center>
+                    <TableView prefHeight="200.0" prefWidth="200.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" />
+                        <TableColumn prefWidth="75.0" text="Name" />
+                        <TableColumn prefWidth="75.0" text="Vorname" />
+                        <TableColumn prefWidth="75.0" text="Jahrgang" />
+                        <TableColumn prefWidth="75.0" text="Verein" />
+                        <TableColumn prefWidth="75.0" text="AK?" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Mannschaft" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Wettkampf" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Riege" />
+                      </columns>
+                    </TableView>
+                  </center>
+                  <top>
+                    <ToolBar>
+                      <items>
+                        <Button defaultButton="true" mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Neue Riege" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Riege löschen" />
+                        <Separator orientation="VERTICAL" prefHeight="21.0" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" style=" &#10;" text="Erfassung öffnen">
+                          <graphic>
+                            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/calculator24.png" preserveRatio="false" smooth="false" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                        </Button>
+                      </items>
+                    </ToolBar>
+                  </top>
+                </BorderPane>
+              </content>
+              <graphic>
+                <ImageView>
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Flag-green24_1.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Tab>
+            <Tab text="Erfassung">
+              <content>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                  <center>
+                    <TabPane prefHeight="200.0" prefWidth="200.0" side="BOTTOM" tabClosingPolicy="ALL_TABS">
+                      <tabs>
+                        <Tab text="RG: Riege 1">
+                          <content>
+                            <TableView prefHeight="200.0" prefWidth="200.0">
+                              <columns>
+                                <TableColumn prefWidth="75.0" text="Column X" />
+                                <TableColumn prefWidth="75.0" text="Column X" />
+                              </columns>
+                            </TableView>
+                          </content>
+                        </Tab>
+                        <Tab closable="false" disable="true" text="+" />
+                      </tabs>
+                    </TabPane>
+                  </center>
+                </BorderPane>
+              </content>
+              <graphic>
+                <ImageView>
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/calculator24.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </center>
+    </BorderPane>
+  </center>
+  <top>
+    <MenuBar styleClass="null">
+      <menus>
+        <Menu mnemonicParsing="false" text="_Datei">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Öffnen">
+              <graphic>
+                <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/new-file16.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" text="Speichern">
+              <graphic>
+                <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/open-file16.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" text="Speichern unter..." />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="_Einstellungen">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="E_xtras">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Rundenwettkampf auswerten">
+              <graphic>
+                <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="file:/C:/Users/Tim.EIS5DC/Desktop/Icons/png/Numbers16.png" preserveRatio="false" smooth="false" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Alle Wertungen neu initialisieren" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="_Hilfe">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Info..." />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>

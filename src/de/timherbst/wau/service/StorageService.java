@@ -79,9 +79,12 @@ public class StorageService {
 	}
 
 	public class AutoSaveThread extends Thread {
+		
+		boolean run = true;
+		
 		@Override
 		public void run() {
-			while (true) {
+			while (run) {
 				try {
 					Thread.sleep(new Integer(AppProperties.getProperty("AUTOSAVE_INTERVAL_SEC")).intValue() * 1000);
 				} catch (InterruptedException e) {
@@ -90,6 +93,8 @@ public class StorageService {
 				StorageService.autoSave();
 			}
 		}
+		
+		
 	}
 
 }

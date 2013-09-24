@@ -108,7 +108,7 @@ public class Application {
 			awtAppClassNameField.setAccessible(true);
 			awtAppClassNameField.set(xToolkit, NAME);
 		} catch (Throwable t) {
-			t.printStackTrace();
+			
 		}
 
 		new Application(args);
@@ -119,6 +119,8 @@ public class Application {
 	}
 
 	public static MainFrame getMainFrame() {
+		if(mainFrame==null)
+			mainFrame = new MainFrame();
 		return mainFrame;
 	}
 
