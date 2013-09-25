@@ -24,7 +24,7 @@ public class WettkampfTag implements Serializable {
 	private Date datum;
 
 	private Vector<Wettkampf> wettkaempfe;
-	private Vector<Turner> turner;
+	private final Vector<Turner> turner;
 	private Vector<Mannschaft> mannschaften;
 	private Vector<Riege> riegen;
 

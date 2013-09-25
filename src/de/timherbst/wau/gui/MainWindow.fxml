@@ -37,15 +37,15 @@
                   <center>
                     <TableView fx:id="turnerTable">
                       <columns>
-                        <TableColumn editable="false" prefWidth="75.0" sortable="false" />
-                        <TableColumn prefWidth="75.0" text="Name" />
-                        <TableColumn prefWidth="75.0" text="Vorname" />
-                        <TableColumn prefWidth="75.0" text="Jahrgang" />
-                        <TableColumn prefWidth="75.0" text="Verein" />
-                        <TableColumn prefWidth="75.0" text="AK?" />
-                        <TableColumn editable="false" prefWidth="75.0" text="Mannschaft" />
-                        <TableColumn editable="false" prefWidth="75.0" text="Wettkampf" />
-                        <TableColumn editable="false" prefWidth="75.0" text="Riege" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" fx:id="ttColIcon" />
+                        <TableColumn prefWidth="75.0" text="Name" fx:id="ttColName" />
+                        <TableColumn prefWidth="75.0" text="Vorname" fx:id="ttColVorname" />
+                        <TableColumn prefWidth="75.0" text="Jahrgang" fx:id="ttColJahrgang" />
+                        <TableColumn prefWidth="75.0" text="Verein" fx:id="ttColVerein" />
+                        <TableColumn prefWidth="75.0" text="AK?" fx:id="ttColAK" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Mannschaft" fx:id="ttColMannschaft" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Wettkampf" fx:id="ttColWettkampf" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Riege" fx:id="ttColRiege" />
                       </columns>
                     </TableView>
                   </center>

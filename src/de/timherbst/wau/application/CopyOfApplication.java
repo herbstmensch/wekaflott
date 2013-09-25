@@ -70,6 +70,18 @@ public class CopyOfApplication extends Application {
 		SwingJavaBuilder.getConfig().addType(TurnerView.class, MannschaftenView.class, WettkaempfeView.class, RiegenView.class, ErfassungView.class, ErfassungHostView.class);
 
 		
+		AxtresLogger.info("Setting Locale: "
+				+ AppProperties.getProperty("LOCALE_LANGUAGE") + ","
+				+ AppProperties.getProperty("LOCALE_COUNTRY"));
+		// Set the default locale to custom locale
+		Locale.setDefault(new Locale(AppProperties
+				.getProperty("LOCALE_LANGUAGE"), AppProperties
+				.getProperty("LOCALE_COUNTRY")));
+
+		AxtresLogger.info("User Dir: " + System.getProperty("user.dir"));
+
+		
+		
 		// +++++++++++++++++++++++++++++++++++++++++++++
 		// Layout
 		// +++++++++++++++++++++++++++++++++++++++++++++
@@ -113,18 +125,6 @@ public class CopyOfApplication extends Application {
 			}
 		});
 	
-
-		System.out.println("ww");
-
-		AxtresLogger.info("Setting Locale: "
-				+ AppProperties.getProperty("LOCALE_LANGUAGE") + ","
-				+ AppProperties.getProperty("LOCALE_COUNTRY"));
-		// Set the default locale to custom locale
-		Locale.setDefault(new Locale(AppProperties
-				.getProperty("LOCALE_LANGUAGE"), AppProperties
-				.getProperty("LOCALE_COUNTRY")));
-
-		AxtresLogger.info("User Dir: " + System.getProperty("user.dir"));
 
 		if (getParameters().getRaw().size() > 0) {
 			for (String s : getParameters().getRaw()) {

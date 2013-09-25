@@ -22494,3 +22494,323 @@ javafx.fxml.LoadException: Page language not specified.
 2013-09-24 14:07:27,073 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
 2013-09-24 14:07:27,073 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
 2013-09-24 14:07:27,074 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:09:31,758 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:09:31.758****************
+2013-09-24 15:09:31,759 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:09:31,759 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:09:31,759 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:11:23,950 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:11:23.95****************
+2013-09-24 15:11:23,951 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:11:23,951 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:11:23,951 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:12:45,964 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:12:45.964****************
+2013-09-24 15:12:45,965 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:12:45,965 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:12:45,965 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:12:57,773 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:12:57.773****************
+2013-09-24 15:12:57,774 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:12:57,774 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:12:57,774 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:19:06,872 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:19:06.872****************
+2013-09-24 15:19:06,873 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:19:06,873 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:19:06,874 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:21:08,019 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:21:40,747 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:21:40.746****************
+2013-09-24 15:21:40,747 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:21:40,747 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:21:40,748 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:22:37,053 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:22:37.053****************
+2013-09-24 15:22:37,055 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:22:37,055 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:22:37,055 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:23:08,015 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:24:06,086 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:24:06.085****************
+2013-09-24 15:24:06,087 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:24:06,087 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:24:06,087 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:25:08,009 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:26:12,574 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:26:12.574****************
+2013-09-24 15:26:12,575 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:26:12,575 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:26:12,575 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:27:08,003 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:29:05,354 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:29:05.353****************
+2013-09-24 15:29:05,355 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:29:05,355 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:29:05,355 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:29:36,174 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:29:36.173****************
+2013-09-24 15:29:36,175 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:29:36,175 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:29:36,175 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:29:55,312 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:29:55.311****************
+2013-09-24 15:29:55,313 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:29:55,313 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:29:55,313 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:31:06,497 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:31:51,175 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:31:51.174****************
+2013-09-24 15:31:51,175 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:31:51,175 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:31:51,176 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:33:06,511 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:34:51,660 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:34:51.659****************
+2013-09-24 15:34:51,660 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:34:51,660 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:34:51,661 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:35:06,541 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:35:43,672 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:35:43.671****************
+2013-09-24 15:35:43,672 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:35:43,672 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:35:43,673 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:36:23,801 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:36:23.8****************
+2013-09-24 15:36:23,801 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:36:23,802 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:36:23,802 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:39:20,849 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:39:20.849****************
+2013-09-24 15:39:20,850 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:39:20,850 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:39:20,851 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:39:48,530 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:39:48.529****************
+2013-09-24 15:39:48,530 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:39:48,530 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:39:48,531 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:40:56,087 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:40:56.086****************
+2013-09-24 15:40:56,087 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:40:56,087 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:40:56,088 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:43:16,374 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:45:16,383 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 15:46:23,692 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:46:23.691****************
+2013-09-24 15:46:23,692 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:46:23,692 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:46:23,693 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:47:13,960 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:47:13.959****************
+2013-09-24 15:47:13,961 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:47:13,961 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:47:13,961 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:47:40,784 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:47:40.783****************
+2013-09-24 15:47:40,785 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:47:40,785 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:47:40,785 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:49:53,669 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:49:53.668****************
+2013-09-24 15:49:53,670 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:49:53,670 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:49:53,670 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:50:11,836 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:50:11.836****************
+2013-09-24 15:50:11,837 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:50:11,837 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:50:11,837 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:51:15,918 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:51:15.917****************
+2013-09-24 15:51:15,919 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:51:15,919 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:51:15,919 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:51:50,899 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:51:50.898****************
+2013-09-24 15:51:50,900 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:51:50,900 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:51:50,900 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:53:48,776 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:53:48.774****************
+2013-09-24 15:53:48,779 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:53:48,781 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:53:55,064 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:54:37,480 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:54:37.479****************
+2013-09-24 15:54:37,480 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:54:37,480 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:54:37,481 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:58:13,274 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:58:13.273****************
+2013-09-24 15:58:13,274 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:58:13,274 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:58:13,275 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:58:41,233 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:58:41.233****************
+2013-09-24 15:58:41,234 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:58:41,234 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:58:41,234 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 15:59:08,560 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 15:59:08.559****************
+2013-09-24 15:59:08,561 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 15:59:08,561 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 15:59:08,561 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:15:45,032 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:15:45.032****************
+2013-09-24 16:15:45,046 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:15:45,046 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:15:45,047 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:16:29,247 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:16:29.246****************
+2013-09-24 16:16:29,248 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:16:29,248 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:16:29,248 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:17:01,445 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:17:01.444****************
+2013-09-24 16:17:01,445 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:17:01,445 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:17:01,446 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:17:46,707 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:17:46.707****************
+2013-09-24 16:17:46,708 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:17:46,708 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:17:46,708 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:18:30,274 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:18:30.273****************
+2013-09-24 16:18:30,275 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:18:30,275 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:18:30,275 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:19:11,567 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:19:11.566****************
+2013-09-24 16:19:11,568 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:19:11,568 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:19:11,568 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:20:05,338 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:20:05.338****************
+2013-09-24 16:20:05,339 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:20:05,339 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:20:05,339 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:22:08,017 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:24:08,013 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:26:08,007 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:28:08,001 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:30:07,995 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:32:07,989 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:34:07,983 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:34:09,712 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:34:09.712****************
+2013-09-24 16:34:09,713 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:34:09,713 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:34:09,713 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:36:07,978 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:36:12,470 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:38:47,745 INFO  [JavaFX Application Thread] - *********LOGGING STARTED 2013-09-24 16:38:47.744****************
+2013-09-24 16:38:47,746 INFO  [JavaFX Application Thread] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-24 16:38:47,746 INFO  [JavaFX Application Thread] - Setting Locale: de,DE
+2013-09-24 16:38:47,746 INFO  [JavaFX Application Thread] - User Dir: D:\Workspaces\WAu\WeKaFlott
+2013-09-24 16:40:50,462 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)
+2013-09-24 16:42:50,459 ERROR [Thread-3] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:93)

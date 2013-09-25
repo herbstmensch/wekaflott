@@ -361,6 +361,11 @@
             <MenuItem mnemonicParsing="false" text="Speichern unter..." />
           </items>
         </Menu>
+        <Menu mnemonicParsing="false" text="Optionen">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openRenameWettkampftag" text="Wettkampftag Eigenschaften" />
+          </items>
+        </Menu>
         <Menu mnemonicParsing="false" text="_Einstellungen">
           <items>
             <MenuItem mnemonicParsing="false" text="Delete" />
