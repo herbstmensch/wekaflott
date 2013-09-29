@@ -1,0 +1,9 @@
+JDialog(name=Debug, title=Debug Log, iconImage=/icons/r16/settings.png):
+    - Action(name=ok, text="OK", toolTipText="OK", onAction=ok, icon=/icons/r16/ok.png)
+    - Action(name=cancel, text="Cancel", toolTipText="Cancel", onAction=cancel, icon=/icons/r16/cancel.png)
+    - JButton(name=btnOk, hideActionText=true, action=ok)
+    - JButton(name=btnCancel, hideActionText=true, action=cancel)
+    - MigLayout: |
+        [grow,200]
+        txtVeranstaltung
+        >btnCancel+*=1,btnOk=1

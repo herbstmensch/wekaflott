@@ -3,6 +3,7 @@ package de.timherbst.wau.service;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -41,6 +42,7 @@ import de.timherbst.wau.domain.auswertung.MannschaftsAuswertungMannschaftBean;
 import de.timherbst.wau.domain.auswertung.MannschaftsErgebnis;
 import de.timherbst.wau.domain.auswertung.MannschaftsUrkundeBean;
 import de.timherbst.wau.domain.auswertung.TabellenEintrag;
+import de.timherbst.wau.domain.auswertung.TabellenEintragTurner;
 import de.timherbst.wau.domain.wettkampf.EinzelWettkampf;
 import de.timherbst.wau.domain.wettkampf.MannschaftsWettkampf;
 import de.timherbst.wau.util.Formatter;
@@ -436,7 +438,7 @@ public class AuswertungService {
 				t.setPunkte(t.getPunkte() + e.getErgebnis().getGesamt());
 				t.setTabellenPunkte(t.getTabellenPunkte() + getTabellenPunkte(a.getWettkampf().getMannschaften().size(), e.getPlatzierung(), a.getEntrysMannschaft().values()));
 				t.setGegenPunkte(t.getGegenPunkte() + getGegenPunkte(a.getWettkampf().getMannschaften().size(), e.getPlatzierung(), a.getEntrysMannschaft().values()));
-
+				t.setTurner(m.getTurner());
 			}
 		}
 
@@ -510,7 +512,15 @@ public class AuswertungService {
 	public static void printUrkunden(List<TabellenEintrag> tabelle) throws JRException, IOException {
 
 		JasperReport jr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "standardRundenUrkunde.jrxml");
-		JasperPrint jp = JasperFillManager.fillReport(jr, new HashMap<String, Object>(), new JRBeanCollectionDataSource(tabelle));
+
+		List<TabellenEintragTurner> tabellePrint = new ArrayList<TabellenEintragTurner>();
+		for (TabellenEintrag te : tabelle) {
+			for (int i = 0; i < te.getTurner().size(); i++) {
+				tabellePrint.add(te.getTurnerEintrag(i));
+			}
+		}
+
+		JasperPrint jp = JasperFillManager.fillReport(jr, new HashMap<String, Object>(), new JRBeanCollectionDataSource(tabellePrint));
 		File f = new File(getOutputFolder() + "urkunden");
 		if (!f.exists())
 			f.mkdirs();

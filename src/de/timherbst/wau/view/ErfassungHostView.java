@@ -63,7 +63,7 @@ public class ErfassungHostView extends JPanel implements EventListener {
 	}
 
 	public void addAuswertungTab(Object item) {
-		if(item == null){
+		if (item == null) {
 			JOptionPane.showMessageDialog(this, "Bitte eine Auswahl treffen...", "Hinweis", JOptionPane.INFORMATION_MESSAGE);
 			return;
 		}

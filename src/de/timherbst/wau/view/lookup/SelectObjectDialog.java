@@ -19,7 +19,6 @@ import javax.swing.JDialog;
 import org.javabuilders.swing.SwingJavaBuilder;
 
 import de.axtres.logging.main.AxtresLogger;
-import de.timherbst.wau.application.Application;
 
 @SuppressWarnings("serial")
 public class SelectObjectDialog<O extends Object> extends JDialog {

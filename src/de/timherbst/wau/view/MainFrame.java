@@ -4,7 +4,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
 
-import javax.swing.Box;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -49,8 +48,6 @@ public class MainFrame extends JFrame implements EventListener {
 	 * Create the frame.
 	 */
 	public MainFrame() {
-
-		
 
 		EventDispatcher.addListener(Event.WETTKAMPFTAG_CHANGED, this);
 		EventDispatcher.addListener(Event.WERTUNG_CHANGED, this);

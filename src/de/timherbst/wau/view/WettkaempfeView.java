@@ -51,7 +51,7 @@ public class WettkaempfeView extends JPanel {
 	public WettkaempfeView() {
 		SwingJavaBuilder.build(this);
 		table.setModel(new WettkaempfeTableModel());
-		table.setDefaultEditor(Wertungsmodus.class, new DefaultCellEditor(new JComboBox(Wertung.getWertungsmodi())));
+		table.setDefaultEditor(Wertungsmodus.class, new DefaultCellEditor(new JComboBox<Wertungsmodus>(Wertung.getWertungsmodi())));
 		new ExcelAdapter(table);
 		table.setAutoCreateRowSorter(true);
 		table.setFillsViewportHeight(true);

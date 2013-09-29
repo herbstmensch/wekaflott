@@ -73,19 +73,17 @@ public class RundenwettkampfDialog extends JDialog {
 		tableWettkaempfe.getSelectionModel().setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		addEscapeListener(this);
 	}
-	
+
 	public static void addEscapeListener(final JDialog dialog) {
-	    ActionListener escListener = new ActionListener() {
+		ActionListener escListener = new ActionListener() {
 
-	        @Override
-	        public void actionPerformed(ActionEvent e) {
-	            dialog.setVisible(false);
-	        }
-	    };
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				dialog.setVisible(false);
+			}
+		};
 
-	    dialog.getRootPane().registerKeyboardAction(escListener,
-	            KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),
-	            JComponent.WHEN_IN_FOCUSED_WINDOW);
+		dialog.getRootPane().registerKeyboardAction(escListener, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_IN_FOCUSED_WINDOW);
 
 	}
 
@@ -101,6 +99,26 @@ public class RundenwettkampfDialog extends JDialog {
 
 	@SuppressWarnings("unused")
 	private void printUrkunden() {
+		try {
+			AuswertungService.printUrkunden(tabelle);
+		} catch (Exception e) {
+			AxtresLogger.error(e.getMessage(), e);
+			JOptionPane.showMessageDialog(this, "Beim erstellen der Urkunden ist ein Fehler aufgetreten: " + e.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
+		}
+	}
+
+	@SuppressWarnings("unused")
+	private void printPDF() {
+		try {
+			AuswertungService.printUrkunden(tabelle);
+		} catch (Exception e) {
+			AxtresLogger.error(e.getMessage(), e);
+			JOptionPane.showMessageDialog(this, "Beim erstellen der Urkunden ist ein Fehler aufgetreten: " + e.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
+		}
+	}
+
+	@SuppressWarnings("unused")
+	private void printXLS() {
 		try {
 			AuswertungService.printUrkunden(tabelle);
 		} catch (Exception e) {
@@ -277,6 +295,12 @@ public class RundenwettkampfDialog extends JDialog {
 			return null;
 		}
 
+	}
+
+	@SuppressWarnings("unused")
+	private void ok() {
+
+		setVisible(false);
 	}
 
 }

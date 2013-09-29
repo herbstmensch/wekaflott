@@ -1,11 +1,17 @@
 JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung", iconImage=/icons/r16/auswertung.png):
+    - Action(name=ok, text="OK", toolTipText="OK", onAction=ok, icon=/icons/r16/ok.png)
+    - JButton(name=btnOk, hideActionText=true, action=ok)
     - Action(name=addWKTag, text="Wettkampftag hinzufügen", toolTipText="Wettkampftag hinzufügen", onAction=addWKTag, icon=/icons/r24/wettkampftag_add.png)
     - Action(name=removeWKTag, text="Wettkampftag entfernen", toolTipText="Wettkampftag entfernen", onAction=removeWKTag, icon=/icons/r24/wettkampftag_delete.png)
+    - Action(name=printPDF, text="Siegerliste als PDF drucken", toolTipText="Siegerliste als PDF drucken", onAction=printPDF, icon=/icons/r24/auswertung_pdf.png)
+    - Action(name=printXLS, text="Siegerliste als XLS drucken", toolTipText="Siegerliste als XLS drucken", onAction=printXLS, icon=/icons/r24/auswertung_xls.png)
     - Action(name=printUrkunden, text="Urkunden drucken", toolTipText="Urkunden drucken", onAction=printUrkunden, icon=/icons/r24/urkunden_drucken.png)
     - JToolBar(name=toolbar, floatable=false, orientation=HORIZONTAL, rollover=true):
         - JButton(action=addWKTag, hideActionText=true)
         - JButton(action=removeWKTag, hideActionText=true)
         - ToolBarSeparator()
+        - JButton(action=printPDF, hideActionText=true)
+        - JButton(action=printXLS, hideActionText=true)
         - JButton(action=printUrkunden, hideActionText=true)
         - ToolBarSeparator()
         - JLabel(name=lblVeranstaltung, text='  Veranstaltung:')
@@ -43,4 +49,5 @@ JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung",
         [grow]
         toolbar     [min!]
         split1      [grow]
+        >btnOk=1
         {toolbar: dock north}

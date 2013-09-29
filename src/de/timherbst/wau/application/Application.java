@@ -4,19 +4,14 @@ import java.awt.Toolkit;
 import java.util.Locale;
 
 import javax.swing.SwingUtilities;
-import javax.swing.UIDefaults;
 import javax.swing.UIManager;
 
 import org.javabuilders.swing.SwingJavaBuilder;
-import org.pushingpixels.substance.api.SubstanceLookAndFeel;
-import org.pushingpixels.substance.api.fonts.FontPolicy;
-import org.pushingpixels.substance.api.fonts.FontSet;
 
 import de.axtres.logging.main.AxtresLogger;
 import de.axtres.util.AppProperties;
 import de.timherbst.wau.service.StorageService;
 import de.timherbst.wau.service.StorageService.AutoSaveThread;
-import de.timherbst.wau.util.WrapperFontSet;
 import de.timherbst.wau.view.ErfassungHostView;
 import de.timherbst.wau.view.ErfassungView;
 import de.timherbst.wau.view.MainFrame;
@@ -32,7 +27,7 @@ import de.timherbst.wau.view.components.ToolBarSeparator;
 public class Application {
 
 	public static final String NAME = "WeKaFlott";
-	public static final String VERSION_VIEW = "1.0 beta 6";
+	public static final String VERSION_VIEW = "1.0 beta 7";
 
 	private static MainFrame mainFrame = null;
 
@@ -56,13 +51,8 @@ public class Application {
 
 						AxtresLogger.info("Setting LaF: " + AppProperties.getProperty("LOOK_AND_FEEL"));
 						UIManager.setLookAndFeel(AppProperties.getProperty("LOOK_AND_FEEL"));
-						setFontPolicy();
 					}
-					
-					if ("GTK look and feel".equals(UIManager.getLookAndFeel().getName())){
-						  UIManager.put("FileChooserUI", "eu.kostia.gtkjfilechooser.ui.GtkFileChooserUI");
-						}
-					
+
 					AxtresLogger.info("Setted Look And Feel to: " + UIManager.getLookAndFeel().getName());
 					AxtresLogger.info("Setting Locale: " + AppProperties.getProperty("LOCALE_LANGUAGE") + "," + AppProperties.getProperty("LOCALE_COUNTRY"));
 					// Set the default locale to custom locale
@@ -129,30 +119,6 @@ public class Application {
 	public static void openErfassung(Object o) {
 		getMainFrame().openErfassung(o);
 
-	}
-
-	private void setFontPolicy() {
-		try{
-		SubstanceLookAndFeel.setFontPolicy(null);
-		// Get the default font set
-		final FontSet substanceCoreFontSet = SubstanceLookAndFeel.getFontPolicy().getFontSet("Substance", null);
-		// Create the wrapper font set
-		FontPolicy newFontPolicy = new FontPolicy() {
-			public FontSet getFontSet(String lafName, UIDefaults table) {
-				return new WrapperFontSet(substanceCoreFontSet, -2);
-			}
-		};
-
-		
-
-			// set the new font policy
-			SubstanceLookAndFeel.setFontPolicy(newFontPolicy);
-			// reset the LAF to have the changes
-			UIManager.setLookAndFeel(AppProperties.getProperty("LOOK_AND_FEEL"));
-
-		} catch (Exception exc) {
-			AxtresLogger.error(exc.getMessage(), exc);
-		}
 	}
 
 }

@@ -22138,3 +22138,485 @@ java.lang.NullPointerException
 2013-09-22 23:27:17,920 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
 2013-09-22 23:27:17,920 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
 2013-09-22 23:27:18,044 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:13:31,720 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:13:31.719****************
+2013-09-29 10:13:31,735 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:13:31,735 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:13:31,976 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:13:31,976 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:13:32,106 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:17:13,440 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:17:13.439****************
+2013-09-29 10:17:13,441 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:17:13,442 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:17:13,568 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:17:13,568 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:17:13,704 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:18:08,408 ERROR [AWT-EventQueue-0] - 
+java.lang.NullPointerException
+	at de.timherbst.wau.service.AuswertungService.printUrkunden(AuswertungService.java:517)
+	at de.timherbst.wau.view.RundenwettkampfDialog.printUrkunden(RundenwettkampfDialog.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.BuilderUtils.invokeCallerEventMethods(BuilderUtils.java:427)
+	at org.javabuilders.swing.handler.event.CommonActionListenerHandler$1.onAction(CommonActionListenerHandler.java:67)
+	at org.javabuilders.swing.SwingAction.actionPerformed(SwingAction.java:153)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:154)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:182)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:221)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:219)
+	at java.awt.Dialog.show(Dialog.java:1082)
+	at java.awt.Component.show(Component.java:1651)
+	at java.awt.Component.setVisible(Component.java:1603)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:1005)
+	at de.timherbst.wau.view.MainFrame.openRundenAuswertung(MainFrame.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.BuilderUtils.invokeCallerEventMethods(BuilderUtils.java:427)
+	at org.javabuilders.swing.handler.event.CommonActionListenerHandler$1.onAction(CommonActionListenerHandler.java:67)
+	at org.javabuilders.swing.SwingAction.actionPerformed(SwingAction.java:153)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:833)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:877)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-29 10:22:23,890 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:22:23.889****************
+2013-09-29 10:22:23,892 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:22:23,892 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:22:24,034 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:22:24,034 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:22:24,175 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:23:55,181 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:23:55.181****************
+2013-09-29 10:23:55,184 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:23:55,184 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:23:55,362 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:23:55,362 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:23:55,550 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:25:05,114 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:25:05.113****************
+2013-09-29 10:25:05,115 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:25:05,115 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:25:05,250 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:25:05,251 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:25:05,420 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:50:47,853 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:50:47.853****************
+2013-09-29 10:50:47,854 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:50:47,854 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:50:48,001 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:50:48,001 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:50:48,239 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:51:30,188 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:51:30.188****************
+2013-09-29 10:51:30,190 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:51:30,190 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:51:30,331 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:51:30,331 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:51:30,526 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:54:39,389 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 10:54:39.388****************
+2013-09-29 10:54:39,390 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 10:54:39,390 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 10:54:39,524 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 10:54:39,524 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 10:54:39,682 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 10:55:12,245 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:11:48,837 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 11:11:48.836****************
+2013-09-29 11:11:48,838 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 11:11:48,838 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 11:11:48,950 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 11:11:48,951 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 11:11:49,098 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 11:12:15,397 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:14:47,101 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 11:14:47.1****************
+2013-09-29 11:14:47,102 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 11:14:47,102 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 11:14:47,324 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 11:14:47,324 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 11:14:47,456 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 11:15:05,228 ERROR [AWT-EventQueue-0] - Beim erstellen der Auswertung ist ein Fehler aufgetreten.
+net.sf.jasperreports.engine.design.JRValidationException: Report design not valid : 
+	 1. Warning : Element bottom reaches outside band area : y=244 height=1 band-height=43
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.verifyDesign(JRAbstractCompiler.java:271)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:153)
+	at net.sf.jasperreports.engine.JasperCompileManager.compile(JasperCompileManager.java:240)
+	at net.sf.jasperreports.engine.JasperCompileManager.compile(JasperCompileManager.java:173)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:448)
+	at de.timherbst.wau.service.AuswertungService.printMannschaftsAuswertung(AuswertungService.java:296)
+	at de.timherbst.wau.view.WettkaempfeView.printAuswertungPDF(WettkaempfeView.java:189)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.BuilderUtils.invokeCallerEventMethods(BuilderUtils.java:427)
+	at org.javabuilders.swing.handler.event.CommonActionListenerHandler$1.onAction(CommonActionListenerHandler.java:67)
+	at org.javabuilders.swing.SwingAction.actionPerformed(SwingAction.java:153)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-29 11:17:12,862 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 11:17:12.861****************
+2013-09-29 11:17:12,863 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 11:17:12,863 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 11:17:12,975 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 11:17:12,975 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 11:17:13,133 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 11:17:43,351 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:18:12,004 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3.pdf
+2013-09-29 11:18:18,448 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 7.pdf
+2013-09-29 11:18:23,829 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
+2013-09-29 11:19:11,972 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:23:04,081 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
+2013-09-29 11:23:44,023 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
+2013-09-29 11:24:00,308 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7.pdf
+2013-09-29 11:24:13,445 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 16.pdf
+2013-09-29 11:24:30,318 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 16.pdf
+2013-09-29 11:24:35,904 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3.pdf
+2013-09-29 11:24:41,354 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 7.pdf
+2013-09-29 11:24:45,550 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7.pdf
+2013-09-29 11:24:50,843 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
+2013-09-29 11:24:55,544 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 9.pdf
+2013-09-29 11:24:58,903 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 10.pdf
+2013-09-29 11:25:03,223 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 15.pdf
+2013-09-29 11:25:19,098 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 17.pdf
+2013-09-29 11:25:22,703 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 16.pdf
+2013-09-29 11:25:44,248 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 16.pdf
+2013-09-29 11:25:50,874 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:26:21,283 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:26:48,971 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:27:45,571 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:28:55,188 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3_Wettkampf 7_Wettkampf 8_Wettkampf 9_Wettkampf 10_Wettkampf 15_Wettkampf 16_Wettkampf 17.pdf
+2013-09-29 11:29:29,371 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3.pdf
+2013-09-29 11:29:32,898 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 7.pdf
+2013-09-29 11:29:37,258 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
+2013-09-29 11:29:48,461 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 9.pdf
+2013-09-29 11:29:54,394 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20130921/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 10.pdf
+2013-09-29 11:35:28,029 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 11:35:28.028****************
+2013-09-29 11:35:28,029 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 11:35:28,030 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 11:35:28,145 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 11:35:28,145 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 11:35:28,277 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 11:35:50,518 ERROR [AWT-EventQueue-0] - 
+java.lang.NullPointerException
+	at de.timherbst.wau.service.AuswertungService.printUrkunden(AuswertungService.java:517)
+	at de.timherbst.wau.view.RundenwettkampfDialog.printUrkunden(RundenwettkampfDialog.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.BuilderUtils.invokeCallerEventMethods(BuilderUtils.java:427)
+	at org.javabuilders.swing.handler.event.CommonActionListenerHandler$1.onAction(CommonActionListenerHandler.java:67)
+	at org.javabuilders.swing.SwingAction.actionPerformed(SwingAction.java:153)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:154)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:182)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:221)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:219)
+	at java.awt.Dialog.show(Dialog.java:1082)
+	at java.awt.Component.show(Component.java:1651)
+	at java.awt.Component.setVisible(Component.java:1603)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:1005)
+	at de.timherbst.wau.view.MainFrame.openRundenAuswertung(MainFrame.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.BuilderUtils.invokeCallerEventMethods(BuilderUtils.java:427)
+	at org.javabuilders.swing.handler.event.CommonActionListenerHandler$1.onAction(CommonActionListenerHandler.java:67)
+	at org.javabuilders.swing.SwingAction.actionPerformed(SwingAction.java:153)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:833)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:877)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-29 11:35:53,092 ERROR [AWT-EventQueue-0] - 
+java.lang.NullPointerException
+	at de.timherbst.wau.service.AuswertungService.printUrkunden(AuswertungService.java:517)
+	at de.timherbst.wau.view.RundenwettkampfDialog.printUrkunden(RundenwettkampfDialog.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.BuilderUtils.invokeCallerEventMethods(BuilderUtils.java:427)
+	at org.javabuilders.swing.handler.event.CommonActionListenerHandler$1.onAction(CommonActionListenerHandler.java:67)
+	at org.javabuilders.swing.SwingAction.actionPerformed(SwingAction.java:153)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:154)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:182)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:221)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:219)
+	at java.awt.Dialog.show(Dialog.java:1082)
+	at java.awt.Component.show(Component.java:1651)
+	at java.awt.Component.setVisible(Component.java:1603)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:1005)
+	at de.timherbst.wau.view.MainFrame.openRundenAuswertung(MainFrame.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.BuilderUtils.invokeCallerEventMethods(BuilderUtils.java:427)
+	at org.javabuilders.swing.handler.event.CommonActionListenerHandler$1.onAction(CommonActionListenerHandler.java:67)
+	at org.javabuilders.swing.SwingAction.actionPerformed(SwingAction.java:153)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:833)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:877)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-09-29 12:02:19,155 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 12:02:19.155****************
+2013-09-29 12:02:19,156 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 12:02:19,156 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 12:02:19,262 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 12:02:19,262 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 12:02:19,413 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 12:04:28,066 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 12:04:28.066****************
+2013-09-29 12:04:28,067 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 12:04:28,067 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 12:04:28,177 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 12:04:28,177 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 12:04:28,316 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 12:08:03,311 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 12:08:03.311****************
+2013-09-29 12:08:03,313 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 12:08:03,313 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 12:08:03,427 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 12:08:03,427 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 12:08:03,560 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-09-29 12:12:27,688 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-09-29 12:12:27.687****************
+2013-09-29 12:12:27,689 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-09-29 12:12:27,689 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-09-29 12:12:27,793 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-09-29 12:12:27,794 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-09-29 12:12:27,918 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
