@@ -2,15 +2,16 @@ package de.timherbst.wau.domain.auswertung;
 
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
-public class MannschaftsAuswertungBean {
+public class MannschaftsRundenAuswertungBean {
 	private String wettkampf;
 	private String art;
 	private String modus;
 	private String jahrgaenge;
 	private JRBeanCollectionDataSource listEinzel;
 	private JRBeanCollectionDataSource listMannschaft;
+	private JRBeanCollectionDataSource listTabelle;
 
-	public MannschaftsAuswertungBean(String wettkampf, String art, String modus, String jahrgaenge, JRBeanCollectionDataSource listEinzel, JRBeanCollectionDataSource listMannschaft) {
+	public MannschaftsRundenAuswertungBean(String wettkampf, String art, String modus, String jahrgaenge, JRBeanCollectionDataSource listEinzel, JRBeanCollectionDataSource listMannschaft, JRBeanCollectionDataSource listTabelle) {
 		super();
 
 		this.wettkampf = wettkampf;
@@ -19,6 +20,7 @@ public class MannschaftsAuswertungBean {
 		this.jahrgaenge = jahrgaenge;
 		this.listEinzel = listEinzel;
 		this.listMannschaft = listMannschaft;
+		this.listTabelle=listTabelle;
 	}
 
 	public String getWettkampf() {
@@ -67,6 +69,14 @@ public class MannschaftsAuswertungBean {
 
 	public void setListMannschaft(JRBeanCollectionDataSource listMannschaft) {
 		this.listMannschaft = listMannschaft;
+	}
+
+	public JRBeanCollectionDataSource getListTabelle() {
+		return listTabelle;
+	}
+
+	public void setListTabelle(JRBeanCollectionDataSource listTabelle) {
+		this.listTabelle = listTabelle;
 	}
 	
 	

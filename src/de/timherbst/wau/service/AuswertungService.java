@@ -40,6 +40,7 @@ import de.timherbst.wau.domain.auswertung.MannschaftsAuswertungEinzelBean;
 import de.timherbst.wau.domain.auswertung.MannschaftsAuswertungEntry;
 import de.timherbst.wau.domain.auswertung.MannschaftsAuswertungMannschaftBean;
 import de.timherbst.wau.domain.auswertung.MannschaftsErgebnis;
+import de.timherbst.wau.domain.auswertung.MannschaftsRundenAuswertungBean;
 import de.timherbst.wau.domain.auswertung.MannschaftsUrkundeBean;
 import de.timherbst.wau.domain.auswertung.TabellenEintrag;
 import de.timherbst.wau.domain.auswertung.TabellenEintragTurner;
@@ -170,9 +171,9 @@ public class AuswertungService {
 		if (lea == null || lea.size() == 0)
 			return;
 
-		List<EinzelAuswertungBean> list = new Vector<EinzelAuswertungBean>();
-
 		for (EinzelAuswertung ea : lea) {
+
+			List<EinzelAuswertungBean> list = new Vector<EinzelAuswertungBean>();
 
 			final EinzelWettkampf w = ea.getWettkampf();
 			List<Turner> lt = w.getTurner();
@@ -192,27 +193,27 @@ public class AuswertungService {
 			}
 
 			list.add(new EinzelAuswertungBean(w.getName(), w.getGeraeteText(), w.getTyp(), w.getJahrgaenge(), new JRBeanCollectionDataSource(list2)));
+
+			Map<String, Object> parameters = new HashMap<String, Object>();
+			parameters.put("veranstaltung", WettkampfTag.get().getName());
+			parameters.put("datum", Formatter.format(WettkampfTag.get().getDatum()));
+			parameters.put("ort", WettkampfTag.get().getOrt());
+			JasperReport sjr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "siegerliste_sub.jrxml");
+			parameters.put("SUBREPORT", sjr);
+
+			JasperReport jr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "siegerliste.jrxml");
+
+			JasperPrint jp = JasperFillManager.fillReport(jr, parameters, new JRBeanCollectionDataSource(list));
+			File f = new File(getOutputFolder() + "siegerlisten");
+			if (!f.exists())
+				f.mkdirs();
+
+			if (xls)
+				printAuswertungXLS(jp, getNameSuffix(ea));
+			else
+				printAuswertungPDF(jp, getNameSuffix(ea));
+
 		}
-
-		Map<String, Object> parameters = new HashMap<String, Object>();
-		parameters.put("veranstaltung", WettkampfTag.get().getName());
-		parameters.put("datum", Formatter.format(WettkampfTag.get().getDatum()));
-		parameters.put("ort", WettkampfTag.get().getOrt());
-		JasperReport sjr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "siegerliste_sub.jrxml");
-		parameters.put("SUBREPORT", sjr);
-
-		JasperReport jr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "siegerliste.jrxml");
-
-		JasperPrint jp = JasperFillManager.fillReport(jr, parameters, new JRBeanCollectionDataSource(list));
-		File f = new File(getOutputFolder() + "siegerlisten");
-		if (!f.exists())
-			f.mkdirs();
-
-		if (xls)
-			printAuswertungXLS(jp, getNameSuffix(lea));
-		else
-			printAuswertungPDF(jp, getNameSuffix(lea));
-
 	}
 
 	// public static void printRundenAuswertung(String veranstaltung, Date date,
@@ -247,9 +248,9 @@ public class AuswertungService {
 		if (lma == null || lma.size() == 0)
 			return;
 
-		List<MannschaftsAuswertungBean> list = new Vector<MannschaftsAuswertungBean>();
-
 		for (MannschaftsAuswertung ma : lma) {
+
+			List<MannschaftsAuswertungBean> list = new Vector<MannschaftsAuswertungBean>();
 
 			final MannschaftsWettkampf w = ma.getWettkampf();
 			List<MannschaftsAuswertungEntry> entrys = new Vector<MannschaftsAuswertungEntry>(ma.getEntrysMannschaft().values());
@@ -284,18 +285,83 @@ public class AuswertungService {
 
 			MannschaftsAuswertungBean bean = new MannschaftsAuswertungBean(w.getName(), w.getGeraeteText(), w.getTyp(), w.getJahrgaenge(), new JRBeanCollectionDataSource(list_einzel), new JRBeanCollectionDataSource(list_mannschaft));
 			list.add(bean);
+
+			Map<String, Object> parameters = new HashMap<String, Object>();
+			parameters.put("veranstaltung", WettkampfTag.get().getName());
+			parameters.put("datum", Formatter.format(WettkampfTag.get().getDatum()));
+			parameters.put("ort", WettkampfTag.get().getOrt());
+			JasperReport sjr_einzel = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsSiegerliste_Einzelsub.jrxml");
+			parameters.put("SUBREPORT_EINZEL", sjr_einzel);
+			JasperReport sjr_mannschaft = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsSiegerliste_Mannschaftsub.jrxml");
+			parameters.put("SUBREPORT_MANNSCHAFT", sjr_mannschaft);
+
+			JasperReport jr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsSiegerliste.jrxml");
+
+			JasperPrint jp = JasperFillManager.fillReport(jr, parameters, new JRBeanCollectionDataSource(list));
+			File f = new File(getOutputFolder() + "siegerlisten");
+			if (!f.exists())
+				f.mkdirs();
+
+			if (xls)
+				printAuswertungXLS(jp, getNameSuffix(ma));
+			else
+				printAuswertungPDF(jp, getNameSuffix(ma));
+
 		}
 
+	}
+
+	public static void printMannschaftsRundenAuswertung(MannschaftsAuswertung ma, List<TabellenEintrag> tabelle, String veranstaltung, boolean xls) throws JRException, IOException {
+
+		if (ma == null)
+			return;
+
+		List<MannschaftsRundenAuswertungBean> list = new Vector<MannschaftsRundenAuswertungBean>();
+
+		final MannschaftsWettkampf w = ma.getWettkampf();
+		List<MannschaftsAuswertungEntry> entrys = new Vector<MannschaftsAuswertungEntry>(ma.getEntrysMannschaft().values());
+		Collections.sort(entrys, new Comparator<MannschaftsAuswertungEntry>() {
+
+			@Override
+			public int compare(MannschaftsAuswertungEntry o1, MannschaftsAuswertungEntry o2) {
+				return o1.getPlatzierung().compareTo(o2.getPlatzierung());
+			}
+		});
+
+		List<MannschaftsAuswertungMannschaftBean> list_mannschaft = new Vector<MannschaftsAuswertungMannschaftBean>();
+		for (MannschaftsAuswertungEntry mae : entrys) {
+
+			list_mannschaft.add(new MannschaftsAuswertungMannschaftBean(mae.getMannschaft().getVerein(), mae.getErgebnis().getBoden(), mae.getErgebnis().getSeitpferd(), mae.getErgebnis().getRinge(), mae.getErgebnis().getSprung(), mae.getErgebnis().getBarren(), mae.getErgebnis().getReck(), mae.getErgebnis().getGesamt(), mae.getPlatzierung()));
+		}
+
+		List<EinzelAuswertungEntry> entrys_einzel = new Vector<EinzelAuswertungEntry>(getEinzelAuswertungEntrys(w.getTurner(), w.getGewerteteGeraete()).values());
+		Collections.sort(entrys_einzel, new Comparator<EinzelAuswertungEntry>() {
+
+			@Override
+			public int compare(EinzelAuswertungEntry o1, EinzelAuswertungEntry o2) {
+				return new Integer(o1.getPlatzierung() == 0 ? Integer.MAX_VALUE : o1.getPlatzierung()).compareTo(new Integer(o2.getPlatzierung() == 0 ? Integer.MAX_VALUE : o2.getPlatzierung()));
+			}
+		});
+
+		List<MannschaftsAuswertungEinzelBean> list_einzel = new Vector<MannschaftsAuswertungEinzelBean>();
+		for (EinzelAuswertungEntry eae : entrys_einzel) {
+
+			list_einzel.add(new MannschaftsAuswertungEinzelBean(eae.getTurner().getName(), eae.getTurner().getVorname(), eae.getTurner().getMannschaft().getVerein(), eae.getTurner().getJahrgang(), eae.getTurner().getWertungen().getBoden(), eae.getTurner().getWertungen().getSeitpferd(), eae.getTurner().getWertungen().getRinge(), eae.getTurner().getWertungen().getSprung(), eae.getTurner().getWertungen().getBarren(), eae.getTurner().getWertungen().getReck(), eae.getGesamt(), eae.getPlatzierung()));
+		}
+
+		MannschaftsRundenAuswertungBean bean = new MannschaftsRundenAuswertungBean(w.getName(), w.getGeraeteText(), w.getTyp(), w.getJahrgaenge(), new JRBeanCollectionDataSource(list_einzel), new JRBeanCollectionDataSource(list_mannschaft), new JRBeanCollectionDataSource(tabelle));
+		list.add(bean);
+
 		Map<String, Object> parameters = new HashMap<String, Object>();
-		parameters.put("veranstaltung", WettkampfTag.get().getName());
-		parameters.put("datum", Formatter.format(WettkampfTag.get().getDatum()));
-		parameters.put("ort", WettkampfTag.get().getOrt());
+		parameters.put("veranstaltung", veranstaltung);
 		JasperReport sjr_einzel = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsSiegerliste_Einzelsub.jrxml");
 		parameters.put("SUBREPORT_EINZEL", sjr_einzel);
 		JasperReport sjr_mannschaft = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsSiegerliste_Mannschaftsub.jrxml");
 		parameters.put("SUBREPORT_MANNSCHAFT", sjr_mannschaft);
+		JasperReport sjr_tabelle = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsSiegerliste_Tabellesub.jrxml");
+		parameters.put("SUBREPORT_TABELLE", sjr_tabelle);
 
-		JasperReport jr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsSiegerliste.jrxml");
+		JasperReport jr = JasperCompileManager.compileReport(WeKaUtil.enshureEnding(AppProperties.getProperty("TEMPLATE_PATH", "templates"), "/") + "MannschaftsRundenSiegerliste.jrxml");
 
 		JasperPrint jp = JasperFillManager.fillReport(jr, parameters, new JRBeanCollectionDataSource(list));
 		File f = new File(getOutputFolder() + "siegerlisten");
@@ -303,9 +369,9 @@ public class AuswertungService {
 			f.mkdirs();
 
 		if (xls)
-			printAuswertungXLS(jp, getNameSuffix(lma));
+			printAuswertungXLS(jp, getNameSuffix(ma));
 		else
-			printAuswertungPDF(jp, getNameSuffix(lma));
+			printAuswertungPDF(jp, getNameSuffix(ma));
 
 	}
 
@@ -342,6 +408,12 @@ public class AuswertungService {
 		String s = "";
 		for (Auswertung ea : lea)
 			s += "".equals(s) ? ea.getWettkampf().getName() : "_" + ea.getWettkampf().getName();
+		return s;
+	}
+
+	private static String getNameSuffix(Auswertung a) {
+		String s = "";
+		s += "".equals(s) ? a.getWettkampf().getName() : "_" + a.getWettkampf().getName();
 		return s;
 	}
 
@@ -474,7 +546,7 @@ public class AuswertungService {
 	private static int getHoeherePlatzierungen(int platzierung, Collection<MannschaftsAuswertungEntry> lma) {
 		int count = 0;
 		for (MannschaftsAuswertungEntry a : lma) {
-			if (a.getPlatzierung() > platzierung)
+			if (a.getPlatzierung() < platzierung)
 				count++;
 		}
 		return count;
@@ -483,7 +555,7 @@ public class AuswertungService {
 	private static int getTieferePlatzierungen(int platzierung, Collection<MannschaftsAuswertungEntry> lma) {
 		int count = 0;
 		for (MannschaftsAuswertungEntry a : lma) {
-			if (a.getPlatzierung() < platzierung)
+			if (a.getPlatzierung() > platzierung)
 				count++;
 		}
 		return count;

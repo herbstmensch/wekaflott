@@ -3,14 +3,15 @@ package de.timherbst.wau.view;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.io.File;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 
+import javax.swing.Action;
+import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -20,6 +21,8 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 import javax.swing.ListSelectionModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableModel;
@@ -28,6 +31,7 @@ import org.javabuilders.swing.SwingJavaBuilder;
 
 import de.axtres.logging.main.AxtresLogger;
 import de.timherbst.wau.domain.WettkampfTag;
+import de.timherbst.wau.domain.auswertung.MannschaftsAuswertung;
 import de.timherbst.wau.domain.auswertung.TabellenEintrag;
 import de.timherbst.wau.domain.wettkampf.MannschaftsWettkampf;
 import de.timherbst.wau.domain.wettkampf.Wettkampf;
@@ -44,10 +48,14 @@ public class RundenwettkampfDialog extends JDialog {
 	List<WettkampfTag> tage = new Vector<WettkampfTag>();
 	HashMap<String, List<MannschaftsWettkampf>> wettkaempfe = new HashMap<String, List<MannschaftsWettkampf>>();
 	List<TabellenEintrag> tabelle;
+	MannschaftsAuswertung auswertung;
 	WettkampfTageModel wettkampftagemodel = new WettkampfTageModel();
 	WettkaempfeModel wettkaempfemodel = new WettkaempfeModel();
 	JSplitPane split1;
 	JSplitPane split2;
+	Action printUrkunden;
+	Action printPDF;
+	Action printXLS;
 
 	public RundenwettkampfDialog() {
 		setModalityType(ModalityType.APPLICATION_MODAL);
@@ -58,18 +66,26 @@ public class RundenwettkampfDialog extends JDialog {
 		tfVeranstaltung.setText(WettkampfTag.get().getName());
 		tableWettkampftage.setModel(wettkampftagemodel);
 		tableWettkaempfe.setModel(wettkaempfemodel);
-		tableWettkaempfe.setRowSelectionAllowed(true);
-		tableWettkaempfe.setCellSelectionEnabled(false);
-		tableWettkaempfe.addMouseListener(new MouseAdapter() {
-			@SuppressWarnings("unchecked")
+//		tableWettkaempfe.setRowSelectionAllowed(true);
+//		tableWettkaempfe.setCellSelectionEnabled(false);
+
+		tableWettkaempfe.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+
 			@Override
-			public void mouseClicked(MouseEvent e) {
-				super.mouseClicked(e);
-				if (tableWettkaempfe.getSelectedColumn() != -1) {
+			public void valueChanged(ListSelectionEvent e) {
+				if (tableWettkaempfe.getSelectedColumns().length > 0) {
+					printUrkunden.setEnabled(true);
+					printXLS.setEnabled(true);
+					printPDF.setEnabled(true);
 					updateTabelle((List<MannschaftsWettkampf>) tableWettkaempfe.getValueAt(tableWettkaempfe.getSelectedRow(), -1));
+				} else {
+					printUrkunden.setEnabled(false);
+					printXLS.setEnabled(false);
+					printPDF.setEnabled(false);
 				}
 			}
 		});
+
 		tableWettkaempfe.getSelectionModel().setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		addEscapeListener(this);
 	}
@@ -89,6 +105,7 @@ public class RundenwettkampfDialog extends JDialog {
 
 	private void updateTabelle(List<MannschaftsWettkampf> wettkaempfe) {
 		tabelle = AuswertungService.getRundenWKAuswertung(tfVeranstaltung.getText(), wettkaempfe);
+		auswertung = AuswertungService.getAuswertung(wettkaempfe.get(wettkaempfe.size()-1));
 		tableTabelle.setModel(new TabellenModel(tabelle));
 	}
 
@@ -110,20 +127,20 @@ public class RundenwettkampfDialog extends JDialog {
 	@SuppressWarnings("unused")
 	private void printPDF() {
 		try {
-			AuswertungService.printUrkunden(tabelle);
+			AuswertungService.printMannschaftsRundenAuswertung(auswertung, tabelle, tfVeranstaltung.getText(), false);
 		} catch (Exception e) {
 			AxtresLogger.error(e.getMessage(), e);
-			JOptionPane.showMessageDialog(this, "Beim erstellen der Urkunden ist ein Fehler aufgetreten: " + e.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Beim erstellen der Auswertung ist ein Fehler aufgetreten: " + e.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 
 	@SuppressWarnings("unused")
 	private void printXLS() {
 		try {
-			AuswertungService.printUrkunden(tabelle);
+			AuswertungService.printMannschaftsRundenAuswertung(auswertung, tabelle, tfVeranstaltung.getText(), true);
 		} catch (Exception e) {
 			AxtresLogger.error(e.getMessage(), e);
-			JOptionPane.showMessageDialog(this, "Beim erstellen der Urkunden ist ein Fehler aufgetreten: " + e.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Beim erstellen der Auswertung ist ein Fehler aufgetreten: " + e.getMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 
@@ -268,7 +285,7 @@ public class RundenwettkampfDialog extends JDialog {
 
 		@Override
 		public String getColumnName(int columnIndex) {
-			return Arrays.asList("Mannschaft", "Tabellenpunkte", "Gesamtpunkte", "Platzierung").get(columnIndex);
+			return Arrays.asList("Platzierung", "Mannschaft", "Tabellenpunkte", "Gesamtpunkte").get(columnIndex);
 		}
 
 		@Override
@@ -284,13 +301,13 @@ public class RundenwettkampfDialog extends JDialog {
 			case -1:
 				return tabelle.get(rowIndex);
 			case 0:
-				return tabelle.get(rowIndex).getMannschaft();
-			case 1:
-				return tabelle.get(rowIndex).getTabellenPunkte() + ":" + tabelle.get(rowIndex).getGegenPunkte();
-			case 2:
-				return tabelle.get(rowIndex).getPunkte();
-			case 3:
 				return tabelle.get(rowIndex).getPlatzierung();
+			case 1:
+				return tabelle.get(rowIndex).getMannschaft();
+			case 2:
+				return tabelle.get(rowIndex).getTabellenPunkte() + ":" + tabelle.get(rowIndex).getGegenPunkte();
+			case 3:
+				return new DecimalFormat("#00.00").format( tabelle.get(rowIndex).getPunkte());
 			}
 			return null;
 		}
