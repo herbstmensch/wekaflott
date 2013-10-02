@@ -23610,3 +23610,27 @@ Caused by: java.lang.NoSuchMethodException: Unknown property 'platz' on class 'c
 2013-10-02 21:56:29,582 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/dummy/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 7.pdf
 2013-10-02 21:56:30,408 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/dummy/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
 2013-10-02 21:56:31,274 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/dummy/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 9.pdf
+2013-10-02 22:03:56,738 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-02 22:03:56.737****************
+2013-10-02 22:03:56,739 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-02 22:03:56,739 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-02 22:03:56,838 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-02 22:03:56,838 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-02 22:03:56,973 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-02 22:04:08,303 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-02 22:04:08.302****************
+2013-10-02 22:04:08,304 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-02 22:04:08,304 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-02 22:04:08,410 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-02 22:04:08,411 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-02 22:04:08,533 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-02 22:10:48,406 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-02 22:10:48.405****************
+2013-10-02 22:10:48,407 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-02 22:10:48,407 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-02 22:10:48,505 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-02 22:10:48,505 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-02 22:10:48,632 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-02 22:13:55,377 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-02 22:13:55.377****************
+2013-10-02 22:13:55,378 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-02 22:13:55,378 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-02 22:13:55,481 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-02 22:13:55,481 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-02 22:13:55,605 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
