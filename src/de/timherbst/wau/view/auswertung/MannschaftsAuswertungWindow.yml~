@@ -5,7 +5,6 @@ JFrame(name=einzelAuswertung, size=800x400, title=Auswertung, iconImage=/icons/r
     - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
         - JButton(action=printAuswertungPDF, hideActionText=true)
         - JButton(action=printAuswertungXLS, hideActionText=true)
-        - JSeparator()
         - JButton(action=printUrkunden, hideActionText=true)
     - JPanel(name=infoPanel):
         - JLabel(name=wkName)

@@ -1,9 +1,9 @@
 JPanel(name=turnerPanel):
-    - Action(name=newTurner, text="&neuer Turner", onAction=newTurner, icon=/icons/r24/turner_add.png)
-    - Action(name=deleteTurner, text="Turner &löschen", onAction=deleteTurner, icon=/icons/r24/turner_delete.png, enabled=false)
-    - Action(name=zuMannschaft, text="Zu &Mannschaft hinzufügen", onAction=zuMannschaft, icon=/icons/r24/add_to_mannschaft.png, enabled=false)
-    - Action(name=zuWettkampf, text="Zu &Wettkampf hinzufügen", onAction=zuWettkampf, icon=/icons/r24/add_to_wettkampf.png, enabled=false)
-    - Action(name=zuRiege, text="Zu &Riege hinzufügen", onAction=zuRiege, icon=/icons/r24/add_to_riege.png, enabled=false)
+    - Action(name=newTurner, text="&neuer Turner", onAction=newTurner, icon=/icons/r24/add.png)
+    - Action(name=deleteTurner, text="Turner &löschen", onAction=deleteTurner, icon=/icons/r24/delete.png, enabled=false)
+    - Action(name=zuMannschaft, text="Zu &Mannschaft hinzufügen", onAction=zuMannschaft, icon=/icons/r24/mannschaft.png, enabled=false)
+    - Action(name=zuWettkampf, text="Zu &Wettkampf hinzufügen", onAction=zuWettkampf, icon=/icons/r24/wettkampf.png, enabled=false)
+    - Action(name=zuRiege, text="Zu &Riege hinzufügen", onAction=zuRiege, icon=/icons/r24/riege.png, enabled=false)
     - JPopupMenu(name=tablePopUp):
         - JMenuItem(action=zuMannschaft)
         - JMenuItem(action=zuWettkampf)

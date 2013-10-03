@@ -1,8 +1,8 @@
 JPanel(name=mannschaftenPanel):
-    - Action(name=newMannschaft, text="&neue Mannschaft", onAction=newMannschaft, icon=/icons/r24/mannschaft_add.png)
-    - Action(name=deleteMannschaft, text="Mannschaft &löschen", onAction=deleteMannschaft, icon=/icons/r24/mannschaft_delete.png, enabled=false)
-    - Action(name=zuWettkampf, text="Zu &Wettkampf hinzufügen", onAction=zuWettkampf, icon=/icons/r24/add_to_wettkampf.png, enabled=false)
-    - Action(name=zuRiege, text="Zu &Riege hinzufügen", onAction=zuRiege, icon=/icons/r24/add_to_riege.png, enabled=false)
+    - Action(name=newMannschaft, text="&neue Mannschaft", onAction=newMannschaft, icon=/icons/r24/add.png)
+    - Action(name=deleteMannschaft, text="Mannschaft &löschen", onAction=deleteMannschaft, icon=/icons/r24/delete.png, enabled=false)
+    - Action(name=zuWettkampf, text="Zu &Wettkampf hinzufügen", onAction=zuWettkampf, icon=/icons/r24/wettkampf.png, enabled=false)
+    - Action(name=zuRiege, text="Zu &Riege hinzufügen", onAction=zuRiege, icon=/icons/r24/riege.png, enabled=false)
     - Action(name=openErfassung, text="&Erfassungsfenster öffnen", onAction=openErfassung, icon=/icons/r24/erfassung.png, enabled=false)
     - JPopupMenu(name=tablePopUp):
         - JMenuItem(action=zuWettkampf)

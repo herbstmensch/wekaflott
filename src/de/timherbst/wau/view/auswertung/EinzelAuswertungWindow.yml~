@@ -5,7 +5,6 @@ JFrame(name=einzelAuswertung, size=800x400, title=Auswertung, iconImage=/icons/r
     - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
         - JButton(action=printAuswertungPDF, hideActionText=true)
         - JButton(action=printAuswertungXLS, hideActionText=true)
-        - JSeparator()
         - JButton(action=printUrkunden, hideActionText=true)
     - JPanel(name=infoPanel):
         - JLabel(name=wkName)
@@ -16,25 +15,17 @@ JFrame(name=einzelAuswertung, size=800x400, title=Auswertung, iconImage=/icons/r
             [[insets 2, gap 25]]
             [min!]  [min!]      [min!]      [min!]
             wkName  wkGeraete   wkKlasse    wkJahrgaenge [min!]
-    - JPanel(name=tablePanelEinzel):
+    - JPanel(name=tablePanel):
         - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
-            JTable(name=tableEinzel, fillsViewportHeight=true)
+            JTable(name=table, fillsViewportHeight=true)
         - MigLayout: |
             [[insets 0, gap 0]]
             [grow]
             scrollPane1 [grow]
-    - JPanel(name=tablePanelMannschaften):
-        - JScrollPane(name=scrollPane2, vScrollBar=asNeeded, hScrollBar=asNeeded):
-            JTable(name=tableMannschaften, fillsViewportHeight=true)
-        - MigLayout: |
-            [[insets 0, gap 0]]
-            [grow]
-            scrollPane2 [grow]
     - MigLayout: |
         [[insets 0, gap 0]]
         [grow]
-        toolBar                [min!]
-        infoPanel              [min!]
-        tablePanelEinzel       [grow]
-        tablePanelMannschaften [grow]
+        toolBar [min!]
+        infoPanel [min!]
+        tablePanel [grow]
         {toolBar: dock north}

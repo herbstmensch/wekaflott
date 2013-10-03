@@ -1,7 +1,7 @@
 JPanel(name=riegenPanel):
-    - Action(name=newEinzelRiege, text="&neue Einzelriege", onAction=newEinzelriege, icon=/icons/r24/riege_add.png)
-    - Action(name=newMannschaftsRiege, text="neue &Mannschaftsriege", onAction=newMannschaftsriege, icon=/icons/r24/riege_add.png)
-    - Action(name=deleteRiege, text="Riege &löschen", onAction=deleteRiege, icon=/icons/r24/riege_delete.png, enabled=false)
+    - Action(name=newEinzelRiege, text="&neue Einzelriege", onAction=newEinzelriege, icon=/icons/r24/add.png)
+    - Action(name=newMannschaftsRiege, text="neue &Mannschaftsriege", onAction=newMannschaftsriege, icon=/icons/r24/add.png)
+    - Action(name=deleteRiege, text="Riege &löschen", onAction=deleteRiege, icon=/icons/r24/delete.png, enabled=false)
     - Action(name=openErfassung, text="&Erfassungsfenster öffnen", onAction=openErfassung, icon=/icons/r24/erfassung.png, enabled=false)
     - JPopupMenu(name=tablePopUp):
         - JMenuItem(action=openErfassung)

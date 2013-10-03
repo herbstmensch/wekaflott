@@ -83,5 +83,6 @@ JFrame(name=dialog, size=800x600, defaultCloseOperation=doNothingOnClose, iconIm
     - MigLayout: |
         [[insets 0, gap 0]]
         [grow]
+        choosePanel [min!]
         tabs [grow]
         statusBar [20]

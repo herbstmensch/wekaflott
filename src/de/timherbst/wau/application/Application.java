@@ -6,6 +6,7 @@ import java.util.Locale;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
+import org.gpl.JSplitButton.JSplitButton;
 import org.javabuilders.swing.SwingJavaBuilder;
 
 import de.axtres.logging.main.AxtresLogger;
@@ -61,6 +62,7 @@ public class Application {
 					SwingJavaBuilder.getConfig().addType(ErfassungTable.class);
 					SwingJavaBuilder.getConfig().addType(TabulatorTextField.class);
 					SwingJavaBuilder.getConfig().addType(ToolBarSeparator.class);
+					SwingJavaBuilder.getConfig().addType(JSplitButton.class);
 					SwingJavaBuilder.getConfig().addType(TurnerView.class, MannschaftenView.class, WettkaempfeView.class, RiegenView.class, ErfassungView.class, ErfassungHostView.class);
 
 					AxtresLogger.info("User Dir: " + System.getProperty("user.dir"));

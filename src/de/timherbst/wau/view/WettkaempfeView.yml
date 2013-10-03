@@ -1,7 +1,7 @@
 JPanel(name=wettkaempfePanel):
-    - Action(name=newEinzelwettkampf, text="&neuer Einzelwettkampf", toolTipText="neuer Einzelwettkampf", onAction=newEinzelwettkampf, icon=/icons/r24/wettkampf_add.png)
-    - Action(name=newMannschaftswettkampf, text="neue &Mannschaftswettkampf", toolTipText="neue Mannschaftswettkampf", onAction=newMannschaftswettkampf, icon=/icons/r24/wettkampf_add.png)
-    - Action(name=deleteWettkampf, text="Wettkampf &löschen", toolTipText="Wettkampf löschen", onAction=deleteWettkampf, icon=/icons/r24/wettkampf_delete.png, enabled=false)
+    - Action(name=newEinzelwettkampf, text="&neuer Einzelwettkampf", toolTipText="neuer Einzelwettkampf", onAction=newEinzelwettkampf, icon=/icons/r24/add.png)
+    - Action(name=newMannschaftswettkampf, text="neue &Mannschaftswettkampf", toolTipText="neue Mannschaftswettkampf", onAction=newMannschaftswettkampf, icon=/icons/r24/add.png)
+    - Action(name=deleteWettkampf, text="Wettkampf &löschen", toolTipText="Wettkampf löschen", onAction=deleteWettkampf, icon=/icons/r24/delete.png, enabled=false)
     - Action(name=showAuswertung, text="Auswertung &anzeigen", toolTipText="Auswertung anzeigen", onAction=showAuswertung, icon=/icons/r24/auswertung_anzeigen.png, enabled=false)
     - Action(name=printAuswertungPDF, text="Auswertung als &PDF drucken", toolTipText="Auswertung als PDF drucken", onAction=printAuswertungPDF, icon=/icons/r24/auswertung_pdf.png, enabled=false)
     - Action(name=printAuswertungXLS, text="Auswertung als &XLS drucken", toolTipText="Auswertung als XLS drucken", onAction=printAuswertungXLS, icon=/icons/r24/auswertung_xls.png, enabled=false)

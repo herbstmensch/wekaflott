@@ -1,14 +1,22 @@
 package de.timherbst.wau.view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
 
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
+import javax.swing.KeyStroke;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.javabuilders.BuildResult;
@@ -34,6 +42,12 @@ public class MainFrame extends JFrame implements EventListener {
 	private JTabbedPane tabs;
 	private JLabel status;
 	private ErfassungHostView pimpedErfassung;
+	
+	private JButton turnerBtn;
+	private JButton mannschaftBtn;
+	private JButton wettkampfBtn;
+	private JButton riegeBtn;
+	private JButton erfassungBtn;
 
 	/**
 	 * Launch the application.
@@ -56,6 +70,20 @@ public class MainFrame extends JFrame implements EventListener {
 		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		setTitle(Application.NAME + " " + Application.VERSION_VIEW);
 		addWindowListener(new MainFrameWindowListener());
+		addSaveListener(this);
+	}
+	
+	public void addSaveListener(final JFrame frame) {
+		ActionListener saveListener = new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				saveWettkampftag();
+			}
+		};
+
+		frame.getRootPane().registerKeyboardAction(saveListener, KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
+
 	}
 
 	public void openWettkampftag() {
@@ -213,5 +241,44 @@ public class MainFrame extends JFrame implements EventListener {
 	public void setStatus(String text) {
 		status.setText(text);
 	}
+	
+	public void showTurner(){
+		disableSelectButtons();
+		enableSelectButton(turnerBtn);
+	}
+	
+	public void showMannschaften(){
+		disableSelectButtons();
+		enableSelectButton(mannschaftBtn);
+	}
+	
+	public void showWettkaempfe(){
+		disableSelectButtons();
+		enableSelectButton(wettkampfBtn);
+	}
+	
+	public void showRiegen(){
+		disableSelectButtons();
+		enableSelectButton(riegeBtn);
+	}
+	
+	public void showErfassung(){
+		disableSelectButtons();
+		enableSelectButton(erfassungBtn);
+	}
+
+	private void enableSelectButton(JButton btn) {
+		btn.setSelected(true);
+	}
+
+	private void disableSelectButtons() {
+		turnerBtn.setSelected(false);
+		mannschaftBtn.setSelected(false);
+		wettkampfBtn.setSelected(false);
+		riegeBtn.setSelected(false);
+		erfassungBtn.setSelected(false);
+	}
+	
+	
 
 }
