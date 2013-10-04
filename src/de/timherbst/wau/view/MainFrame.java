@@ -1,5 +1,6 @@
 package de.timherbst.wau.view;
 
+import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
@@ -10,12 +11,12 @@ import java.io.File;
 
 import javax.swing.JButton;
 import javax.swing.JComponent;
-import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JTabbedPane;
+import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 import javax.swing.KeyStroke;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
@@ -39,15 +40,22 @@ public class MainFrame extends JFrame implements EventListener {
 	private boolean dirty = false;
 	@SuppressWarnings("unused")
 	private BuildResult result;
-	private JTabbedPane tabs;
+
+	private CardLayout cards;
+	private JPanel tabs;
 	private JLabel status;
 	private ErfassungHostView pimpedErfassung;
-	
+
 	private JButton turnerBtn;
 	private JButton mannschaftBtn;
 	private JButton wettkampfBtn;
 	private JButton riegeBtn;
 	private JButton erfassungBtn;
+	private JButton fileBtn;
+	private JButton settingsBtn;
+	
+	private JPopupMenu fileMenu;
+	private JPopupMenu settingsMenu;
 
 	/**
 	 * Launch the application.
@@ -72,7 +80,7 @@ public class MainFrame extends JFrame implements EventListener {
 		addWindowListener(new MainFrameWindowListener());
 		addSaveListener(this);
 	}
-	
+
 	public void addSaveListener(final JFrame frame) {
 		ActionListener saveListener = new ActionListener() {
 
@@ -231,7 +239,8 @@ public class MainFrame extends JFrame implements EventListener {
 	}
 
 	public void selectAuswertung() {
-		tabs.setSelectedIndex(AUSWERTUNG_TAB_INDEX);
+		showErfassung();
+		//tabs.setSelectedIndex(AUSWERTUNG_TAB_INDEX);
 	}
 
 	public void openErfassung(Object o) {
@@ -241,30 +250,35 @@ public class MainFrame extends JFrame implements EventListener {
 	public void setStatus(String text) {
 		status.setText(text);
 	}
-	
-	public void showTurner(){
+
+	public void showTurner() {
 		disableSelectButtons();
 		enableSelectButton(turnerBtn);
+		cards.show(tabs, "turnerCard");
 	}
-	
-	public void showMannschaften(){
+
+	public void showMannschaften() {
 		disableSelectButtons();
 		enableSelectButton(mannschaftBtn);
+		cards.show(tabs, "mannschaftenCard");
 	}
-	
-	public void showWettkaempfe(){
+
+	public void showWettkaempfe() {
 		disableSelectButtons();
 		enableSelectButton(wettkampfBtn);
+		cards.show(tabs, "wettkaempfeCard");
 	}
-	
-	public void showRiegen(){
+
+	public void showRiegen() {
 		disableSelectButtons();
 		enableSelectButton(riegeBtn);
+		cards.show(tabs, "riegenCard");
 	}
-	
-	public void showErfassung(){
+
+	public void showErfassung() {
 		disableSelectButtons();
 		enableSelectButton(erfassungBtn);
+		cards.show(tabs, "erfassungCard");
 	}
 
 	private void enableSelectButton(JButton btn) {
@@ -278,7 +292,13 @@ public class MainFrame extends JFrame implements EventListener {
 		riegeBtn.setSelected(false);
 		erfassungBtn.setSelected(false);
 	}
-	
-	
+
+	public void popupSettingsMenu() {
+		settingsMenu.show(settingsBtn, 0, 30);
+	}
+
+	public void popupFileMenu() {
+		fileMenu.show(fileBtn, 0, 30);
+	}
 
 }

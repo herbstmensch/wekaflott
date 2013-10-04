@@ -24421,3 +24421,1809 @@ expected <block end>, but found Scalar
 2013-10-03 11:49:44,767 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
 2013-10-03 11:49:44,767 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
 2013-10-03 11:49:44,886 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 16:50:39,316 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 16:50:39.316****************
+2013-10-03 16:50:39,318 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 16:50:39,318 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 16:50:39,424 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 16:50:39,425 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 16:50:39,581 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 16:50:39,995 ERROR [AWT-EventQueue-0] - Unable to find type for prefix settings for settingsButton
+Unable to find type for prefix settings for settingsButton
+	at org.javabuilders.Builder.buildControlFromName(Builder.java:379)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.getNamedComponentOrCreateOne(AbstractMigLayoutHandler.java:348)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.useExistingInstance(AbstractMigLayoutHandler.java:114)
+	at org.javabuilders.swing.handler.type.layout.MigLayoutHandler.createNewInstance(MigLayoutHandler.java:53)
+	at org.javabuilders.Builder.handleType(Builder.java:608)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-03 16:51:09,915 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 16:51:09.914****************
+2013-10-03 16:51:09,916 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 16:51:09,916 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 16:51:10,032 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 16:51:10,032 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 16:51:10,179 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 16:51:49,035 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 16:51:49.034****************
+2013-10-03 16:51:49,036 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 16:51:49,036 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 16:51:49,169 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 16:51:49,170 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 16:51:49,297 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 16:53:00,849 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 16:53:00.848****************
+2013-10-03 16:53:00,850 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 16:53:00,850 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 16:53:00,968 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 16:53:00,968 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 16:53:01,112 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 16:53:36,971 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 16:53:36.971****************
+2013-10-03 16:53:36,973 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 16:53:36,973 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 16:53:37,081 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 16:53:37,082 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 16:53:37,225 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 16:59:01,725 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 16:59:01.724****************
+2013-10-03 16:59:01,726 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 16:59:01,726 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 16:59:01,829 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 16:59:01,830 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 16:59:01,962 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:00:11,223 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:00:11.222****************
+2013-10-03 17:00:11,224 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:00:11,224 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:00:11,335 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:00:11,335 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:00:11,455 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:00:33,661 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:00:33.66****************
+2013-10-03 17:00:33,662 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:00:33,663 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:00:33,766 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:00:33,766 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:00:33,886 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:00:34,280 ERROR [AWT-EventQueue-0] - Illegal Constraint: 'border 1'
+Unknown Constraint: 'border 1'
+
+java.lang.IllegalArgumentException: Illegal Constraint: 'border 1'
+Unknown Constraint: 'border 1'
+
+	at net.miginfocom.layout.ConstraintParser.parseLayoutConstraint(Unknown Source)
+	at net.miginfocom.swing.MigLayout.setLayoutConstraints(Unknown Source)
+	at org.javabuilders.swing.handler.type.layout.MigLayoutHandler.setLayoutConstraints(MigLayoutHandler.java:110)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.useExistingInstance(AbstractMigLayoutHandler.java:202)
+	at org.javabuilders.swing.handler.type.layout.MigLayoutHandler.createNewInstance(MigLayoutHandler.java:53)
+	at org.javabuilders.Builder.handleType(Builder.java:608)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-03 17:02:29,974 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:02:29.973****************
+2013-10-03 17:02:29,975 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:02:29,975 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:02:30,089 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:02:30,089 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:02:30,211 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:20:35,904 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:20:35.903****************
+2013-10-03 17:20:35,905 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:20:35,905 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:20:36,012 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:20:36,012 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:20:36,131 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:20:58,493 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:20:58.492****************
+2013-10-03 17:20:58,494 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:20:58,494 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:20:58,595 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:20:58,595 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:20:58,718 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:25:17,050 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:25:17.05****************
+2013-10-03 17:25:17,051 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:25:17,051 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:25:17,161 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:25:17,161 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:25:17,297 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:25:47,962 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:25:47.961****************
+2013-10-03 17:25:47,962 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:25:47,963 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:25:48,074 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:25:48,075 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:25:48,192 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:26:35,060 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:26:35.059****************
+2013-10-03 17:26:35,061 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:26:35,061 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:26:35,165 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:26:35,166 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:26:35,287 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:27:02,261 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:27:02.261****************
+2013-10-03 17:27:02,262 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:27:02,262 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:27:02,368 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:27:02,368 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:27:02,486 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:29:25,727 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:29:25.727****************
+2013-10-03 17:29:25,728 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:29:25,728 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:29:25,835 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:29:25,835 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:29:25,953 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:29:26,378 ERROR [AWT-EventQueue-0] - Unable to find type for prefix choose for choosePanel
+Unable to find type for prefix choose for choosePanel
+	at org.javabuilders.Builder.buildControlFromName(Builder.java:379)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.getNamedComponentOrCreateOne(AbstractMigLayoutHandler.java:348)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.useExistingInstance(AbstractMigLayoutHandler.java:114)
+	at org.javabuilders.swing.handler.type.layout.MigLayoutHandler.createNewInstance(MigLayoutHandler.java:53)
+	at org.javabuilders.Builder.handleType(Builder.java:608)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-03 17:29:55,687 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:29:55.686****************
+2013-10-03 17:29:55,688 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:29:55,688 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:29:55,795 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:29:55,795 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:29:55,912 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:29:56,324 ERROR [AWT-EventQueue-0] - Unable to find type for prefix choose for choosePanel
+Unable to find type for prefix choose for choosePanel
+	at org.javabuilders.Builder.buildControlFromName(Builder.java:379)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.getNamedComponentOrCreateOne(AbstractMigLayoutHandler.java:348)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.useExistingInstance(AbstractMigLayoutHandler.java:114)
+	at org.javabuilders.swing.handler.type.layout.MigLayoutHandler.createNewInstance(MigLayoutHandler.java:53)
+	at org.javabuilders.Builder.handleType(Builder.java:608)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-03 17:32:57,567 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:32:57.566****************
+2013-10-03 17:32:57,568 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:32:57,568 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:32:57,676 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:32:57,676 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:32:57,794 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:32:58,218 ERROR [AWT-EventQueue-0] - Unable to find type for prefix choose for choosePanel
+Unable to find type for prefix choose for choosePanel
+	at org.javabuilders.Builder.buildControlFromName(Builder.java:379)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.getNamedComponentOrCreateOne(AbstractMigLayoutHandler.java:348)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.useExistingInstance(AbstractMigLayoutHandler.java:114)
+	at org.javabuilders.swing.handler.type.layout.MigLayoutHandler.createNewInstance(MigLayoutHandler.java:53)
+	at org.javabuilders.Builder.handleType(Builder.java:608)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-03 17:33:44,058 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:33:44.058****************
+2013-10-03 17:33:44,059 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:33:44,059 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:33:44,166 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:33:44,166 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:33:44,285 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:34:15,453 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:34:15.453****************
+2013-10-03 17:34:15,454 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:34:15,454 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:34:15,562 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:34:15,562 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:34:15,681 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:36:35,041 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:36:35.04****************
+2013-10-03 17:36:35,042 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:36:35,042 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:36:35,164 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:36:35,164 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:36:35,283 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:37:05,667 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:37:05.666****************
+2013-10-03 17:37:05,668 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:37:05,668 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:37:05,777 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:37:05,777 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:37:05,896 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:39:01,404 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:39:01.403****************
+2013-10-03 17:39:01,405 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:39:01,405 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:39:01,519 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:39:01,520 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:39:01,638 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:40:16,998 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:40:16.997****************
+2013-10-03 17:40:16,999 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:40:16,999 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:40:17,102 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:40:17,103 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:40:17,222 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:41:51,611 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:41:51.611****************
+2013-10-03 17:41:51,612 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:41:51,613 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:41:51,746 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:41:51,746 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:41:51,880 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:42:36,852 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:42:36.852****************
+2013-10-03 17:42:36,853 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:42:36,853 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:42:36,957 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:42:36,957 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:42:37,079 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:44:11,577 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:44:11.577****************
+2013-10-03 17:44:11,578 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:44:11,578 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:44:11,685 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:44:11,685 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:44:11,804 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:44:45,426 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:44:45.425****************
+2013-10-03 17:44:45,427 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:44:45,427 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:44:45,531 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:44:45,531 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:44:45,651 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:44:45,671 ERROR [AWT-EventQueue-0] - ":" is missing after "            ", as list is started on next line
+":" is missing after "            ", as list is started on next line
+	at org.javabuilders.util.BuilderUtils.validateYamlContent(BuilderUtils.java:902)
+	at org.javabuilders.Builder.buildFromString(Builder.java:321)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-03 17:44:55,298 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:44:55.297****************
+2013-10-03 17:44:55,299 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:44:55,299 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:44:55,403 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:44:55,403 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:44:55,524 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:45:36,756 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:45:36.755****************
+2013-10-03 17:45:36,757 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:45:36,757 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:45:36,859 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:45:36,860 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:45:36,985 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:51:16,504 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:51:16.503****************
+2013-10-03 17:51:16,505 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:51:16,505 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:51:16,611 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:51:16,611 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:51:16,731 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:51:53,033 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:51:53.033****************
+2013-10-03 17:51:53,034 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:51:53,034 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:51:53,137 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:51:53,137 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:51:53,256 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:52:25,160 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:52:25.159****************
+2013-10-03 17:52:25,162 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:52:25,162 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:52:25,272 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:52:25,272 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:52:25,393 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:53:50,310 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:53:50.309****************
+2013-10-03 17:53:50,311 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:53:50,311 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:53:50,421 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:53:50,421 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:53:50,541 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:54:15,131 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:54:15.131****************
+2013-10-03 17:54:15,132 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:54:15,132 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:54:15,238 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:54:15,238 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:54:15,372 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:56:35,912 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:56:35.911****************
+2013-10-03 17:56:35,913 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:56:35,913 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:56:36,019 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:56:36,019 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:56:36,139 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 17:56:49,624 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 17:56:49.623****************
+2013-10-03 17:56:49,625 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 17:56:49,625 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 17:56:49,738 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 17:56:49,738 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 17:56:49,870 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 18:01:02,347 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 18:01:02.346****************
+2013-10-03 18:01:02,348 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 18:01:02,348 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 18:01:02,459 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 18:01:02,459 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 18:01:02,577 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-03 18:01:20,276 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-03 18:01:20.276****************
+2013-10-03 18:01:20,278 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-03 18:01:20,278 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-03 18:01:20,502 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-03 18:01:20,503 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-03 18:01:20,625 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 19:58:22,386 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 19:58:22.385****************
+2013-10-04 19:58:22,386 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 19:58:22,386 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 19:58:22,495 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 19:58:22,495 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 19:58:22,614 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:03:50,300 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:03:50.299****************
+2013-10-04 20:03:50,301 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:03:50,301 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:03:50,406 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:03:50,406 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:03:50,541 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:03:50,644 ERROR [AWT-EventQueue-0] - while parsing a block mapping; expected <block end>, but found BlockEntry
+while parsing a block mapping
+ in "<reader>", line 39, column 9:
+            -JPanel(name=choosePanel):
+            ^
+expected <block end>, but found BlockEntry
+ in "<reader>", line 46, column 9:
+            - JButton(name=fileBtn, action=p ... 
+            ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:576)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:163)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:160)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:160)
+	at org.yaml.snakeyaml.composer.Composer.composeSequenceNode(Composer.java:204)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:158)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:160)
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:124)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:264)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:238)
+	at org.javabuilders.Builder.buildFromString(Builder.java:323)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-04 20:05:32,909 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:05:32.908****************
+2013-10-04 20:05:32,910 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:05:32,910 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:05:33,014 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:05:33,014 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:05:33,134 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:05:33,154 ERROR [AWT-EventQueue-0] - ":" is missing after "    ", as list is started on next line
+":" is missing after "    ", as list is started on next line
+	at org.javabuilders.util.BuilderUtils.validateYamlContent(BuilderUtils.java:902)
+	at org.javabuilders.Builder.buildFromString(Builder.java:321)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-04 20:05:49,789 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:05:49.789****************
+2013-10-04 20:05:49,790 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:05:49,790 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:05:49,888 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:05:49,888 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:05:50,011 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:05:50,120 ERROR [AWT-EventQueue-0] - while parsing a block collection; expected <block end>, but found Key
+while parsing a block collection
+ in "<reader>", line 2, column 5:
+        - Action(name=showTurner, text=" ... 
+        ^
+expected <block end>, but found Key
+ in "<reader>", line 38, column 5:
+        -JPanel(name=choosePanel):
+        ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockSequenceEntry.produce(ParserImpl.java:520)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:163)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeSequenceNode(Composer.java:203)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:158)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:160)
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:124)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:264)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:238)
+	at org.javabuilders.Builder.buildFromString(Builder.java:323)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-04 20:07:12,111 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:07:12.11****************
+2013-10-04 20:07:12,112 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:07:12,112 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:07:12,232 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:07:12,232 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:07:12,349 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:07:12,795 ERROR [AWT-EventQueue-0] - Unable to find type for prefix choose for choosePanel
+Unable to find type for prefix choose for choosePanel
+	at org.javabuilders.Builder.buildControlFromName(Builder.java:379)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.getNamedComponentOrCreateOne(AbstractMigLayoutHandler.java:348)
+	at org.javabuilders.layout.mig.AbstractMigLayoutHandler.useExistingInstance(AbstractMigLayoutHandler.java:114)
+	at org.javabuilders.swing.handler.type.layout.MigLayoutHandler.createNewInstance(MigLayoutHandler.java:53)
+	at org.javabuilders.Builder.handleType(Builder.java:608)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-04 20:07:35,919 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:07:35.918****************
+2013-10-04 20:07:35,920 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:07:35,921 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:07:36,024 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:07:36,025 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:07:36,144 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:07:52,591 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:07:52.59****************
+2013-10-04 20:07:52,592 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:07:52,592 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:07:52,695 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:07:52,696 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:07:52,818 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:08:26,521 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:08:26.52****************
+2013-10-04 20:08:26,522 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:08:26,522 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:08:26,627 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:08:26,627 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:08:26,748 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:08:27,137 ERROR [AWT-EventQueue-0] - FlowLayout.horizontalGap : unable to set value "0".
+Unable to find setter method: java.awt.FlowLayout.setHorizontalGap.
+The known property names for FlowLayout are:
+alignOnBaseline
+alignment
+hgap
+vgap
+FlowLayout.horizontalGap : unable to set value "0".
+Unable to find setter method: java.awt.FlowLayout.setHorizontalGap.
+The known property names for FlowLayout are:
+alignOnBaseline
+alignment
+hgap
+vgap
+org.javabuilders.BuildException: Unable to find setter method: java.awt.FlowLayout.setHorizontalGap
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:86)
+	at org.javabuilders.Builder.handleProperty(Builder.java:867)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:560)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: Unable to find setter method: java.awt.FlowLayout.setHorizontalGap
+	at org.javabuilders.util.PropertyUtils.setProperty(PropertyUtils.java:111)
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:66)
+	... 35 more
+2013-10-04 20:08:51,639 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:08:51.638****************
+2013-10-04 20:08:51,640 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:08:51,640 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:08:51,746 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:08:51,746 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:08:51,865 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:09:04,402 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:09:04.401****************
+2013-10-04 20:09:04,403 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:09:04,403 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:09:04,508 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:09:04,508 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:09:04,628 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:09:47,254 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:09:47.253****************
+2013-10-04 20:09:47,255 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:09:47,255 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:09:47,358 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:09:47,358 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:09:47,476 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:10:23,518 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:10:23.517****************
+2013-10-04 20:10:23,519 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:10:23,519 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:10:23,624 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:10:23,624 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:10:23,748 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:25:29,221 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:25:29.221****************
+2013-10-04 20:25:29,222 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:25:29,222 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:25:29,324 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:25:29,324 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:25:29,444 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:25:42,664 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:25:42.663****************
+2013-10-04 20:25:42,665 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:25:42,665 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:25:42,767 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:25:42,768 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:25:42,886 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:26:10,261 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:26:10.26****************
+2013-10-04 20:26:10,261 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:26:10,261 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:26:10,369 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:26:10,369 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:26:10,496 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:26:34,098 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:26:34.097****************
+2013-10-04 20:26:34,099 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:26:34,099 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:26:34,205 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:26:34,205 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:26:34,323 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:30:26,169 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:30:26.168****************
+2013-10-04 20:30:26,170 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:30:26,171 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:30:26,294 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:30:26,294 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:30:26,415 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:31:08,556 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:31:08.555****************
+2013-10-04 20:31:08,557 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:31:08,557 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:31:08,662 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:31:08,662 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:31:08,794 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:31:40,919 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:31:40.918****************
+2013-10-04 20:31:40,920 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:31:40,921 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:31:41,022 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:31:41,023 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:31:41,142 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:31:50,096 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:31:50.096****************
+2013-10-04 20:31:50,097 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:31:50,097 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:31:50,200 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:31:50,200 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:31:50,320 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:32:02,518 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:32:02.517****************
+2013-10-04 20:32:02,519 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:32:02,519 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:32:02,621 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:32:02,621 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:32:02,746 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:32:16,205 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:32:16.204****************
+2013-10-04 20:32:16,206 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:32:16,206 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:32:16,310 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:32:16,310 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:32:16,431 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:32:40,489 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:32:40.489****************
+2013-10-04 20:32:40,490 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:32:40,490 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:32:40,595 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:32:40,595 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:32:40,715 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:32:58,207 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:32:58.206****************
+2013-10-04 20:32:58,208 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:32:58,208 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:32:58,310 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:32:58,310 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:32:58,430 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:36:03,250 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:36:03.249****************
+2013-10-04 20:36:03,251 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:36:03,251 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:36:03,352 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:36:03,352 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:36:03,471 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:36:34,751 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:36:34.751****************
+2013-10-04 20:36:34,752 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:36:34,752 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:36:34,866 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:36:34,866 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:36:34,984 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:36:35,378 ERROR [AWT-EventQueue-0] - JButton.focusable : unable to set value "false; rollover=false".
+Failed to set javax.swing.JButton.focusable = false; rollover=false.
+The known property names for JButton are:
+action
+actionCommand
+actionMap
+alignmentX
+alignmentY
+autoscrolls
+background
+border
+borderPainted
+bounds
+componentOrientation
+componentPopupMenu
+contentAreaFilled
+cursor
+debugGraphicsOptions
+defaultCapable
+defaultLocale
+disabledIcon
+disabledSelectedIcon
+displayedMnemonicIndex
+doubleBuffered
+dropTarget
+enabled
+focusCycleRoot
+focusPainted
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+font
+foreground
+hideActionText
+horizontalAlignment
+horizontalTextPosition
+icon
+iconTextGap
+ignoreRepaint
+inheritsPopupMenu
+inputVerifier
+label
+layout
+locale
+location
+margin
+maximumSize
+minimumSize
+mnemonic
+model
+multiClickThreshhold
+name
+nextFocusableComponent
+opaque
+preferredSize
+pressedIcon
+requestFocusEnabled
+rolloverEnabled
+rolloverIcon
+rolloverSelectedIcon
+selected
+selectedIcon
+size
+text
+toolTipText
+transferHandler
+uI
+verifyInputWhenFocusTarget
+verticalAlignment
+verticalTextPosition
+visible
+JButton.focusable : unable to set value "false; rollover=false".
+Failed to set javax.swing.JButton.focusable = false; rollover=false.
+The known property names for JButton are:
+action
+actionCommand
+actionMap
+alignmentX
+alignmentY
+autoscrolls
+background
+border
+borderPainted
+bounds
+componentOrientation
+componentPopupMenu
+contentAreaFilled
+cursor
+debugGraphicsOptions
+defaultCapable
+defaultLocale
+disabledIcon
+disabledSelectedIcon
+displayedMnemonicIndex
+doubleBuffered
+dropTarget
+enabled
+focusCycleRoot
+focusPainted
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+font
+foreground
+hideActionText
+horizontalAlignment
+horizontalTextPosition
+icon
+iconTextGap
+ignoreRepaint
+inheritsPopupMenu
+inputVerifier
+label
+layout
+locale
+location
+margin
+maximumSize
+minimumSize
+mnemonic
+model
+multiClickThreshhold
+name
+nextFocusableComponent
+opaque
+preferredSize
+pressedIcon
+requestFocusEnabled
+rolloverEnabled
+rolloverIcon
+rolloverSelectedIcon
+selected
+selectedIcon
+size
+text
+toolTipText
+transferHandler
+uI
+verifyInputWhenFocusTarget
+verticalAlignment
+verticalTextPosition
+visible
+org.javabuilders.BuildException: Failed to set javax.swing.JButton.focusable = false; rollover=false
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:86)
+	at org.javabuilders.Builder.handleProperty(Builder.java:867)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:560)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: Failed to set javax.swing.JButton.focusable = false; rollover=false
+java.lang.IllegalArgumentException: argument type mismatch
+	at org.javabuilders.util.PropertyUtils.setProperty(PropertyUtils.java:108)
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:66)
+	... 35 more
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.javabuilders.util.PropertyUtils.setProperty(PropertyUtils.java:106)
+	... 36 more
+2013-10-04 20:37:13,137 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:37:13.136****************
+2013-10-04 20:37:13,137 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:37:13,137 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:37:13,243 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:37:13,243 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:37:13,363 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:38:05,621 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:38:05.62****************
+2013-10-04 20:38:05,622 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:38:05,622 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:38:05,726 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:38:05,726 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:38:05,849 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:38:06,266 ERROR [AWT-EventQueue-0] - JButton.roloverEnabled : unable to set value "false".
+Unable to find setter method: javax.swing.JButton.setRoloverEnabled.
+The known property names for JButton are:
+action
+actionCommand
+actionMap
+alignmentX
+alignmentY
+autoscrolls
+background
+border
+borderPainted
+bounds
+componentOrientation
+componentPopupMenu
+contentAreaFilled
+cursor
+debugGraphicsOptions
+defaultCapable
+defaultLocale
+disabledIcon
+disabledSelectedIcon
+displayedMnemonicIndex
+doubleBuffered
+dropTarget
+enabled
+focusCycleRoot
+focusPainted
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+font
+foreground
+hideActionText
+horizontalAlignment
+horizontalTextPosition
+icon
+iconTextGap
+ignoreRepaint
+inheritsPopupMenu
+inputVerifier
+label
+layout
+locale
+location
+margin
+maximumSize
+minimumSize
+mnemonic
+model
+multiClickThreshhold
+name
+nextFocusableComponent
+opaque
+preferredSize
+pressedIcon
+requestFocusEnabled
+rolloverEnabled
+rolloverIcon
+rolloverSelectedIcon
+selected
+selectedIcon
+size
+text
+toolTipText
+transferHandler
+uI
+verifyInputWhenFocusTarget
+verticalAlignment
+verticalTextPosition
+visible
+JButton.roloverEnabled : unable to set value "false".
+Unable to find setter method: javax.swing.JButton.setRoloverEnabled.
+The known property names for JButton are:
+action
+actionCommand
+actionMap
+alignmentX
+alignmentY
+autoscrolls
+background
+border
+borderPainted
+bounds
+componentOrientation
+componentPopupMenu
+contentAreaFilled
+cursor
+debugGraphicsOptions
+defaultCapable
+defaultLocale
+disabledIcon
+disabledSelectedIcon
+displayedMnemonicIndex
+doubleBuffered
+dropTarget
+enabled
+focusCycleRoot
+focusPainted
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+font
+foreground
+hideActionText
+horizontalAlignment
+horizontalTextPosition
+icon
+iconTextGap
+ignoreRepaint
+inheritsPopupMenu
+inputVerifier
+label
+layout
+locale
+location
+margin
+maximumSize
+minimumSize
+mnemonic
+model
+multiClickThreshhold
+name
+nextFocusableComponent
+opaque
+preferredSize
+pressedIcon
+requestFocusEnabled
+rolloverEnabled
+rolloverIcon
+rolloverSelectedIcon
+selected
+selectedIcon
+size
+text
+toolTipText
+transferHandler
+uI
+verifyInputWhenFocusTarget
+verticalAlignment
+verticalTextPosition
+visible
+org.javabuilders.BuildException: Unable to find setter method: javax.swing.JButton.setRoloverEnabled
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:86)
+	at org.javabuilders.Builder.handleProperty(Builder.java:867)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:560)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: Unable to find setter method: javax.swing.JButton.setRoloverEnabled
+	at org.javabuilders.util.PropertyUtils.setProperty(PropertyUtils.java:111)
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:66)
+	... 35 more
+2013-10-04 20:38:51,848 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:38:51.848****************
+2013-10-04 20:38:51,849 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:38:51,850 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:38:51,962 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:38:51,963 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:38:52,081 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:38:52,473 ERROR [AWT-EventQueue-0] - JButton.roloverEnabled : unable to set value "false".
+Unable to find setter method: javax.swing.JButton.setRoloverEnabled.
+The known property names for JButton are:
+action
+actionCommand
+actionMap
+alignmentX
+alignmentY
+autoscrolls
+background
+border
+borderPainted
+bounds
+componentOrientation
+componentPopupMenu
+contentAreaFilled
+cursor
+debugGraphicsOptions
+defaultCapable
+defaultLocale
+disabledIcon
+disabledSelectedIcon
+displayedMnemonicIndex
+doubleBuffered
+dropTarget
+enabled
+focusCycleRoot
+focusPainted
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+font
+foreground
+hideActionText
+horizontalAlignment
+horizontalTextPosition
+icon
+iconTextGap
+ignoreRepaint
+inheritsPopupMenu
+inputVerifier
+label
+layout
+locale
+location
+margin
+maximumSize
+minimumSize
+mnemonic
+model
+multiClickThreshhold
+name
+nextFocusableComponent
+opaque
+preferredSize
+pressedIcon
+requestFocusEnabled
+rolloverEnabled
+rolloverIcon
+rolloverSelectedIcon
+selected
+selectedIcon
+size
+text
+toolTipText
+transferHandler
+uI
+verifyInputWhenFocusTarget
+verticalAlignment
+verticalTextPosition
+visible
+JButton.roloverEnabled : unable to set value "false".
+Unable to find setter method: javax.swing.JButton.setRoloverEnabled.
+The known property names for JButton are:
+action
+actionCommand
+actionMap
+alignmentX
+alignmentY
+autoscrolls
+background
+border
+borderPainted
+bounds
+componentOrientation
+componentPopupMenu
+contentAreaFilled
+cursor
+debugGraphicsOptions
+defaultCapable
+defaultLocale
+disabledIcon
+disabledSelectedIcon
+displayedMnemonicIndex
+doubleBuffered
+dropTarget
+enabled
+focusCycleRoot
+focusPainted
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+font
+foreground
+hideActionText
+horizontalAlignment
+horizontalTextPosition
+icon
+iconTextGap
+ignoreRepaint
+inheritsPopupMenu
+inputVerifier
+label
+layout
+locale
+location
+margin
+maximumSize
+minimumSize
+mnemonic
+model
+multiClickThreshhold
+name
+nextFocusableComponent
+opaque
+preferredSize
+pressedIcon
+requestFocusEnabled
+rolloverEnabled
+rolloverIcon
+rolloverSelectedIcon
+selected
+selectedIcon
+size
+text
+toolTipText
+transferHandler
+uI
+verifyInputWhenFocusTarget
+verticalAlignment
+verticalTextPosition
+visible
+org.javabuilders.BuildException: Unable to find setter method: javax.swing.JButton.setRoloverEnabled
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:86)
+	at org.javabuilders.Builder.handleProperty(Builder.java:867)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:560)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:68)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: Unable to find setter method: javax.swing.JButton.setRoloverEnabled
+	at org.javabuilders.util.PropertyUtils.setProperty(PropertyUtils.java:111)
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:66)
+	... 35 more
+2013-10-04 20:39:16,723 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:39:16.722****************
+2013-10-04 20:39:16,724 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:39:16,724 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:39:16,831 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:39:16,831 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:39:16,953 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:40:26,368 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:40:26.367****************
+2013-10-04 20:40:26,369 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:40:26,369 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:40:26,473 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:40:26,474 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:40:26,595 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:41:07,517 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:41:07.517****************
+2013-10-04 20:41:07,518 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:41:07,518 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:41:07,626 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:41:07,626 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:41:07,746 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:41:49,049 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:41:49.049****************
+2013-10-04 20:41:49,051 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:41:49,051 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:41:49,156 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:41:49,156 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:41:49,275 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:42:00,300 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:42:00.3****************
+2013-10-04 20:42:00,301 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:42:00,302 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:42:00,411 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:42:00,411 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:42:00,531 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:45:36,508 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:45:36.507****************
+2013-10-04 20:45:36,509 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:45:36,509 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:45:36,648 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:45:36,648 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:45:36,788 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:47:20,155 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:47:20.155****************
+2013-10-04 20:47:20,156 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:47:20,156 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:47:20,259 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:47:20,259 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:47:20,378 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:47:56,000 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:47:56.0****************
+2013-10-04 20:47:56,001 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:47:56,001 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:47:56,106 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:47:56,106 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:47:56,225 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:48:09,497 INFO  [AWT-EventQueue-0] - Open Erfassung for: Wettkampf 1
+2013-10-04 20:48:09,544 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-04 20:48:12,506 INFO  [AWT-EventQueue-0] - Open Erfassung for: Wettkampf 1
+2013-10-04 20:48:12,526 INFO  [AWT-EventQueue-0] - Restored existing tab
+2013-10-04 20:48:20,040 INFO  [AWT-EventQueue-0] - Open Erfassung for: Wettkampf 1
+2013-10-04 20:48:20,095 INFO  [AWT-EventQueue-0] - Restored existing tab
+2013-10-04 20:48:21,654 INFO  [AWT-EventQueue-0] - Checking existence of Wettkampf 1
+2013-10-04 20:48:21,654 INFO  [AWT-EventQueue-0] - Wettkampf 1 exists
+2013-10-04 20:48:21,964 INFO  [AWT-EventQueue-0] - Checking existence of Wettkampf 1
+2013-10-04 20:48:21,964 INFO  [AWT-EventQueue-0] - Wettkampf 1 exists
+2013-10-04 20:48:22,121 INFO  [AWT-EventQueue-0] - Checking existence of Wettkampf 1
+2013-10-04 20:48:22,122 INFO  [AWT-EventQueue-0] - Wettkampf 1 exists
+2013-10-04 20:49:41,338 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:49:41.338****************
+2013-10-04 20:49:41,339 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:49:41,339 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:49:41,447 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:49:41,447 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:49:41,579 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:49:41,599 ERROR [AWT-EventQueue-0] - ":" is missing after "    -JPopUpMenu", as list is started on next line
+":" is missing after "    -JPopUpMenu", as list is started on next line
+	at org.javabuilders.util.BuilderUtils.validateYamlContent(BuilderUtils.java:902)
+	at org.javabuilders.Builder.buildFromString(Builder.java:321)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:70)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-04 20:49:46,371 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:49:46.37****************
+2013-10-04 20:49:46,372 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:49:46,372 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:49:46,481 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:49:46,481 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:49:46,607 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:49:46,699 ERROR [AWT-EventQueue-0] - while parsing a block collection; expected <block end>, but found Key
+while parsing a block collection
+ in "<reader>", line 2, column 5:
+        - Action(name=showTurner, text=" ... 
+        ^
+expected <block end>, but found Key
+ in "<reader>", line 19, column 5:
+        -JPopUpMenu():
+        ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockSequenceEntry.produce(ParserImpl.java:520)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:163)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeSequenceNode(Composer.java:203)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:158)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:160)
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:124)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:264)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:238)
+	at org.javabuilders.Builder.buildFromString(Builder.java:323)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:70)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-04 20:49:55,508 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:49:55.507****************
+2013-10-04 20:49:55,509 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:49:55,509 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:49:55,613 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:49:55,613 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:49:55,736 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:49:56,072 ERROR [AWT-EventQueue-0] - content.JPopUpMenu() : unable to set value "null".
+Unable to find setter method: de.timherbst.wau.view.MainFrame.setJPopUpMenu().
+The known property names for MainFrame are:
+alwaysOnTop
+autoRequestFocus
+background
+bounds
+componentOrientation
+contentPane
+cursor
+defaultCloseOperation
+defaultLookAndFeelDecorated
+dirty
+dropTarget
+enabled
+extendedState
+focusCycleRoot
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+focusableWindowState
+font
+foreground
+glassPane
+iconImage
+iconImages
+ignoreRepaint
+jMenuBar
+layeredPane
+layout
+locale
+location
+locationByPlatform
+locationRelativeTo
+maximizedBounds
+maximumSize
+menuBar
+minimumSize
+modalExclusionType
+name
+opacity
+preferredSize
+resizable
+shape
+size
+state
+status
+title
+transferHandler
+type
+undecorated
+visible
+content.JPopUpMenu() : unable to set value "null".
+Unable to find setter method: de.timherbst.wau.view.MainFrame.setJPopUpMenu().
+The known property names for MainFrame are:
+alwaysOnTop
+autoRequestFocus
+background
+bounds
+componentOrientation
+contentPane
+cursor
+defaultCloseOperation
+defaultLookAndFeelDecorated
+dirty
+dropTarget
+enabled
+extendedState
+focusCycleRoot
+focusTraversalKeysEnabled
+focusTraversalPolicy
+focusTraversalPolicyProvider
+focusable
+focusableWindowState
+font
+foreground
+glassPane
+iconImage
+iconImages
+ignoreRepaint
+jMenuBar
+layeredPane
+layout
+locale
+location
+locationByPlatform
+locationRelativeTo
+maximizedBounds
+maximumSize
+menuBar
+minimumSize
+modalExclusionType
+name
+opacity
+preferredSize
+resizable
+shape
+size
+state
+status
+title
+transferHandler
+type
+undecorated
+visible
+org.javabuilders.BuildException: Unable to find setter method: de.timherbst.wau.view.MainFrame.setJPopUpMenu()
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:86)
+	at org.javabuilders.Builder.handleProperty(Builder.java:867)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:554)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:70)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: Unable to find setter method: de.timherbst.wau.view.MainFrame.setJPopUpMenu()
+	at org.javabuilders.util.PropertyUtils.setProperty(PropertyUtils.java:111)
+	at org.javabuilders.handler.DefaultPropertyHandler.handle(DefaultPropertyHandler.java:66)
+	... 27 more
+2013-10-04 20:50:42,833 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:50:42.832****************
+2013-10-04 20:50:42,834 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:50:42,834 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:50:42,937 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:50:42,938 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:50:43,076 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:56:09,656 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:56:09.656****************
+2013-10-04 20:56:09,657 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:56:09,657 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:56:09,766 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:56:09,766 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:56:09,888 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:56:10,269 ERROR [AWT-EventQueue-0] - de.timherbst.wau.view.MainFrame[frame0,0,27,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@5568a50f,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] : Duplicate name "fileMenu" specified in YAML file : JPopupMenu
+de.timherbst.wau.view.MainFrame[frame0,0,27,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@5568a50f,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] : Duplicate name "fileMenu" specified in YAML file : JPopupMenu
+org.javabuilders.BuildException: Duplicate name "fileMenu" specified in YAML file : JPopupMenu
+	at org.javabuilders.BuildProcess.addNamedObject(BuildProcess.java:90)
+	at org.javabuilders.Builder.handleType(Builder.java:749)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:76)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: Duplicate name "fileMenu" specified in YAML file : JPopupMenu
+	at org.javabuilders.BuildResult.put(BuildResult.java:83)
+	at org.javabuilders.BuildProcess.addNamedObject(BuildProcess.java:87)
+	... 27 more
+2013-10-04 20:56:34,537 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:56:34.536****************
+2013-10-04 20:56:34,538 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:56:34,538 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:56:34,648 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:56:34,648 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:56:34,777 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:57:59,391 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:57:59.39****************
+2013-10-04 20:57:59,392 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:57:59,392 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:57:59,498 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:57:59,498 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:57:59,619 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:58:18,197 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 20:58:18.197****************
+2013-10-04 20:58:18,198 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 20:58:18,198 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 20:58:18,306 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 20:58:18,306 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 20:58:18,425 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 20:58:54,457 INFO  [AWT-EventQueue-0] - Open Erfassung for: Mannschaft 1
+2013-10-04 20:58:54,457 INFO  [AWT-EventQueue-0] - Kann kein Fenster oeffnen fuer: Mannschaft 1
+2013-10-04 20:59:21,692 INFO  [AWT-EventQueue-0] - Open Erfassung for: Wettkampf 1
+2013-10-04 20:59:21,746 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-04 20:59:27,516 INFO  [AWT-EventQueue-0] - Tab WK: Wettkampf 1 closed
+2013-10-04 21:02:04,084 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 21:02:04.083****************
+2013-10-04 21:02:04,084 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 21:02:04,084 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 21:02:04,191 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 21:02:04,192 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 21:02:04,311 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 21:05:51,190 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 21:05:51.189****************
+2013-10-04 21:05:51,191 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 21:05:51,191 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 21:05:51,297 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 21:05:51,297 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 21:05:51,417 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 21:06:22,059 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 21:06:22.058****************
+2013-10-04 21:06:22,060 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 21:06:22,060 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 21:06:22,170 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 21:06:22,170 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 21:06:22,289 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 21:06:22,580 ERROR [AWT-EventQueue-0] - Unable to process property SwingAction.icon : Unable to find Icon defined by path: /icons/r24/file.png
+Unable to process property SwingAction.icon : Unable to find Icon defined by path: /icons/r24/file.png
+org.javabuilders.BuildException: Unable to find Icon defined by path: /icons/r24/file.png
+	at org.javabuilders.Builder.handleProperty(Builder.java:862)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:560)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:543)
+	at org.javabuilders.Builder.handleType(Builder.java:708)
+	at org.javabuilders.Builder.processDocumentNode(Builder.java:510)
+	at org.javabuilders.Builder.executeBuild(Builder.java:449)
+	at org.javabuilders.Builder.buildFromString(Builder.java:324)
+	at org.javabuilders.Builder.build(Builder.java:265)
+	at org.javabuilders.Builder.build(Builder.java:185)
+	at org.javabuilders.Builder.build(Builder.java:144)
+	at org.javabuilders.swing.SwingJavaBuilder.build(SwingJavaBuilder.java:82)
+	at de.timherbst.wau.view.MainFrame.<init>(MainFrame.java:76)
+	at de.timherbst.wau.application.Application$1.run(Application.java:70)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: Unable to find Icon defined by path: /icons/r24/file.png
+	at org.javabuilders.handler.type.IconAsValueHandler.getValue(IconAsValueHandler.java:58)
+	at org.javabuilders.handler.type.IconAsValueHandler.getValue(IconAsValueHandler.java:22)
+	at org.javabuilders.Builder.handleProperty(Builder.java:852)
+	... 28 more
+2013-10-04 21:08:20,534 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 21:08:20.533****************
+2013-10-04 21:08:20,534 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 21:08:20,534 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 21:08:20,639 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 21:08:20,639 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 21:08:20,758 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-04 21:08:54,388 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-04 21:08:54.387****************
+2013-10-04 21:08:54,389 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-04 21:08:54,389 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-04 21:08:54,496 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-04 21:08:54,496 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-04 21:08:54,615 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
