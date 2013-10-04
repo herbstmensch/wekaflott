@@ -1,0 +1,25 @@
+JDialog(size=400x300, name=infoWindow, title=Info..., iconImage=/icons/r24/rename_wkt.png):
+    - Action(name=close, text="Schließen", toolTipText="Schließen", onAction=close, icon=/icons/r16/ok.png)
+    - JPanel(name=head, background=WHITE):
+        - JLabel(name=lblShowAppName, icon=/icons/r32/app.png, font=bold 24pt, iconTextGap=67, text="<html>Hier werden die Eigenschaften des Wettkampftages eingestellt.</html>")
+        - FlowLayout(vgap=12, hgap=10, alignment=left)
+    - JLabel(name=lblShowVersion)
+    - JLabel(name=lblShowCopyright)
+    - JLabel(name=lblShowAutor)
+    - JLabel(name=lblShowKontakt)
+    - JLabel(name=lblShowRuntime)
+    - JLabel(name=lblShowJavaVersion)
+    - JButton(name=btnClose, hideActionText=false, action=close)
+    - MigLayout: |
+        [[insets 10, gap 40 0]]
+        [pref]          [grow,200]
+        head+*
+        "Version"       lblShowVersion
+        "Copyright"     lblShowCopyright
+        "Autor"         lblShowAutor
+        "Kontakt"       lblShowKontakt
+        " "+*
+        "Runtime"       lblShowRuntime
+        "Java Version"  lblShowJavaVersion
+        >btnClose+*
+        {head: dock north}

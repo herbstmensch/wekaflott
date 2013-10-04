@@ -28,7 +28,7 @@ import de.timherbst.wau.view.components.ToolBarSeparator;
 public class Application {
 
 	public static final String NAME = "WeKaFlott";
-	public static final String VERSION_VIEW = "1.0 beta 7";
+	public static final String VERSION_VIEW = "1.0 beta 8";
 
 	private static MainFrame mainFrame = null;
 

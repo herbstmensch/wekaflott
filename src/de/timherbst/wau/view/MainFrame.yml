@@ -1,4 +1,4 @@
-JFrame(name=dialog, size=800x600, defaultCloseOperation=doNothingOnClose, iconImage=/icons/r32/app.png):
+JFrame(name=dialog, size=850x600, defaultCloseOperation=doNothingOnClose, iconImage=/icons/r32/app.png):
     - Action(name=showTurner, text="Turner", onAction=showTurner, icon=/icons/r24/turner.png)
     - Action(name=showMannschaften, text="Mannschaften", onAction=showMannschaften, icon=/icons/r24/mannschaft.png)
     - Action(name=showWettkaempfe, text="Wettkämpfe", onAction=showWettkaempfe, icon=/icons/r24/wettkampf.png)
@@ -6,15 +6,17 @@ JFrame(name=dialog, size=800x600, defaultCloseOperation=doNothingOnClose, iconIm
     - Action(name=showErfassung, text="Erfassung", onAction=showErfassung, icon=/icons/r24/erfassung.png)
     - Action(name=popupSettings, text="Erfassung", onAction=popupSettingsMenu, icon=/icons/r24/configure.png)
     - Action(name=popupFile, text="Erfassung", onAction=popupFileMenu, icon=/icons/r24/file.png)
-    - Action(name=newWkt, text="&neuer Wettkampftag", onAction=newWettkampftag, icon=/icons/r24/new.png)
-    - Action(name=openWkt, text="Wettkampftag ö&ffnen", onAction=openWettkampftag, icon=/icons/r24/open.png)
-    - Action(name=saveWkt, text="Wettkampftag &speichern", onAction=saveWettkampftag, icon=/icons/r24/save.png)
+    - Action(name=newWkt, text="neuer Wettkampftag", onAction=newWettkampftag, icon=/icons/r24/new.png)
+    - Action(name=openWkt, text="Wettkampftag öffnen", onAction=openWettkampftag, icon=/icons/r24/open.png)
+    - Action(name=saveWkt, text="Wettkampftag speichern", onAction=saveWettkampftag, icon=/icons/r24/save.png)
     - Action(name=saveAsWkt, text="Wettkampftag speichern unter...", onAction=saveAsWettkampftag, icon=/icons/r24/save_as.png)
-    - Action(name=beenden, text="&Beenden", onAction=beenden)
-    - Action(name=renameWkt, text="Wettkampftag &umbenennen", onAction=renameWettkampftag, icon=/icons/r24/rename_wkt.png)
-    - Action(name=openEinstellungen, text="&Einstellungen", onAction=openSettings, icon=/icons/r24/settings.png)
-    - Action(name=openRundenAuswertung, text="&Rundenwettkampf auswerten", onAction=openRundenAuswertung, icon=/icons/r24/rundenwettkampf.png)
-    - Action(name=initWertungen, text="&Alle Wertungen neu initialisieren", onAction=initWertungen, icon=/icons/r24/delete_wertungen.png)
+    - Action(name=beenden, text="Beenden", onAction=beenden, icon=/icons/r24/close.png)
+    - Action(name=renameWkt, text="Wettkampftag umbenennen", onAction=renameWettkampftag, icon=/icons/r24/rename_wkt.png)
+    - Action(name=openEinstellungen, text="Einstellungen", onAction=openSettings, icon=/icons/r24/settings.png)
+    - Action(name=openRundenAuswertung, text="Rundenwettkampf auswerten", onAction=openRundenAuswertung, icon=/icons/r24/rundenwettkampf.png)
+    - Action(name=initWertungen, text="Alle Wertungen neu initialisieren", onAction=initWertungen, icon=/icons/r24/delete_wertungen.png)
+    - Action(name=bugMelden, text="Fehler Online melden", onAction=bugMelden, icon=/icons/r24/bug.png)
+    - Action(name=bugMeldenMail, text="Fehler per E-Mail melden", onAction=bugMeldenMail, icon=/icons/r24/bug_mail.png)
     - Action(name=openInfo, text="&Info...", onAction=openInfo, icon=/icons/r24/info.png)
     - JPopupMenu(name=fileMenu):
         - JMenuItem(action=newWkt)
@@ -25,18 +27,22 @@ JFrame(name=dialog, size=800x600, defaultCloseOperation=doNothingOnClose, iconIm
         - JSeparator()
         - JMenuItem(action=renameWkt)
         - JSeparator()
-        - JMenu(name=extrasMenu,text=Extras):
+        - JMenu(name=extrasMenu,text=Extras, icon=/icons/r24/extras.png):
             - JMenuItem(action=openRundenAuswertung)
         - JSeparator()
         - JMenuItem(action=beenden)
     - JPopupMenu(name=settingsMenu):
         - JMenuItem(action=openEinstellungen)
         - JSeparator()
-        - JMenu(name=debugMenu,text=Debug):
+        - JMenu(name=debugMenu,text=Debug, icon=/icons/r24/debug.png):
             - JMenuItem(action=initWertungen)
+            - JSeparator()
+            - JMenuItem(action=bugMelden)
+            - JMenuItem(action=bugMeldenMail)
         - JSeparator()
         - JMenuItem(action=openInfo)
     - JPanel(name=topPanel):
+        - JButton(name=fileBtn, action=popupFile, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false)
         - JPanel(name=choosePanel):
             - JButton(name=turnerBtn, action=showTurner, focusPainted=false, selected=true, focusable=false, rolloverEnabled=false)
             - JButton(name=mannschaftBtn, action=showMannschaften, focusPainted=false, focusable=false, rolloverEnabled=false)
@@ -44,8 +50,7 @@ JFrame(name=dialog, size=800x600, defaultCloseOperation=doNothingOnClose, iconIm
             - JButton(name=riegeBtn, action=showRiegen, focusPainted=false, focusable=false, rolloverEnabled=false)
             - JButton(name=erfassungBtn, action=showErfassung, focusPainted=false, focusable=false, rolloverEnabled=false)
             - FlowLayout(alignment=center, hgap=0)
-        - JButton(name=fileBtn, action=popupFile, focusPainted=false, hideActionText=true, focusable=false, rolloverEnabled=false)
-        - JButton(name=settingsBtn, action=popupSettings, focusPainted=false, hideActionText=true, focusable=false, rolloverEnabled=false)
+        - JButton(name=settingsBtn, action=popupSettings, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false)
         - MigLayout: |
             [[fillx]]
             [pref!][growx, fill][pref!]

@@ -10,14 +10,13 @@ JPanel(name=mannschaftenPanel):
         - JSeparator()
         - JMenuItem(action=openErfassung)
     - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
-        - JButton(action=newMannschaft, hideActionText=true, focusPainted=false)
-        - JButton(action=deleteMannschaft, hideActionText=true, enabled=false, focusPainted=false)
+        - JButton(action=newMannschaft, hideActionText=false, focusPainted=false)
+        - JButton(action=deleteMannschaft, hideActionText=false, enabled=false, focusPainted=false)
         - ToolBarSeparator()
-        - JButton(name=btnZuWettkampf, action=zuWettkampf, enabled=false, focusPainted=false)
+        - JButton(name=btnZuWettkampf, action=zuWettkampf, enabled=false, hideActionText=false, focusPainted=false)
+        - JButton(name=btnZuRiege, action=zuRiege, enabled=false, hideActionText=false, focusPainted=false)
         - ToolBarSeparator()
-        - JButton(name=btnZuRiege, action=zuRiege, enabled=false, focusPainted=false)
-        - ToolBarSeparator()
-        - JButton(name=btnOpenErfassung, action=openErfassung, enabled=false, focusPainted=false)
+        - JButton(name=btnOpenErfassung, action=openErfassung, enabled=false, hideActionText=true, focusPainted=false)
     - JPanel(name=tablePanel):
         - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
             JTable(name=table, fillsViewportHeight=true)

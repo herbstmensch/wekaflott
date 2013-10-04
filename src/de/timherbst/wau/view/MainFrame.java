@@ -1,6 +1,7 @@
 package de.timherbst.wau.view;
 
 import java.awt.CardLayout;
+import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
@@ -8,6 +9,9 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -35,7 +39,6 @@ import de.timherbst.wau.service.StorageService;
 public class MainFrame extends JFrame implements EventListener {
 
 	private static final long serialVersionUID = -1883573216655861511L;
-	private static final int AUSWERTUNG_TAB_INDEX = 4;
 
 	private boolean dirty = false;
 	@SuppressWarnings("unused")
@@ -53,7 +56,7 @@ public class MainFrame extends JFrame implements EventListener {
 	private JButton erfassungBtn;
 	private JButton fileBtn;
 	private JButton settingsBtn;
-	
+
 	private JPopupMenu fileMenu;
 	private JPopupMenu settingsMenu;
 
@@ -78,23 +81,47 @@ public class MainFrame extends JFrame implements EventListener {
 		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		setTitle(Application.NAME + " " + Application.VERSION_VIEW);
 		addWindowListener(new MainFrameWindowListener());
-		addSaveListener(this);
+		addKeyListener(this);
 	}
 
-	public void addSaveListener(final JFrame frame) {
+	public void addKeyListener(final JFrame frame) {
+		ActionListener openListener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				openWettkampftag();
+			}
+		};
+		ActionListener newListener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				newWettkampftag();
+			}
+		};
 		ActionListener saveListener = new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				saveWettkampftag();
 			}
 		};
+		ActionListener saveAsListener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				saveAsWettkampftag();
+			}
+		};
 
+		frame.getRootPane().registerKeyboardAction(newListener, KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
+		frame.getRootPane().registerKeyboardAction(openListener, KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
 		frame.getRootPane().registerKeyboardAction(saveListener, KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
+		frame.getRootPane().registerKeyboardAction(saveAsListener, KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK + InputEvent.SHIFT_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
 
 	}
 
 	public void openWettkampftag() {
+
+		if (!confirmDirty("aktuellen Wettkampftag speichern?"))
+			return;
+
 		JFileChooser fc = new JFileChooser();
 		fc.setFileFilter(new FileNameExtensionFilter("Wettkampftag Dateien", "wkt"));
 		fc.setAcceptAllFileFilterUsed(false);
@@ -111,6 +138,23 @@ public class MainFrame extends JFrame implements EventListener {
 				JOptionPane.showMessageDialog(this, "Beim öffnen der Datei " + StorageService.filename + " ist ein Fehler aufgetreten:\n\n" + t.getLocalizedMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 			}
 		}
+	}
+
+	/**
+	 * @return true if Wettkampftag is confirmed as Dirty, false if not dirty or
+	 *         saved
+	 */
+	private boolean confirmDirty(String message) {
+		if (dirty) {
+			int i = JOptionPane.showConfirmDialog(MainFrame.this, message);
+			switch (i) {
+			case JOptionPane.CANCEL_OPTION:
+				return false;
+			case JOptionPane.YES_OPTION:
+				return saveWettkampftag();
+			}
+		}
+		return true;
 	}
 
 	public boolean saveWettkampftag() {
@@ -167,12 +211,15 @@ public class MainFrame extends JFrame implements EventListener {
 	}
 
 	public void newWettkampftag() {
+		if (!confirmDirty("aktuellen Wettkampftag speichern?"))
+			return;
+
 		StorageService.newWettkampftag();
 		renameWettkampftag();
 	}
 
-	public void renameWettkampftag() {
-		new WettkampfTagPropertiesWindow().setVisible(true);
+	public boolean renameWettkampftag() {
+		return new WettkampfTagPropertiesWindow().rename();
 	}
 
 	public void openSettings() {
@@ -208,23 +255,13 @@ public class MainFrame extends JFrame implements EventListener {
 
 		@Override
 		public void windowClosing(WindowEvent e) {
-			if (dirty) {
-				int i = JOptionPane.showConfirmDialog(MainFrame.this, "Wettkampftag vor dem Beenden speichern?");
-				switch (i) {
-				case JOptionPane.CANCEL_OPTION:
-					return;
-				case JOptionPane.YES_OPTION:
-					if (!saveWettkampftag())
-						return;
-				default:
-					MainFrame.this.setVisible(false);
-					System.exit(0);
-					break;
-				}
-			} else {
-				MainFrame.this.setVisible(false);
-				System.exit(0);
-			}
+
+			if (!confirmDirty("Wettkampftag vor dem Beenden speichern?"))
+				return;
+
+			MainFrame.this.setVisible(false);
+			System.exit(0);
+
 		}
 
 		@Override
@@ -240,7 +277,6 @@ public class MainFrame extends JFrame implements EventListener {
 
 	public void selectAuswertung() {
 		showErfassung();
-		//tabs.setSelectedIndex(AUSWERTUNG_TAB_INDEX);
 	}
 
 	public void openErfassung(Object o) {
@@ -299,6 +335,22 @@ public class MainFrame extends JFrame implements EventListener {
 
 	public void popupFileMenu() {
 		fileMenu.show(fileBtn, 0, 30);
+	}
+	
+	public void bugMelden() {
+		try {
+			Desktop.getDesktop().browse(new URI("https://github.com/herbstmensch/wekaflott/issues"));
+		} catch (Throwable e) {
+			AxtresLogger.error("Fehler beim Melden eines Fehlers aufgetreten.", e);
+		}
+	}
+	
+	public void bugMeldenMail() {
+		try {
+			Desktop.getDesktop().mail(new URI("mailto:mail@timherbst.de?subject=WeKaFlott%20Fehlermeldung"));
+		} catch (Throwable e) {
+			AxtresLogger.error("Fehler beim Melden eines Fehlers aufgetreten.", e);
+		}
 	}
 
 }

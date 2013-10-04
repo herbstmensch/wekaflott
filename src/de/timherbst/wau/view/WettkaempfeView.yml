@@ -18,9 +18,9 @@ JPanel(name=wettkaempfePanel):
     - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
         - JButton(action=newEinzelwettkampf, focusPainted=false)
         - JButton(action=newMannschaftswettkampf, focusPainted=false)
-        - JButton(action=deleteWettkampf, hideActionText=true, focusPainted=false)
+        - JButton(action=deleteWettkampf, hideActionText=false, focusPainted=false)
         - ToolBarSeparator()
-        - JButton(action=openErfassung, focusPainted=false)
+        - JButton(action=openErfassung, hideActionText=true, focusPainted=false)
         - ToolBarSeparator()
         - JButton(action=showAuswertung, hideActionText=true, focusPainted=false)
         - JButton(action=printAuswertungPDF, hideActionText=true, focusPainted=false)

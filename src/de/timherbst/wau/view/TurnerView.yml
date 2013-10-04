@@ -9,14 +9,12 @@ JPanel(name=turnerPanel):
         - JMenuItem(action=zuWettkampf)
         - JMenuItem(action=zuRiege)
     - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
-        - JButton(action=newTurner, hideActionText=true, focusPainted=false)
-        - JButton(action=deleteTurner, hideActionText=true, focusPainted=false)
+        - JButton(action=newTurner, hideActionText=false, focusPainted=false)
+        - JButton(action=deleteTurner, hideActionText=false, focusPainted=false)
         - ToolBarSeparator()
-        - JButton(name=btnZuMannschaft, action=zuMannschaft, focusPainted=false)
-        - ToolBarSeparator()
-        - JButton(name=btnZuWettkampf, action=zuWettkampf, focusPainted=false)
-        - ToolBarSeparator()
-        - JButton(name=btnZuRiege, action=zuRiege, focusPainted=false)
+        - JButton(name=btnZuMannschaft, action=zuMannschaft, hideActionText=false, focusPainted=false)
+        - JButton(name=btnZuWettkampf, action=zuWettkampf, hideActionText=false, focusPainted=false)
+        - JButton(name=btnZuRiege, action=zuRiege, hideActionText=false, focusPainted=false)
     - JPanel(name=tablePanel):
         - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
             JTable(name=table, fillsViewportHeight=true)

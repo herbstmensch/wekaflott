@@ -15,6 +15,7 @@ import de.timherbst.wau.util.Formatter;
 public class WettkampfTagPropertiesWindow extends JDialog {
 
 	private static final long serialVersionUID = -2541536572046492142L;
+	private boolean result = false;
 	private JTextField txtVeranstaltung;
 	private JTextField txtOrt;
 	private JTextField txtDatum;
@@ -44,11 +45,19 @@ public class WettkampfTagPropertiesWindow extends JDialog {
 		WettkampfTag.get().setName(txtVeranstaltung.getText());
 		WettkampfTag.get().setOrt(txtOrt.getText());
 
-		cancel();
+		result = true;
+		setVisible(false);
 	}
 
+	@SuppressWarnings("unused")
 	private void cancel() {
+		result = false;
 		setVisible(false);
+	}
+
+	public boolean rename() {
+		setVisible(true);
+		return result;
 	}
 
 }

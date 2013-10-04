@@ -8,9 +8,9 @@ JPanel(name=riegenPanel):
     - JToolBar(name=toolBar, floatable=false, orientation=HORIZONTAL, rollover=true):
         - JButton(action=newEinzelRiege, focusPainted=false)
         - JButton(action=newMannschaftsRiege, focusPainted=false)
-        - JButton(action=deleteRiege, hideActionText=true, focusPainted=false)
+        - JButton(action=deleteRiege, hideActionText=false, focusPainted=false)
         - ToolBarSeparator()
-        - JButton(action=openErfassung, focusPainted=false)
+        - JButton(action=openErfassung, hideActionText=false, focusPainted=false)
     - JPanel(name=tablePanel):
         - JScrollPane(name=scrollPane1, vScrollBar=asNeeded, hScrollBar=asNeeded):
             JTable(name=table, fillsViewportHeight=true)
