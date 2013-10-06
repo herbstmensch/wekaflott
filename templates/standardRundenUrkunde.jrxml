@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="standardUrkunde" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="39579037-3250-4df7-9072-de2255d70fe8">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="2"/>
-	<property name="ireport.y" value="399"/>
+	<property name="ireport.y" value="475"/>
 	<property name="ireport.background.image.properties" value="true,true,0.25,-8,-8,0,0,171,126"/>
 	<field name="mannschaft" class="java.lang.String"/>
 	<field name="veranstaltung" class="java.lang.String"/>
@@ -21,46 +21,46 @@
 	<detail>
 		<band height="493">
 			<textField>
-				<reportElement uuid="5b2f29f0-ceb0-4f25-be5d-c570dbaa62e4" x="0" y="19" width="555" height="36"/>
+				<reportElement uuid="5b2f29f0-ceb0-4f25-be5d-c570dbaa62e4" x="100" y="19" width="455" height="36"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="24" isBold="true" pdfFontName="Helvetica" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{turner}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement uuid="327e2cbb-1950-4b58-ba05-c7c3e9864c6f" x="0" y="105" width="555" height="30"/>
+				<reportElement uuid="327e2cbb-1950-4b58-ba05-c7c3e9864c6f" x="100" y="105" width="455" height="30"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="18" isBold="true" pdfFontName="Helvetica" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{veranstaltung}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement uuid="292089f5-4b9e-40d9-a9c2-d321a951998c" x="0" y="166" width="555" height="25"/>
+				<reportElement uuid="292089f5-4b9e-40d9-a9c2-d321a951998c" x="100" y="166" width="455" height="25"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="18" isBold="true" pdfFontName="Helvetica" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{wettkampf}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement uuid="ef1bc8c0-6890-497a-a4bf-ab2ba509ecdd" x="0" y="231" width="555" height="23"/>
+				<reportElement uuid="ef1bc8c0-6890-497a-a4bf-ab2ba509ecdd" x="100" y="231" width="455" height="23"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="16" isBold="true" pdfFontName="Helvetica" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tabellenPunkte}+":"+$F{gegenPunkte}+ " Punkten"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement uuid="bfa2ad66-1fd9-4afc-be13-1ebe337b4e73" x="0" y="289" width="555" height="22"/>
+				<reportElement uuid="bfa2ad66-1fd9-4afc-be13-1ebe337b4e73" x="100" y="289" width="455" height="22"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="16" isBold="true" pdfFontName="Helvetica" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{platzierung} + ". Platz"]]></textFieldExpression>
 			</textField>
 			<image scaleImage="RetainShape">
-				<reportElement uuid="be123be3-7006-4f3d-9899-51c9a9ed37b7" x="95" y="326" width="120" height="79"/>
+				<reportElement uuid="be123be3-7006-4f3d-9899-51c9a9ed37b7" x="155" y="326" width="120" height="79"/>
 				<imageExpression><![CDATA["./templates/unterschrift.png"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement uuid="9e4e0b8f-8615-4b1d-9451-3d44d5979cdb" x="0" y="55" width="555" height="36"/>
+				<reportElement uuid="9e4e0b8f-8615-4b1d-9451-3d44d5979cdb" x="100" y="55" width="455" height="36"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="18" isBold="true" pdfFontName="Helvetica" isPdfEmbedded="false"/>
 				</textElement>

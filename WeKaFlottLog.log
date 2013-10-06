@@ -28759,3 +28759,291 @@ java.net.URISyntaxException: Illegal character in opaque part at index 43: mailt
 2013-10-05 01:05:25,633 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
 2013-10-05 01:05:25,633 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
 2013-10-05 01:05:25,755 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-06 09:59:22,733 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-06 09:59:22.732****************
+2013-10-06 09:59:22,734 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-06 09:59:22,734 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-06 09:59:22,834 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-06 09:59:22,834 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-06 09:59:22,955 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-06 10:10:15,837 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 1
+2013-10-06 10:10:19,104 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 1
+2013-10-06 10:11:19,005 INFO  [AWT-EventQueue-0] - *********LOGGING STARTED 2013-10-06 10:11:19.004****************
+2013-10-06 10:11:19,006 INFO  [AWT-EventQueue-0] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-06 10:11:19,006 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+2013-10-06 10:11:19,109 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: GTK look and feel
+2013-10-06 10:11:19,109 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-06 10:11:19,236 INFO  [AWT-EventQueue-0] - User Dir: /home/tim/Development/projects/java/Wettkampferfassung/WAu
+2013-10-06 10:11:38,314 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 1
+2013-10-06 10:11:38,350 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 10:11:38,350 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 2
+2013-10-06 10:11:38,362 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 10:11:38,362 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 3
+2013-10-06 10:11:38,377 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 10:11:38,377 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 4
+2013-10-06 10:11:38,391 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 10:11:38,391 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege KM
+2013-10-06 10:11:38,401 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 10:29:52,552 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 10:29:52,552 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 10:29:52,552 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 10:29:52,552 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 10:29:52,552 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 10:29:52,552 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 10:29:52,553 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 10:29:52,553 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 10:29:52,553 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 10:29:52,553 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 10:29:59,778 INFO  [AWT-EventQueue-0] - Tab RG: Riege 3 closed
+2013-10-06 10:30:05,326 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 3
+2013-10-06 10:30:05,334 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 10:32:45,039 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 10:32:45,039 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 10:32:45,039 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 10:32:45,039 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 10:32:45,039 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 10:32:45,040 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 10:32:45,040 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 10:32:45,040 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 10:32:45,040 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 10:32:45,040 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 10:34:29,203 ERROR [AWT-EventQueue-0] - getWertung
+java.text.ParseException: Unparseable number: ""
+	at java.text.NumberFormat.parse(NumberFormat.java:350)
+	at de.timherbst.wau.util.Formatter.parse(Formatter.java:29)
+	at de.timherbst.wau.view.wertungen.PStufenWertungField.getWertung(PStufenWertungField.java:89)
+	at de.timherbst.wau.view.wertungen.WertungCellEditor.getCellEditorValue(WertungCellEditor.java:31)
+	at javax.swing.JTable.editingStopped(JTable.java:4721)
+	at javax.swing.AbstractCellEditor.fireEditingStopped(AbstractCellEditor.java:141)
+	at javax.swing.AbstractCellEditor.stopCellEditing(AbstractCellEditor.java:85)
+	at de.timherbst.wau.view.wertungen.WertungCellEditor.stopCellEditing(WertungCellEditor.java:68)
+	at javax.swing.plaf.basic.BasicTableUI$Actions.actionPerformed(BasicTableUI.java:496)
+	at javax.swing.SwingUtilities.notifyAction(SwingUtilities.java:1661)
+	at javax.swing.JComponent.processKeyBinding(JComponent.java:2869)
+	at javax.swing.JTable.processKeyBinding(JTable.java:5258)
+	at javax.swing.JComponent.processKeyBindings(JComponent.java:2930)
+	at javax.swing.JComponent.processKeyEvent(JComponent.java:2832)
+	at java.awt.Component.processEvent(Component.java:6282)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1895)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:762)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1027)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:899)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:727)
+	at java.awt.Component.dispatchEventImpl(Component.java:4731)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+2013-10-06 10:34:29,207 ERROR [AWT-EventQueue-0] - Zelle enthält Fehler
+javax.management.RuntimeErrorException
+	at de.timherbst.wau.view.wertungen.PStufenWertungField.getWertung(PStufenWertungField.java:92)
+	at de.timherbst.wau.view.wertungen.WertungCellEditor.getCellEditorValue(WertungCellEditor.java:31)
+	at javax.swing.JTable.editingStopped(JTable.java:4721)
+	at javax.swing.AbstractCellEditor.fireEditingStopped(AbstractCellEditor.java:141)
+	at javax.swing.AbstractCellEditor.stopCellEditing(AbstractCellEditor.java:85)
+	at de.timherbst.wau.view.wertungen.WertungCellEditor.stopCellEditing(WertungCellEditor.java:68)
+	at javax.swing.plaf.basic.BasicTableUI$Actions.actionPerformed(BasicTableUI.java:496)
+	at javax.swing.SwingUtilities.notifyAction(SwingUtilities.java:1661)
+	at javax.swing.JComponent.processKeyBinding(JComponent.java:2869)
+	at javax.swing.JTable.processKeyBinding(JTable.java:5258)
+	at javax.swing.JComponent.processKeyBindings(JComponent.java:2930)
+	at javax.swing.JComponent.processKeyEvent(JComponent.java:2832)
+	at java.awt.Component.processEvent(Component.java:6282)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1895)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:762)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1027)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:899)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:727)
+	at java.awt.Component.dispatchEventImpl(Component.java:4731)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Caused by: java.lang.Error: java.text.ParseException: Unparseable number: ""
+	... 44 more
+Caused by: java.text.ParseException: Unparseable number: ""
+	at java.text.NumberFormat.parse(NumberFormat.java:350)
+	at de.timherbst.wau.util.Formatter.parse(Formatter.java:29)
+	at de.timherbst.wau.view.wertungen.PStufenWertungField.getWertung(PStufenWertungField.java:89)
+	... 43 more
+2013-10-06 10:36:53,575 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 10:36:53,575 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 10:36:53,575 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 10:36:53,575 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 10:36:53,575 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 10:36:53,575 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 10:36:53,576 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 10:36:53,576 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 10:36:53,576 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 10:36:53,576 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:07:23,588 INFO  [AWT-EventQueue-0] - Tab RG: Riege 3 closed
+2013-10-06 11:07:25,957 INFO  [AWT-EventQueue-0] - Tab RG: Riege 1 closed
+2013-10-06 11:07:26,762 INFO  [AWT-EventQueue-0] - Tab RG: Riege 2 closed
+2013-10-06 11:07:27,342 INFO  [AWT-EventQueue-0] - Tab RG: Riege 4 closed
+2013-10-06 11:07:34,838 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 1
+2013-10-06 11:07:34,857 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:07:34,857 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 2
+2013-10-06 11:07:34,864 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:07:34,864 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 3
+2013-10-06 11:07:34,870 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:07:34,870 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 4
+2013-10-06 11:07:34,876 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:15:02,391 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:15:02,392 INFO  [AWT-EventQueue-0] - Riege 4 was removed
+2013-10-06 11:15:02,392 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:15:02,392 INFO  [AWT-EventQueue-0] - Riege 3 was removed
+2013-10-06 11:15:02,392 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:15:02,392 INFO  [AWT-EventQueue-0] - Riege 2 was removed
+2013-10-06 11:15:02,393 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:15:02,393 INFO  [AWT-EventQueue-0] - Riege 1 was removed
+2013-10-06 11:15:02,393 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:15:02,393 INFO  [AWT-EventQueue-0] - Riege KM was removed
+2013-10-06 11:16:12,632 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 1
+2013-10-06 11:16:12,651 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:16:12,651 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 2
+2013-10-06 11:16:12,659 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:16:12,659 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 3
+2013-10-06 11:16:12,665 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:16:12,665 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 4
+2013-10-06 11:16:12,671 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:16:12,671 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege KM
+2013-10-06 11:16:12,676 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 11:48:27,113 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
+2013-10-06 11:50:37,794 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:37,794 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:37,794 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:37,794 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:37,795 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:37,795 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:37,795 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:37,795 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:37,795 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:37,795 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:50:43,668 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:43,668 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:43,668 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:43,668 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:43,668 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:43,668 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:43,668 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:43,669 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:43,669 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:43,669 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:50:44,823 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:44,823 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:44,823 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:44,823 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:44,823 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:44,823 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:44,823 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:44,824 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:44,824 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:44,824 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:50:45,761 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:45,761 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:45,761 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:45,762 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:45,762 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:45,762 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:45,762 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:45,762 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:45,762 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:45,762 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:46,757 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:46,758 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:46,758 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:50:47,960 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:47,960 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:47,960 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:47,961 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:47,961 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:47,961 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:47,961 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:47,961 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:47,961 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:47,961 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:50:55,007 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:55,007 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:55,007 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:55,007 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:55,008 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:55,008 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:55,008 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:55,008 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:55,008 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:55,008 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:50:57,496 INFO  [AWT-EventQueue-0] - Checking existence of Riege 4
+2013-10-06 11:50:57,496 INFO  [AWT-EventQueue-0] - Riege 4 exists
+2013-10-06 11:50:57,496 INFO  [AWT-EventQueue-0] - Checking existence of Riege 3
+2013-10-06 11:50:57,496 INFO  [AWT-EventQueue-0] - Riege 3 exists
+2013-10-06 11:50:57,496 INFO  [AWT-EventQueue-0] - Checking existence of Riege 2
+2013-10-06 11:50:57,497 INFO  [AWT-EventQueue-0] - Riege 2 exists
+2013-10-06 11:50:57,497 INFO  [AWT-EventQueue-0] - Checking existence of Riege 1
+2013-10-06 11:50:57,497 INFO  [AWT-EventQueue-0] - Riege 1 exists
+2013-10-06 11:50:57,497 INFO  [AWT-EventQueue-0] - Checking existence of Riege KM
+2013-10-06 11:50:57,497 INFO  [AWT-EventQueue-0] - Riege KM exists
+2013-10-06 11:51:20,502 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 7.pdf
+2013-10-06 11:53:44,063 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 8.pdf
+2013-10-06 11:56:42,979 INFO  [AWT-EventQueue-0] - Tab RG: Riege KM closed
+2013-10-06 12:03:22,518 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 17.pdf
+2013-10-06 12:08:08,900 INFO  [AWT-EventQueue-0] - Tab RG: Riege 4 closed
+2013-10-06 12:08:11,126 INFO  [AWT-EventQueue-0] - Tab RG: Riege 1 closed
+2013-10-06 12:08:12,051 INFO  [AWT-EventQueue-0] - Tab RG: Riege 2 closed
+2013-10-06 12:08:43,436 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 9.pdf
+2013-10-06 12:12:55,723 INFO  [AWT-EventQueue-0] - Tab RG: Riege 3 closed
+2013-10-06 12:13:02,185 INFO  [AWT-EventQueue-0] - Open Erfassung for: Riege 1
+2013-10-06 12:13:02,212 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-06 12:13:35,020 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 16.pdf
+2013-10-06 12:15:13,631 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 15.pdf
+2013-10-06 12:28:47,310 INFO  [AWT-EventQueue-0] - Tab RG: Riege 1 closed
+2013-10-06 12:29:09,288 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 10.pdf
+2013-10-06 12:29:44,000 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 9.pdf
+2013-10-06 12:30:29,491 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3.pdf

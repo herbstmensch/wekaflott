@@ -99,7 +99,7 @@ public class ErfassungHostView extends JPanel implements EventListener {
 		JLabel lbl = new JLabel(label + "   ");
 		lbl.setOpaque(false);
 		pnl.add(lbl);
-		JButton b = new JButton("", new ImageIcon(getClass().getResource("/icons/r16/delete.png")));
+		JButton b = new JButton("", new ImageIcon(getClass().getResource("/icons/r16/cancel.png")));
 		b.setBorder(null);
 		b.setBorderPainted(false);
 		b.setFocusPainted(false);
