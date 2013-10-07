@@ -13,5 +13,5 @@ JDialog(name=wktProperties, title=Wettkampftag Eigenschaften, iconImage=/icons/r
         "Veranstaltung" txtVeranstaltung
         "Ort"           txtOrt
         "Datum"         txtDatum
-        >btnCancel+*=1,btnOk=1
+        >btnOk+*=1,btnCancel=1
         {head: dock north}

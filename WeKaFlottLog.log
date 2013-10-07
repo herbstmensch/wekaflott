@@ -29047,3 +29047,116 @@ Caused by: java.text.ParseException: Unparseable number: ""
 2013-10-06 12:29:09,288 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 10.pdf
 2013-10-06 12:29:44,000 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 9.pdf
 2013-10-06 12:30:29,491 INFO  [AWT-EventQueue-0] - Opening Auswertun: /home/tim/Dokumente/Wettkampf Auswertungen/GMM_20131006/siegerlisten/Gau-Mannschafts-Meisterschaften 2013 - Wettkampf 3.pdf
+2013-10-07 11:50:59,083 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:50:59.082****************
+2013-10-07 11:50:59,094 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:50:59,095 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+java.lang.NoSuchFieldException: awtAppClassName
+	at java.lang.Class.getDeclaredField(Class.java:1938)
+	at de.timherbst.wau.application.Application.main(Application.java:100)
+2013-10-07 11:50:59,139 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2013-10-07 11:50:59,170 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Windows
+2013-10-07 11:50:59,170 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:50:59,363 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:51:13,471 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:51:13.47****************
+2013-10-07 11:51:13,472 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:51:13,472 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:51:13,502 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2013-10-07 11:51:13,534 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Windows
+2013-10-07 11:51:13,534 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:51:13,677 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:51:56,550 INFO  [AWT-EventQueue-0] - Open Erfassung for: Wettkampf 1
+2013-10-07 11:51:56,627 INFO  [AWT-EventQueue-0] - Created new tab
+2013-10-07 11:51:59,144 INFO  [AWT-EventQueue-0] - Tab WK: Wettkampf 1 closed
+2013-10-07 11:53:24,146 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:53:24.145****************
+2013-10-07 11:53:24,147 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:53:24,147 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:53:24,196 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-10-07 11:53:24,268 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-10-07 11:53:24,268 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:53:24,403 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:54:42,099 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:54:42.098****************
+2013-10-07 11:54:42,100 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:54:42,100 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:54:42,137 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-10-07 11:54:42,208 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-10-07 11:54:42,208 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:54:42,338 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:55:09,510 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:55:09.509****************
+2013-10-07 11:55:09,511 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:55:09,511 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:55:09,546 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-10-07 11:55:09,617 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-10-07 11:55:09,618 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:55:09,749 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:55:27,203 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:55:27.203****************
+2013-10-07 11:55:27,204 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:55:27,204 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:55:27,241 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-10-07 11:55:27,317 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-10-07 11:55:27,317 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:55:27,459 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:56:18,368 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:56:18.367****************
+2013-10-07 11:56:18,369 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:56:18,369 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:56:18,406 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-10-07 11:56:18,480 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-10-07 11:56:18,480 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:56:18,617 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:56:55,489 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:56:55.488****************
+2013-10-07 11:56:55,490 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:56:55,490 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:56:55,549 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-10-07 11:56:55,627 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-10-07 11:56:55,627 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:56:55,832 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:57:39,570 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:57:39.569****************
+2013-10-07 11:57:39,571 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:57:39,571 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:57:39,607 INFO  [AWT-EventQueue-0] - Setting LaF: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2013-10-07 11:57:39,678 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Nimbus
+2013-10-07 11:57:39,678 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:57:39,809 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:57:51,933 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:57:51.932****************
+2013-10-07 11:57:51,934 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:57:51,934 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:57:51,953 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2013-10-07 11:57:51,986 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Windows
+2013-10-07 11:57:51,986 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:57:52,135 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 11:58:23,698 ERROR [Thread-1] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:90)
+2013-10-07 11:59:37,052 INFO  [main] - *********LOGGING STARTED 2013-10-07 11:59:37.052****************
+2013-10-07 11:59:37,052 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 11:59:37,052 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 11:59:37,083 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2013-10-07 11:59:37,114 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Windows
+2013-10-07 11:59:37,114 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 11:59:37,255 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 12:00:04,103 INFO  [main] - *********LOGGING STARTED 2013-10-07 12:00:04.103****************
+2013-10-07 12:00:04,119 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 12:00:04,119 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 12:00:04,134 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2013-10-07 12:00:04,166 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Windows
+2013-10-07 12:00:04,166 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 12:00:04,306 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau
+2013-10-07 12:00:23,698 ERROR [Thread-1] - \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileNotFoundException: \home\tim\Dokumente\Wettkampf Auswertungen\autosave.aswkt (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at de.timherbst.wau.service.StorageService.saveWettkampftag(StorageService.java:23)
+	at de.timherbst.wau.service.StorageService.autoSave(StorageService.java:74)
+	at de.timherbst.wau.service.StorageService$AutoSaveThread.run(StorageService.java:90)
+2013-10-07 12:00:27,911 INFO  [main] - *********LOGGING STARTED 2013-10-07 12:00:27.911****************
+2013-10-07 12:00:27,911 INFO  [main] - AxtresLogger initialized. Log Level set to: INFO
+2013-10-07 12:00:27,911 WARN  [main] - awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM
+2013-10-07 12:00:27,926 INFO  [AWT-EventQueue-0] - Setting LaF: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2013-10-07 12:00:27,957 INFO  [AWT-EventQueue-0] - Setted Look And Feel to: Windows
+2013-10-07 12:00:27,957 INFO  [AWT-EventQueue-0] - Setting Locale: de,DE
+2013-10-07 12:00:28,098 INFO  [AWT-EventQueue-0] - User Dir: D:\Workspaces\WeKaFlott\Wau

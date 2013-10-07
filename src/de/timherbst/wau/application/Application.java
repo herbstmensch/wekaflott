@@ -95,12 +95,13 @@ public class Application {
 
 	public static void main(final String[] args) {
 		try {
+			//Setzen dieser Eigenschaft ist für den Gnome-Desktop wichtig
 			Toolkit xToolkit = Toolkit.getDefaultToolkit();
 			java.lang.reflect.Field awtAppClassNameField = xToolkit.getClass().getDeclaredField("awtAppClassName");
 			awtAppClassNameField.setAccessible(true);
 			awtAppClassNameField.set(xToolkit, NAME);
 		} catch (Throwable t) {
-			t.printStackTrace();
+			AxtresLogger.warn("awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM");
 		}
 
 		new Application(args);

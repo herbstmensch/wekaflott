@@ -1,4 +1,4 @@
-JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung", iconImage=/icons/r16/auswertung.png):
+JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung", iconImage=/icons/r24/rundenwettkampf.png):
     - Action(name=ok, text="OK", toolTipText="OK", onAction=ok, icon=/icons/r16/ok.png)
     - JButton(name=btnOk, hideActionText=true, action=ok)
     - Action(name=addWKTag, text="Wettkampftag hinzufügen", toolTipText="Wettkampftag hinzufügen", onAction=addWKTag, icon=/icons/r24/add.png)

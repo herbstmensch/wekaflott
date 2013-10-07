@@ -1,4 +1,4 @@
-JDialog(size=400x300, name=infoWindow, title=Info..., iconImage=/icons/r24/rename_wkt.png):
+JDialog(size=400x300, name=infoWindow, title=Info..., iconImage=/icons/r24/info.png):
     - Action(name=close, text="Schließen", toolTipText="Schließen", onAction=close, icon=/icons/r16/ok.png)
     - JPanel(name=head, background=WHITE):
         - JLabel(name=lblShowAppName, icon=/icons/r32/app.png, font=bold 24pt, iconTextGap=67, text="<html>Hier werden die Eigenschaften des Wettkampftages eingestellt.</html>")

@@ -42,7 +42,7 @@ JFrame(name=dialog, size=850x600, defaultCloseOperation=doNothingOnClose, iconIm
         - JSeparator()
         - JMenuItem(action=openInfo)
     - JPanel(name=topPanel):
-        - JButton(name=fileBtn, action=popupFile, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false)
+        - JButton(name=fileBtn, size=32x32, action=popupFile, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false, contentAreaFilled=false)
         - JPanel(name=choosePanel):
             - JButton(name=turnerBtn, action=showTurner, focusPainted=false, selected=true, focusable=false, rolloverEnabled=false)
             - JButton(name=mannschaftBtn, action=showMannschaften, focusPainted=false, focusable=false, rolloverEnabled=false)
@@ -50,7 +50,7 @@ JFrame(name=dialog, size=850x600, defaultCloseOperation=doNothingOnClose, iconIm
             - JButton(name=riegeBtn, action=showRiegen, focusPainted=false, focusable=false, rolloverEnabled=false)
             - JButton(name=erfassungBtn, action=showErfassung, focusPainted=false, focusable=false, rolloverEnabled=false)
             - FlowLayout(alignment=center, hgap=0)
-        - JButton(name=settingsBtn, action=popupSettings, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false)
+        - JButton(name=settingsBtn, action=popupSettings, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false, contentAreaFilled=false)
         - MigLayout: |
             [[fillx]]
             [pref!][growx, fill][pref!]
