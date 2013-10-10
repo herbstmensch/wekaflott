@@ -68,7 +68,5 @@ public class MannschaftsAuswertungBean {
 	public void setListMannschaft(JRBeanCollectionDataSource listMannschaft) {
 		this.listMannschaft = listMannschaft;
 	}
-	
-	
 
 }

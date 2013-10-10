@@ -9,9 +9,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
-import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -336,7 +334,7 @@ public class MainFrame extends JFrame implements EventListener {
 	public void popupFileMenu() {
 		fileMenu.show(fileBtn, 0, 30);
 	}
-	
+
 	public void bugMelden() {
 		try {
 			Desktop.getDesktop().browse(new URI("https://github.com/herbstmensch/wekaflott/issues"));
@@ -344,7 +342,7 @@ public class MainFrame extends JFrame implements EventListener {
 			AxtresLogger.error("Fehler beim Melden eines Fehlers aufgetreten.", e);
 		}
 	}
-	
+
 	public void bugMeldenMail() {
 		try {
 			Desktop.getDesktop().mail(new URI("mailto:mail@timherbst.de?subject=WeKaFlott%20Fehlermeldung"));

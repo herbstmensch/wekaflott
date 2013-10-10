@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Vector;
 
 import javax.swing.Action;
-import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -66,8 +65,8 @@ public class RundenwettkampfDialog extends JDialog {
 		tfVeranstaltung.setText(WettkampfTag.get().getName());
 		tableWettkampftage.setModel(wettkampftagemodel);
 		tableWettkaempfe.setModel(wettkaempfemodel);
-//		tableWettkaempfe.setRowSelectionAllowed(true);
-//		tableWettkaempfe.setCellSelectionEnabled(false);
+		// tableWettkaempfe.setRowSelectionAllowed(true);
+		// tableWettkaempfe.setCellSelectionEnabled(false);
 
 		tableWettkaempfe.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 
@@ -105,7 +104,7 @@ public class RundenwettkampfDialog extends JDialog {
 
 	private void updateTabelle(List<MannschaftsWettkampf> wettkaempfe) {
 		tabelle = AuswertungService.getRundenWKAuswertung(tfVeranstaltung.getText(), wettkaempfe);
-		auswertung = AuswertungService.getAuswertung(wettkaempfe.get(wettkaempfe.size()-1));
+		auswertung = AuswertungService.getAuswertung(wettkaempfe.get(wettkaempfe.size() - 1));
 		tableTabelle.setModel(new TabellenModel(tabelle));
 	}
 
@@ -307,7 +306,7 @@ public class RundenwettkampfDialog extends JDialog {
 			case 2:
 				return tabelle.get(rowIndex).getTabellenPunkte() + ":" + tabelle.get(rowIndex).getGegenPunkte();
 			case 3:
-				return new DecimalFormat("#00.00").format( tabelle.get(rowIndex).getPunkte());
+				return new DecimalFormat("#00.00").format(tabelle.get(rowIndex).getPunkte());
 			}
 			return null;
 		}

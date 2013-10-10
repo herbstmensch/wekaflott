@@ -28,7 +28,7 @@ public class StorageService {
 			StorageService.filename = filename;
 		Application.getMainFrame().setDirty(false);
 		if (!isAutosave)
-			Application.getMainFrame().setStatus(filename + " gespeichert ("+new SimpleDateFormat("HH:mm:ss").format(new Date(System.currentTimeMillis()))+")");
+			Application.getMainFrame().setStatus(filename + " gespeichert (" + new SimpleDateFormat("HH:mm:ss").format(new Date(System.currentTimeMillis())) + ")");
 		else
 			Application.getMainFrame().setStatus("Autosave '" + filename + "' um " + new SimpleDateFormat("HH:mm:ss").format(new Date(System.currentTimeMillis())));
 	}

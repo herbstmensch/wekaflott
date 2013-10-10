@@ -1,6 +1,6 @@
 JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung", iconImage=/icons/r24/rundenwettkampf.png):
     - Action(name=ok, text="OK", toolTipText="OK", onAction=ok, icon=/icons/r16/ok.png)
-    - JButton(name=btnOk, hideActionText=true, action=ok)
+    - JButton(name=btnOk, hideActionText=false, action=ok)
     - Action(name=addWKTag, text="Wettkampftag hinzufügen", toolTipText="Wettkampftag hinzufügen", onAction=addWKTag, icon=/icons/r24/add.png)
     - Action(name=removeWKTag, text="Wettkampftag entfernen", toolTipText="Wettkampftag entfernen", onAction=removeWKTag, icon=/icons/r24/delete.png)
     - Action(name=printPDF, text="Siegerliste als PDF drucken", toolTipText="Siegerliste als PDF drucken", onAction=printPDF, icon=/icons/r24/auswertung_pdf.png, enabled=false)
@@ -9,6 +9,7 @@ JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung",
     - JToolBar(name=toolbar, floatable=false, orientation=HORIZONTAL, rollover=true):
         - JButton(action=addWKTag, hideActionText=false)
         - JButton(action=removeWKTag, hideActionText=false)
+        - JCheckBox(name=ch)
         - ToolBarSeparator()
         - JButton(name=btnPrintPDF, action=printPDF, hideActionText=true)
         - JButton(name=btnPrintXLS, action=printXLS, hideActionText=true)
@@ -41,11 +42,9 @@ JDialog(name=rundenAuswertung, size=800x400, title="Rundenwettkampf Auswertung",
             - JScrollPane(name=scrollPane3, vScrollBar=asNeeded, hScrollBar=asNeeded):
                 JTable(name=tableTabelle, fillsViewportHeight=true)
             - MigLayout: |
-                [[insets 0, gap 0]]
                 [grow]
                 scrollPane3 [grow]
     - MigLayout: |
-        [[insets 0, gap 0]]
         [grow]
         toolbar     [min!]
         split1      [grow]

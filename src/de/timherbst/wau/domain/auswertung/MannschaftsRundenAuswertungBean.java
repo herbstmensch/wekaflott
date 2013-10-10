@@ -20,7 +20,7 @@ public class MannschaftsRundenAuswertungBean {
 		this.jahrgaenge = jahrgaenge;
 		this.listEinzel = listEinzel;
 		this.listMannschaft = listMannschaft;
-		this.listTabelle=listTabelle;
+		this.listTabelle = listTabelle;
 	}
 
 	public String getWettkampf() {
@@ -78,7 +78,5 @@ public class MannschaftsRundenAuswertungBean {
 	public void setListTabelle(JRBeanCollectionDataSource listTabelle) {
 		this.listTabelle = listTabelle;
 	}
-	
-	
 
 }
