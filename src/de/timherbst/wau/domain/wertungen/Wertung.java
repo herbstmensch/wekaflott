@@ -3,6 +3,9 @@ package de.timherbst.wau.domain.wertungen;
 import java.io.Serializable;
 import java.util.Vector;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+@XStreamAlias("Wertung")
 public abstract class Wertung {
 	public static final Wertungsmodus WERTUNGSMODUS_CdP = new Wertungsmodus("Code de Pointage");
 	public static final Wertungsmodus WERTUNGSMODUS_PStufen = new Wertungsmodus("P-Stufen");

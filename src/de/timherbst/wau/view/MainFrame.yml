@@ -18,6 +18,7 @@ JFrame(name=dialog, size=850x600, defaultCloseOperation=doNothingOnClose, iconIm
     - Action(name=bugMelden, text="Fehler Online melden", onAction=bugMelden, icon=/icons/r24/bug.png)
     - Action(name=bugMeldenMail, text="Fehler per E-Mail melden", onAction=bugMeldenMail, icon=/icons/r24/bug_mail.png)
     - Action(name=openInfo, text="&Info...", onAction=openInfo, icon=/icons/r24/info.png)
+    - Action(name=json, text="JSON", onAction=json)
     - JPopupMenu(name=fileMenu):
         - JMenuItem(action=newWkt)
         - JMenuItem(action=openWkt)
@@ -39,16 +40,18 @@ JFrame(name=dialog, size=850x600, defaultCloseOperation=doNothingOnClose, iconIm
             - JSeparator()
             - JMenuItem(action=bugMelden)
             - JMenuItem(action=bugMeldenMail)
+            - JSeparator()
+            - JMenuItem(action=json)
         - JSeparator()
         - JMenuItem(action=openInfo)
     - JPanel(name=topPanel):
         - JButton(name=fileBtn, size=32x32, action=popupFile, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false, contentAreaFilled=false)
         - JPanel(name=choosePanel):
-            - JButton(name=turnerBtn, action=showTurner, focusPainted=false, selected=true, focusable=false, rolloverEnabled=false)
-            - JButton(name=mannschaftBtn, action=showMannschaften, focusPainted=false, focusable=false, rolloverEnabled=false)
-            - JButton(name=wettkampfBtn, action=showWettkaempfe, focusPainted=false, focusable=false, rolloverEnabled=false)
-            - JButton(name=riegeBtn, action=showRiegen, focusPainted=false, focusable=false, rolloverEnabled=false)
-            - JButton(name=erfassungBtn, action=showErfassung, focusPainted=false, focusable=false, rolloverEnabled=false)
+            - JButton(name=turnerBtn, action=showTurner, focusPainted=false, selected=true, focusable=false, rolloverEnabled=false, borderPainted=true, contentAreaFilled=true)
+            - JButton(name=mannschaftBtn, action=showMannschaften, focusPainted=false, focusable=false, rolloverEnabled=false, borderPainted=true, contentAreaFilled=true)
+            - JButton(name=wettkampfBtn, action=showWettkaempfe, focusPainted=false, focusable=false, rolloverEnabled=false, borderPainted=true, contentAreaFilled=true)
+            - JButton(name=riegeBtn, action=showRiegen, focusPainted=false, focusable=false, rolloverEnabled=false, borderPainted=true, contentAreaFilled=true)
+            - JButton(name=erfassungBtn, action=showErfassung, focusPainted=false, focusable=false, rolloverEnabled=false, borderPainted=true, contentAreaFilled=true)
             - FlowLayout(alignment=center, hgap=0)
         - JButton(name=settingsBtn, action=popupSettings, focusPainted=false, hideActionText=true, focusable=false, borderPainted=false, contentAreaFilled=false)
         - MigLayout: |

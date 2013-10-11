@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Vector;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import de.axtres.logging.main.AxtresLogger;
 import de.timherbst.wau.domain.riege.Riege;
 import de.timherbst.wau.domain.wettkampf.MannschaftsWettkampf;
@@ -11,14 +13,13 @@ import de.timherbst.wau.events.Event;
 import de.timherbst.wau.events.EventDispatcher;
 import de.timherbst.wau.exceptions.HasWettkampfException;
 
+@XStreamAlias("Mannschaft")
 public class Mannschaft implements Serializable {
 
 	private static final long serialVersionUID = -8418807999669812167L;
 
 	private String verein = "Verein";
 	private String name;
-
-	private List<Turner> turner = new Vector<Turner>();
 
 	private MannschaftsWettkampf wettkampf;
 	private Riege riege;
@@ -44,7 +45,11 @@ public class Mannschaft implements Serializable {
 	}
 
 	public List<Turner> getTurner() {
-		return turner;
+		List<Turner> l = new Vector<Turner>();
+		for (Turner t : WettkampfTag.get().getTurner())
+			if (this.equals(t.getMannschaft()))
+				l.add(t);
+		return l;
 	}
 
 	public void addTurner(Turner t) throws HasWettkampfException {
@@ -58,11 +63,7 @@ public class Mannschaft implements Serializable {
 		t.setMannschaft(this);
 		if (this.getWettkampf() != null)
 			t.initWertungen(this.getWettkampf().getWertungsmodus());
-		this.turner.add(t);
-		if (wettkampf != null)
-			t.setWettkampf(wettkampf);
-		if (riege != null)
-			t.setRiege(riege);
+
 		EventDispatcher.dispatchEvent(Event.TURNER_CHANGED);
 		EventDispatcher.dispatchEvent(Event.MANNSCHAFT_CHANGED);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPFTAG_CHANGED);
@@ -70,7 +71,6 @@ public class Mannschaft implements Serializable {
 
 	public void removeTurner(Turner t) {
 		AxtresLogger.info("Removing Turner " + t + " from Mannschaft " + this);
-		getTurner().remove(t);
 		t.setWettkampf(null);
 		t.setRiege(null);
 		try {

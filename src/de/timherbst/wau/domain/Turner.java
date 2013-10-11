@@ -2,6 +2,9 @@ package de.timherbst.wau.domain;
 
 import java.io.Serializable;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import de.axtres.logging.main.AxtresLogger;
 import de.timherbst.wau.domain.riege.Riege;
 import de.timherbst.wau.domain.wertungen.CdPWertung;
@@ -13,6 +16,7 @@ import de.timherbst.wau.events.Event;
 import de.timherbst.wau.events.EventDispatcher;
 import de.timherbst.wau.exceptions.HasWettkampfException;
 
+@XStreamAlias("Turner")
 public class Turner implements Serializable {
 
 	private static final long serialVersionUID = 8412472847826759190L;

@@ -2,6 +2,9 @@ package de.timherbst.wau.domain.riege;
 
 import java.io.Serializable;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+@XStreamAlias("Riege")
 public abstract class Riege implements Serializable {
 
 	private static final long serialVersionUID = -868908033808328851L;

@@ -6,6 +6,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+@XStreamAlias("Wertungen")
 public class Wertungen implements Serializable {
 
 	private static final long serialVersionUID = 1802579932147239022L;

@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Vector;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import de.timherbst.wau.domain.riege.EinzelRiege;
 import de.timherbst.wau.domain.riege.MannschaftsRiege;
 import de.timherbst.wau.domain.riege.Riege;
@@ -14,6 +16,7 @@ import de.timherbst.wau.events.Event;
 import de.timherbst.wau.events.EventDispatcher;
 import de.timherbst.wau.exceptions.HasWettkampfException;
 
+@XStreamAlias("WettkampfTag")
 public class WettkampfTag implements Serializable {
 
 	private static final long serialVersionUID = 2524662626105936234L;
@@ -23,10 +26,11 @@ public class WettkampfTag implements Serializable {
 	private String ort;
 	private Date datum;
 
-	private Vector<Wettkampf> wettkaempfe;
-	private Vector<Turner> turner;
-	private Vector<Mannschaft> mannschaften;
+
 	private Vector<Riege> riegen;
+	private Vector<Wettkampf> wettkaempfe;
+	private Vector<Mannschaft> mannschaften;
+	private Vector<Turner> turner;
 
 	private WettkampfTag() {
 		name = "Wettkampf Tag";
@@ -185,5 +189,7 @@ public class WettkampfTag implements Serializable {
 		getMannschaften().remove(m);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPFTAG_CHANGED);
 	}
+	
+	
 
 }

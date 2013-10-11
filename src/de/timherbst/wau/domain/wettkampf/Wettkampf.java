@@ -2,8 +2,11 @@ package de.timherbst.wau.domain.wettkampf;
 
 import java.io.Serializable;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import de.timherbst.wau.domain.wertungen.Wertung;
 
+@XStreamAlias("Wettkampf")
 public abstract class Wettkampf implements Serializable {
 
 	private static final long serialVersionUID = -2570588112678147223L;

@@ -4,11 +4,15 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Vector;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import de.timherbst.wau.domain.Mannschaft;
 import de.timherbst.wau.domain.Turner;
+import de.timherbst.wau.domain.WettkampfTag;
 import de.timherbst.wau.events.Event;
 import de.timherbst.wau.events.EventDispatcher;
 
+@XStreamAlias("MannschaftsRiege")
 public class MannschaftsRiege extends Riege implements Serializable {
 
 	public MannschaftsRiege(String name) {
@@ -17,20 +21,20 @@ public class MannschaftsRiege extends Riege implements Serializable {
 
 	private static final long serialVersionUID = 3774432493979662197L;
 
-	private List<Mannschaft> mannschaften = new Vector<Mannschaft>();
-
 	public List<Mannschaft> getMannschaften() {
-		return mannschaften;
+		List<Mannschaft> l = new Vector<Mannschaft>();
+		for (Mannschaft m : WettkampfTag.get().getMannschaften())
+			if (this.equals(m.getRiege()))
+				l.add(m);
+		return l;
 	}
 
 	public void addMannschaft(Mannschaft m) {
-		if (m.getRiege() != null)
-			((MannschaftsRiege) m.getRiege()).getMannschaften().remove(m);
-		m.setRiege(this);
-		this.mannschaften.add(m);
 		for (Turner t : m.getTurner()) {
 			t.setRiege(this);
 		}
+		m.setRiege(this);
+		
 		EventDispatcher.dispatchEvent(Event.RIEGE_CHANGED);
 		EventDispatcher.dispatchEvent(Event.MANNSCHAFT_CHANGED);
 		EventDispatcher.dispatchEvent(Event.TURNER_CHANGED);

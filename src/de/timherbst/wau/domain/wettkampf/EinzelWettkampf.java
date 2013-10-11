@@ -4,35 +4,36 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Vector;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import de.timherbst.wau.domain.Turner;
+import de.timherbst.wau.domain.WettkampfTag;
 import de.timherbst.wau.events.Event;
 import de.timherbst.wau.events.EventDispatcher;
 import de.timherbst.wau.exceptions.HasMannschaftException;
 
+@XStreamAlias("EinzelWettkampf")
 public class EinzelWettkampf extends Wettkampf implements Serializable {
 	private static final long serialVersionUID = 4554973205726013325L;
-
-	List<Turner> turner = new Vector<Turner>();
 
 	public EinzelWettkampf(String name) {
 		this.setName(name);
 	}
 
 	public List<Turner> getTurner() {
-		return turner;
+		List<Turner> l = new Vector<Turner>();
+		for (Turner t : WettkampfTag.get().getTurner())
+			if (this.equals(t.getWettkampf()))
+				l.add(t);
+		return l;
 	}
 
 	public void addTurner(Turner t) throws HasMannschaftException {
 		if (t.getMannschaft() != null) {
 			throw new HasMannschaftException();
 		}
-		if (t.getWettkampf() != null) {
-			if (t.getWettkampf() instanceof EinzelWettkampf)
-				((EinzelWettkampf) t.getWettkampf()).getTurner().remove(t);
-		}
 		t.setWettkampf(this);
 		t.initWertungen(this.getWertungsmodus());
-		turner.add(t);
 		EventDispatcher.dispatchEvent(Event.TURNER_CHANGED);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPF_CHANGED);
 	}
@@ -41,12 +42,7 @@ public class EinzelWettkampf extends Wettkampf implements Serializable {
 		if (t.getMannschaft() != null) {
 			throw new HasMannschaftException();
 		}
-		if (t.getWettkampf() != null) {
-			if (t.getWettkampf() instanceof EinzelWettkampf)
-				((EinzelWettkampf) t.getWettkampf()).getTurner().remove(t);
-		}
 		t.setWettkampf(null);
-		turner.remove(t);
 		EventDispatcher.dispatchEvent(Event.TURNER_CHANGED);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPF_CHANGED);
 	}

@@ -1,18 +1,9 @@
 package de.timherbst.wau.view;
 
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Calendar;
 
-import javax.swing.BorderFactory;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 import org.javabuilders.swing.SwingJavaBuilder;
 
@@ -38,12 +29,14 @@ public class InfoWindow extends JDialog {
 		setModalityType(ModalityType.APPLICATION_MODAL);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setResizable(false);
-		
+
 		lblShowAppName.setText("  " + Application.NAME);
 		lblShowVersion.setText(Application.VERSION_VIEW);
 		lblShowAutor.setText("Tim Herbst");
 		lblShowKontakt.setText("mail@timherbst.de");
-		lblShowCopyright.setText("© 2011" + (2011 == Calendar.getInstance().get(Calendar.YEAR) ? "" : " - " + Calendar.getInstance().get(Calendar.YEAR)));
+		lblShowCopyright.setText("© 2011"
+				+ (2011 == Calendar.getInstance().get(Calendar.YEAR) ? ""
+						: " - " + Calendar.getInstance().get(Calendar.YEAR)));
 		lblShowJavaVersion.setText(System.getProperty("java.version"));
 		lblShowRuntime.setText(System.getProperty("java.runtime.name"));
 		pack();

@@ -6,6 +6,7 @@ import java.util.Vector;
 
 import de.timherbst.wau.domain.Mannschaft;
 import de.timherbst.wau.domain.Turner;
+import de.timherbst.wau.domain.WettkampfTag;
 import de.timherbst.wau.events.Event;
 import de.timherbst.wau.events.EventDispatcher;
 
@@ -14,8 +15,6 @@ public class MannschaftsWettkampf extends Wettkampf implements Serializable {
 
 	Integer turnerProGeraet = 5;
 	Integer gewerteteTurnerProGeraet = 3;
-
-	List<Mannschaft> mannschaften = new Vector<Mannschaft>();
 
 	public MannschaftsWettkampf(String name) {
 		setName(name);
@@ -38,21 +37,22 @@ public class MannschaftsWettkampf extends Wettkampf implements Serializable {
 	}
 
 	public List<Mannschaft> getMannschaften() {
-		return mannschaften;
+		List<Mannschaft> l = new Vector<Mannschaft>();
+		for(Mannschaft m : WettkampfTag.get().getMannschaften())
+			if(this.equals(m.getWettkampf()))
+				l.add(m);
+		return l;
 	}
 
 	public List<Turner> getTurner() {
 		List<Turner> turner = new Vector<Turner>();
-		for (Mannschaft m : mannschaften)
+		for (Mannschaft m : getMannschaften())
 			turner.addAll(m.getTurner());
 		return turner;
 	}
 
 	public void addMannschaft(Mannschaft m) {
-		if (m.getWettkampf() != null)
-			m.getWettkampf().getMannschaften().remove(m);
 		m.setWettkampf(this);
-		mannschaften.add(m);
 		for (Turner t : m.getTurner()) {
 			t.setWettkampf(this);
 			t.initWertungen(this.getWertungsmodus());

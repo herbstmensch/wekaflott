@@ -2,6 +2,9 @@ package de.timherbst.wau.domain.wertungen;
 
 import java.io.Serializable;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+@XStreamAlias("PStufenWertung")
 public class PStufenWertung extends Wertung implements Serializable {
 
 	private static final long serialVersionUID = 3742504743775430850L;
