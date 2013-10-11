@@ -20,4 +20,9 @@ public class WeKaUtil {
 		return new File(StorageService.filename).getName();
 
 	}
+
+	public static boolean isLinuxSystem() {
+		String osName = System.getProperty("os.name").toLowerCase();
+		return osName.indexOf("linux") >= 0;
+	}
 }

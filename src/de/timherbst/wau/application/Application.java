@@ -1,6 +1,7 @@
 package de.timherbst.wau.application;
 
 import java.awt.Toolkit;
+import java.io.IOException;
 import java.util.Locale;
 
 import javax.swing.SwingUtilities;
@@ -13,6 +14,7 @@ import de.axtres.logging.main.AxtresLogger;
 import de.axtres.util.AppProperties;
 import de.timherbst.wau.service.StorageService;
 import de.timherbst.wau.service.StorageService.AutoSaveThread;
+import de.timherbst.wau.util.WeKaUtil;
 import de.timherbst.wau.view.ErfassungHostView;
 import de.timherbst.wau.view.ErfassungView;
 import de.timherbst.wau.view.MainFrame;
@@ -95,13 +97,24 @@ public class Application {
 
 	public static void main(final String[] args) {
 		try {
-			//Setzen dieser Eigenschaft ist für den Gnome-Desktop wichtig
+			// Setzen dieser Eigenschaft ist fï¿½r den Gnome-Desktop wichtig
 			Toolkit xToolkit = Toolkit.getDefaultToolkit();
 			java.lang.reflect.Field awtAppClassNameField = xToolkit.getClass().getDeclaredField("awtAppClassName");
 			awtAppClassNameField.setAccessible(true);
 			awtAppClassNameField.set(xToolkit, NAME);
 		} catch (Throwable t) {
 			AxtresLogger.warn("awtAppClassName konnte nicht gesetzt werden. Vermutlich keine Linux JVM");
+		}
+
+		if (WeKaUtil.isLinuxSystem()) {
+			try {
+				AxtresLogger.info("Trying to set wmname to metacity");
+				Runtime.getRuntime().exec("wmname");
+
+				AxtresLogger.info("Setting wmname to metacity succesful");
+			} catch (IOException e) {
+				AxtresLogger.warn("Changing wmname to metacity not succesful. When running under Gnome-Shell 3.x install 'wmname' to prevent display errors in maximized mode.");
+			}
 		}
 
 		new Application(args);

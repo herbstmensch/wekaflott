@@ -1,6 +1,5 @@
 package de.timherbst.wau.view;
 
-import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -18,8 +17,6 @@ import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import org.gpl.JSplitButton.JSplitButton;
-import org.gpl.JSplitButton.action.SplitButtonActionListener;
 import org.javabuilders.swing.SwingJavaBuilder;
 
 import de.axtres.logging.main.AxtresLogger;
