@@ -404,13 +404,6 @@ public class AuswertungService {
 		}
 	}
 
-	private static String getNameSuffix(List<? extends Auswertung> lea) {
-		String s = "";
-		for (Auswertung ea : lea)
-			s += "".equals(s) ? ea.getWettkampf().getName() : "_" + ea.getWettkampf().getName();
-		return s;
-	}
-
 	private static String getNameSuffix(Auswertung a) {
 		String s = "";
 		s += "".equals(s) ? a.getWettkampf().getName() : "_" + a.getWettkampf().getName();

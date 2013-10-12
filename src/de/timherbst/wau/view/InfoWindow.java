@@ -34,9 +34,7 @@ public class InfoWindow extends JDialog {
 		lblShowVersion.setText(Application.VERSION_VIEW);
 		lblShowAutor.setText("Tim Herbst");
 		lblShowKontakt.setText("mail@timherbst.de");
-		lblShowCopyright.setText("© 2011"
-				+ (2011 == Calendar.getInstance().get(Calendar.YEAR) ? ""
-						: " - " + Calendar.getInstance().get(Calendar.YEAR)));
+		lblShowCopyright.setText("© 2011" + (2011 == Calendar.getInstance().get(Calendar.YEAR) ? "" : " - " + Calendar.getInstance().get(Calendar.YEAR)));
 		lblShowJavaVersion.setText(System.getProperty("java.version"));
 		lblShowRuntime.setText(System.getProperty("java.runtime.name"));
 		pack();

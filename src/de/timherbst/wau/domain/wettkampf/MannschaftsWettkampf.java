@@ -38,8 +38,8 @@ public class MannschaftsWettkampf extends Wettkampf implements Serializable {
 
 	public List<Mannschaft> getMannschaften() {
 		List<Mannschaft> l = new Vector<Mannschaft>();
-		for(Mannschaft m : WettkampfTag.get().getMannschaften())
-			if(this.equals(m.getWettkampf()))
+		for (Mannschaft m : WettkampfTag.get().getMannschaften())
+			if (this.equals(m.getWettkampf()))
 				l.add(m);
 		return l;
 	}

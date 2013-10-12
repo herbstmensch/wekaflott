@@ -23,7 +23,7 @@ import de.axtres.logging.main.AxtresLogger;
 @SuppressWarnings("serial")
 public class SelectObjectDialog<O extends Object> extends JDialog {
 
-	private JComboBox combo;
+	private JComboBox<O> combo;
 	List<O> list;
 
 	public SelectObjectDialog(List<O> l, boolean showEmpty, String title) {
@@ -35,7 +35,7 @@ public class SelectObjectDialog<O extends Object> extends JDialog {
 			list.add(0, null);
 		}
 
-		combo.setModel(new DefaultComboBoxModel(new Vector<O>(list)));
+		combo.setModel(new DefaultComboBoxModel<O>(new Vector<O>(list)));
 		pack();
 	}
 

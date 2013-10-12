@@ -122,29 +122,10 @@ public class MainFrame extends JFrame implements EventListener {
 			}
 		};
 
-		frame.getRootPane()
-				.registerKeyboardAction(
-						newListener,
-						KeyStroke.getKeyStroke(KeyEvent.VK_N,
-								InputEvent.CTRL_DOWN_MASK),
-						JComponent.WHEN_IN_FOCUSED_WINDOW);
-		frame.getRootPane()
-				.registerKeyboardAction(
-						openListener,
-						KeyStroke.getKeyStroke(KeyEvent.VK_O,
-								InputEvent.CTRL_DOWN_MASK),
-						JComponent.WHEN_IN_FOCUSED_WINDOW);
-		frame.getRootPane()
-				.registerKeyboardAction(
-						saveListener,
-						KeyStroke.getKeyStroke(KeyEvent.VK_S,
-								InputEvent.CTRL_DOWN_MASK),
-						JComponent.WHEN_IN_FOCUSED_WINDOW);
-		frame.getRootPane().registerKeyboardAction(
-				saveAsListener,
-				KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK
-						+ InputEvent.SHIFT_DOWN_MASK),
-				JComponent.WHEN_IN_FOCUSED_WINDOW);
+		frame.getRootPane().registerKeyboardAction(newListener, KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
+		frame.getRootPane().registerKeyboardAction(openListener, KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
+		frame.getRootPane().registerKeyboardAction(saveListener, KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
+		frame.getRootPane().registerKeyboardAction(saveAsListener, KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK + InputEvent.SHIFT_DOWN_MASK), JComponent.WHEN_IN_FOCUSED_WINDOW);
 
 	}
 
@@ -154,8 +135,7 @@ public class MainFrame extends JFrame implements EventListener {
 			return;
 
 		JFileChooser fc = new JFileChooser();
-		fc.setFileFilter(new FileNameExtensionFilter("Wettkampftag Dateien",
-				"wkt"));
+		fc.setFileFilter(new FileNameExtensionFilter("Wettkampftag Dateien", "wkt"));
 		fc.setAcceptAllFileFilterUsed(false);
 
 		int state = fc.showOpenDialog(this);
@@ -167,12 +147,7 @@ public class MainFrame extends JFrame implements EventListener {
 				StorageService.loadWettkampftag(StorageService.filename);
 			} catch (Throwable t) {
 				AxtresLogger.error("Fehler beim öffnen der Datei", t);
-				JOptionPane.showMessageDialog(
-						this,
-						"Beim öffnen der Datei " + StorageService.filename
-								+ " ist ein Fehler aufgetreten:\n\n"
-								+ t.getLocalizedMessage(), "Fehler",
-						JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Beim öffnen der Datei " + StorageService.filename + " ist ein Fehler aufgetreten:\n\n" + t.getLocalizedMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}
@@ -203,12 +178,7 @@ public class MainFrame extends JFrame implements EventListener {
 				dirty = false;
 			} catch (Throwable t) {
 				AxtresLogger.error("Fehler beim speichern der Datei", t);
-				JOptionPane.showMessageDialog(
-						this,
-						"Beim Speichern der Datei " + StorageService.filename
-								+ " ist ein Fehler aufgetreten:\n\n"
-								+ t.getLocalizedMessage(), "Fehler",
-						JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Beim Speichern der Datei " + StorageService.filename + " ist ein Fehler aufgetreten:\n\n" + t.getLocalizedMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 				return false;
 			}
 		}
@@ -219,8 +189,7 @@ public class MainFrame extends JFrame implements EventListener {
 	public boolean saveAsWettkampftag() {
 
 		JFileChooser fc = new JFileChooser();
-		fc.setFileFilter(new FileNameExtensionFilter("Wettkampftag Dateien",
-				"wkt"));
+		fc.setFileFilter(new FileNameExtensionFilter("Wettkampftag Dateien", "wkt"));
 		fc.setAcceptAllFileFilterUsed(false);
 
 		int state = fc.showSaveDialog(this);
@@ -229,10 +198,7 @@ public class MainFrame extends JFrame implements EventListener {
 			File file = fc.getSelectedFile();
 
 			if (file.exists())
-				if (JOptionPane.NO_OPTION == JOptionPane.showConfirmDialog(
-						this,
-						"Soll die vorhandene Datei überschrieben werden?",
-						"Frage", JOptionPane.YES_NO_OPTION))
+				if (JOptionPane.NO_OPTION == JOptionPane.showConfirmDialog(this, "Soll die vorhandene Datei überschrieben werden?", "Frage", JOptionPane.YES_NO_OPTION))
 					return false;
 
 			StorageService.filename = file.getAbsolutePath();
@@ -244,12 +210,7 @@ public class MainFrame extends JFrame implements EventListener {
 				dirty = false;
 			} catch (Throwable t) {
 				AxtresLogger.error("Fehler beim speichern der Datei", t);
-				JOptionPane.showMessageDialog(
-						this,
-						"Beim Speichern der Datei " + StorageService.filename
-								+ " ist ein Fehler aufgetreten:\n\n"
-								+ t.getLocalizedMessage(), "Fehler",
-						JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Beim Speichern der Datei " + StorageService.filename + " ist ein Fehler aufgetreten:\n\n" + t.getLocalizedMessage(), "Fehler", JOptionPane.ERROR_MESSAGE);
 
 				return false;
 			}
@@ -283,11 +244,7 @@ public class MainFrame extends JFrame implements EventListener {
 	}
 
 	public void initWertungen() {
-		if (JOptionPane
-				.showConfirmDialog(
-						null,
-						"Sind sie sicher, dass Sie alle Wertungen zurücksetzen wollen? Das kann nicht rückgängig gemacht werden!",
-						"Frage", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION)
+		if (JOptionPane.showConfirmDialog(null, "Sind sie sicher, dass Sie alle Wertungen zurücksetzen wollen? Das kann nicht rückgängig gemacht werden!", "Frage", JOptionPane.YES_NO_OPTION) == JOptionPane.NO_OPTION)
 			return;
 
 		for (Turner t : WettkampfTag.get().getTurner()) {
@@ -394,23 +351,17 @@ public class MainFrame extends JFrame implements EventListener {
 
 	public void bugMelden() {
 		try {
-			Desktop.getDesktop()
-					.browse(new URI(
-							"https://github.com/herbstmensch/wekaflott/issues"));
+			Desktop.getDesktop().browse(new URI("https://github.com/herbstmensch/wekaflott/issues"));
 		} catch (Throwable e) {
-			AxtresLogger.error("Fehler beim Melden eines Fehlers aufgetreten.",
-					e);
+			AxtresLogger.error("Fehler beim Melden eines Fehlers aufgetreten.", e);
 		}
 	}
 
 	public void bugMeldenMail() {
 		try {
-			Desktop.getDesktop()
-					.mail(new URI(
-							"mailto:mail@timherbst.de?subject=WeKaFlott%20Fehlermeldung"));
+			Desktop.getDesktop().mail(new URI("mailto:mail@timherbst.de?subject=WeKaFlott%20Fehlermeldung"));
 		} catch (Throwable e) {
-			AxtresLogger.error("Fehler beim Melden eines Fehlers aufgetreten.",
-					e);
+			AxtresLogger.error("Fehler beim Melden eines Fehlers aufgetreten.", e);
 		}
 	}
 
@@ -418,11 +369,7 @@ public class MainFrame extends JFrame implements EventListener {
 		// System.out.println(new Gson().toJson(WettkampfTag.get()));
 		XStream xstream = new XStream(new StaxDriver());
 		xstream.setMode(XStream.XPATH_ABSOLUTE_REFERENCES);
-		xstream.processAnnotations(new Class[] { WettkampfTag.class,
-				Turner.class, Mannschaft.class, Riege.class, EinzelRiege.class,
-				MannschaftsRiege.class, Wettkampf.class, EinzelWettkampf.class,
-				MannschaftsWettkampf.class, Wertung.class,
-				PStufenWertung.class, CdPWertung.class, Wertungen.class });
+		xstream.processAnnotations(new Class[] { WettkampfTag.class, Turner.class, Mannschaft.class, Riege.class, EinzelRiege.class, MannschaftsRiege.class, Wettkampf.class, EinzelWettkampf.class, MannschaftsWettkampf.class, Wertung.class, PStufenWertung.class, CdPWertung.class, Wertungen.class });
 		System.out.println(xstream.toXML(WettkampfTag.get()));
 	}
 

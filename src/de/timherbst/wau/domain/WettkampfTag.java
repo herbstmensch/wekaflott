@@ -26,7 +26,6 @@ public class WettkampfTag implements Serializable {
 	private String ort;
 	private Date datum;
 
-
 	private Vector<Riege> riegen;
 	private Vector<Wettkampf> wettkaempfe;
 	private Vector<Mannschaft> mannschaften;
@@ -189,7 +188,5 @@ public class WettkampfTag implements Serializable {
 		getMannschaften().remove(m);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPFTAG_CHANGED);
 	}
-	
-	
 
 }

@@ -3,7 +3,6 @@ package de.timherbst.wau.domain;
 import java.io.Serializable;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
 import de.axtres.logging.main.AxtresLogger;
 import de.timherbst.wau.domain.riege.Riege;

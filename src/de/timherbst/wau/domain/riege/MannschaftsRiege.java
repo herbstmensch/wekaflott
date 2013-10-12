@@ -34,7 +34,7 @@ public class MannschaftsRiege extends Riege implements Serializable {
 			t.setRiege(this);
 		}
 		m.setRiege(this);
-		
+
 		EventDispatcher.dispatchEvent(Event.RIEGE_CHANGED);
 		EventDispatcher.dispatchEvent(Event.MANNSCHAFT_CHANGED);
 		EventDispatcher.dispatchEvent(Event.TURNER_CHANGED);

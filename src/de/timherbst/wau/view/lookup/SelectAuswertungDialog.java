@@ -27,8 +27,8 @@ import de.timherbst.wau.domain.WettkampfTag;
 @SuppressWarnings("serial")
 public class SelectAuswertungDialog extends JDialog {
 
-	private JComboBox typ;
-	private JComboBox auswahl;
+	private JComboBox<String> typ;
+	private JComboBox<?> auswahl;
 
 	public SelectAuswertungDialog() {
 		SwingJavaBuilder.build(this, loadYaml(), new ResourceBundle[0]);

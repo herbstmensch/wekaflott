@@ -1,18 +1,32 @@
 package de.timherbst.wau.service;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;
+import com.thoughtworks.xstream.io.xml.StaxDriver;
 
 import de.axtres.logging.main.AxtresLogger;
 import de.axtres.util.AppProperties;
 import de.timherbst.wau.application.Application;
+import de.timherbst.wau.domain.Mannschaft;
+import de.timherbst.wau.domain.Turner;
 import de.timherbst.wau.domain.WettkampfTag;
+import de.timherbst.wau.domain.riege.EinzelRiege;
+import de.timherbst.wau.domain.riege.MannschaftsRiege;
+import de.timherbst.wau.domain.riege.Riege;
+import de.timherbst.wau.domain.wertungen.CdPWertung;
+import de.timherbst.wau.domain.wertungen.PStufenWertung;
+import de.timherbst.wau.domain.wertungen.Wertung;
+import de.timherbst.wau.domain.wertungen.Wertungen;
+import de.timherbst.wau.domain.wettkampf.EinzelWettkampf;
+import de.timherbst.wau.domain.wettkampf.MannschaftsWettkampf;
+import de.timherbst.wau.domain.wettkampf.Wettkampf;
 import de.timherbst.wau.util.WeKaUtil;
 
 public class StorageService {
@@ -20,10 +34,10 @@ public class StorageService {
 	public static String filename = null;
 
 	public static void saveWettkampftag(String filename, boolean isAutosave) throws IOException {
-		FileOutputStream fos = new FileOutputStream(new File(filename));
-		ObjectOutputStream oos = new ObjectOutputStream(fos);
-		oos.writeObject(WettkampfTag.get());
-		oos.close();
+		FileWriter fw = new FileWriter(filename);
+
+		getXStream().marshal(WettkampfTag.get(), new PrettyPrintWriter(fw));
+
 		if (!isAutosave)
 			StorageService.filename = filename;
 		Application.getMainFrame().setDirty(false);
@@ -31,6 +45,13 @@ public class StorageService {
 			Application.getMainFrame().setStatus(filename + " gespeichert (" + new SimpleDateFormat("HH:mm:ss").format(new Date(System.currentTimeMillis())) + ")");
 		else
 			Application.getMainFrame().setStatus("Autosave '" + filename + "' um " + new SimpleDateFormat("HH:mm:ss").format(new Date(System.currentTimeMillis())));
+	}
+
+	private static XStream getXStream() {
+		XStream xstream = new XStream(new StaxDriver());
+		xstream.setMode(XStream.XPATH_ABSOLUTE_REFERENCES);
+		xstream.processAnnotations(new Class[] { WettkampfTag.class, Turner.class, Mannschaft.class, Riege.class, EinzelRiege.class, MannschaftsRiege.class, Wettkampf.class, EinzelWettkampf.class, MannschaftsWettkampf.class, Wertung.class, PStufenWertung.class, CdPWertung.class, Wertungen.class });
+		return xstream;
 	}
 
 	public static void loadWettkampftag(String filename) throws IOException, ClassNotFoundException {
@@ -43,16 +64,19 @@ public class StorageService {
 	}
 
 	public static WettkampfTag getWettkampftagFromFile(String filename) throws IOException, ClassNotFoundException {
-		FileInputStream fis = null;
-		ObjectInputStream ois = null;
+		FileReader fr = null;
+
+		BufferedReader br = null;
+
 		try {
-			fis = new FileInputStream(new File(filename));
-			ois = new ObjectInputStream(fis);
-			WettkampfTag wt = (WettkampfTag) ois.readObject();
+			fr = new FileReader(filename);
+			br = new BufferedReader(fr);
+
+			WettkampfTag wt = (WettkampfTag) getXStream().fromXML(br);
 
 			return wt;
 		} finally {
-			ois.close();
+			br.close();
 		}
 	}
 
