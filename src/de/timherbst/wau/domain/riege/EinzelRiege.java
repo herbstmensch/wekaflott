@@ -17,13 +17,14 @@ public class EinzelRiege extends Riege implements Serializable {
 
 	private static final long serialVersionUID = 3774432493979662197L;
 
-	public EinzelRiege(String name) {
+	public EinzelRiege(String name, WettkampfTag wkt) {
 		setName(name);
+		setWkt(wkt);
 	}
 
 	public List<Turner> getTurner() {
 		List<Turner> l = new Vector<Turner>();
-		for (Turner t : WettkampfTag.get().getTurner())
+		for (Turner t : getWkt().getTurner())
 			if (this.equals(t.getRiege()))
 				l.add(t);
 		return l;

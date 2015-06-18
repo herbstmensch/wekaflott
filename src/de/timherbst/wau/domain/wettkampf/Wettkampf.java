@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
+import de.timherbst.wau.domain.WettkampfTag;
 import de.timherbst.wau.domain.wertungen.Wertung;
 
 @XStreamAlias("Wettkampf")
@@ -17,6 +18,8 @@ public abstract class Wettkampf implements Serializable {
 	Integer geraete = 6;
 	Integer gewerteteGeraete = 6;
 	Wertung.Wertungsmodus wertungsmodus = Wertung.WERTUNGSMODUS_PStufen;
+	
+	private WettkampfTag wkt;
 
 	public abstract boolean isWKModusChangeable();
 
@@ -66,6 +69,14 @@ public abstract class Wettkampf implements Serializable {
 
 	public void setWertungsmodus(Wertung.Wertungsmodus wertungsmodus) {
 		this.wertungsmodus = wertungsmodus;
+	}
+
+	public WettkampfTag getWkt() {
+		return wkt;
+	}
+
+	public void setWkt(WettkampfTag wkt) {
+		this.wkt = wkt;
 	}
 
 	@Override

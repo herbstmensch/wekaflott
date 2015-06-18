@@ -70,6 +70,7 @@ public class WettkampfTag implements Serializable {
 	}
 
 	public void addWettkampf(Wettkampf wettkampf) {
+		wettkampf.setWkt(this);
 		this.wettkaempfe.add(wettkampf);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPFTAG_CHANGED);
 	}
@@ -88,6 +89,7 @@ public class WettkampfTag implements Serializable {
 	}
 
 	public void addMannschaft(Mannschaft mannschaft) {
+		mannschaft.setWkt(this);
 		this.mannschaften.add(mannschaft);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPFTAG_CHANGED);
 	}
@@ -97,6 +99,7 @@ public class WettkampfTag implements Serializable {
 	}
 
 	public void addRiege(Riege riege) {
+		riege.setWkt(this);
 		this.riegen.add(riege);
 		EventDispatcher.dispatchEvent(Event.WETTKAMPFTAG_CHANGED);
 	}

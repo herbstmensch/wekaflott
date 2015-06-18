@@ -265,7 +265,7 @@ public class AuswertungService {
 			List<MannschaftsAuswertungMannschaftBean> list_mannschaft = new Vector<MannschaftsAuswertungMannschaftBean>();
 			for (MannschaftsAuswertungEntry mae : entrys) {
 
-				list_mannschaft.add(new MannschaftsAuswertungMannschaftBean(mae.getMannschaft().getVerein(), mae.getErgebnis().getBoden(), mae.getErgebnis().getSeitpferd(), mae.getErgebnis().getRinge(), mae.getErgebnis().getSprung(), mae.getErgebnis().getBarren(), mae.getErgebnis().getReck(), mae.getErgebnis().getGesamt(), mae.getPlatzierung()));
+				list_mannschaft.add(new MannschaftsAuswertungMannschaftBean(mae.getMannschaft().getName(), mae.getErgebnis().getBoden(), mae.getErgebnis().getSeitpferd(), mae.getErgebnis().getRinge(), mae.getErgebnis().getSprung(), mae.getErgebnis().getBarren(), mae.getErgebnis().getReck(), mae.getErgebnis().getGesamt(), mae.getPlatzierung()));
 			}
 
 			List<EinzelAuswertungEntry> entrys_einzel = new Vector<EinzelAuswertungEntry>(getEinzelAuswertungEntrys(w.getTurner(), w.getGewerteteGeraete()).values());
@@ -280,7 +280,7 @@ public class AuswertungService {
 			List<MannschaftsAuswertungEinzelBean> list_einzel = new Vector<MannschaftsAuswertungEinzelBean>();
 			for (EinzelAuswertungEntry eae : entrys_einzel) {
 
-				list_einzel.add(new MannschaftsAuswertungEinzelBean(eae.getTurner().getName(), eae.getTurner().getVorname(), eae.getTurner().getMannschaft().getVerein(), eae.getTurner().getJahrgang(), eae.getTurner().getWertungen().getBoden(), eae.getTurner().getWertungen().getSeitpferd(), eae.getTurner().getWertungen().getRinge(), eae.getTurner().getWertungen().getSprung(), eae.getTurner().getWertungen().getBarren(), eae.getTurner().getWertungen().getReck(), eae.getGesamt(), eae.getPlatzierung()));
+				list_einzel.add(new MannschaftsAuswertungEinzelBean(eae.getTurner().getName(), eae.getTurner().getVorname(), eae.getTurner().getMannschaft().getName(), eae.getTurner().getJahrgang(), eae.getTurner().getWertungen().getBoden(), eae.getTurner().getWertungen().getSeitpferd(), eae.getTurner().getWertungen().getRinge(), eae.getTurner().getWertungen().getSprung(), eae.getTurner().getWertungen().getBarren(), eae.getTurner().getWertungen().getReck(), eae.getGesamt(), eae.getPlatzierung()));
 			}
 
 			MannschaftsAuswertungBean bean = new MannschaftsAuswertungBean(w.getName(), w.getGeraeteText(), w.getTyp(), w.getJahrgaenge(), new JRBeanCollectionDataSource(list_einzel), new JRBeanCollectionDataSource(list_mannschaft));
@@ -331,7 +331,7 @@ public class AuswertungService {
 		List<MannschaftsAuswertungMannschaftBean> list_mannschaft = new Vector<MannschaftsAuswertungMannschaftBean>();
 		for (MannschaftsAuswertungEntry mae : entrys) {
 
-			list_mannschaft.add(new MannschaftsAuswertungMannschaftBean(mae.getMannschaft().getVerein(), mae.getErgebnis().getBoden(), mae.getErgebnis().getSeitpferd(), mae.getErgebnis().getRinge(), mae.getErgebnis().getSprung(), mae.getErgebnis().getBarren(), mae.getErgebnis().getReck(), mae.getErgebnis().getGesamt(), mae.getPlatzierung()));
+			list_mannschaft.add(new MannschaftsAuswertungMannschaftBean(mae.getMannschaft().getName(), mae.getErgebnis().getBoden(), mae.getErgebnis().getSeitpferd(), mae.getErgebnis().getRinge(), mae.getErgebnis().getSprung(), mae.getErgebnis().getBarren(), mae.getErgebnis().getReck(), mae.getErgebnis().getGesamt(), mae.getPlatzierung()));
 		}
 
 		List<EinzelAuswertungEntry> entrys_einzel = new Vector<EinzelAuswertungEntry>(getEinzelAuswertungEntrys(w.getTurner(), w.getGewerteteGeraete()).values());
@@ -346,7 +346,7 @@ public class AuswertungService {
 		List<MannschaftsAuswertungEinzelBean> list_einzel = new Vector<MannschaftsAuswertungEinzelBean>();
 		for (EinzelAuswertungEntry eae : entrys_einzel) {
 
-			list_einzel.add(new MannschaftsAuswertungEinzelBean(eae.getTurner().getName(), eae.getTurner().getVorname(), eae.getTurner().getMannschaft().getVerein(), eae.getTurner().getJahrgang(), eae.getTurner().getWertungen().getBoden(), eae.getTurner().getWertungen().getSeitpferd(), eae.getTurner().getWertungen().getRinge(), eae.getTurner().getWertungen().getSprung(), eae.getTurner().getWertungen().getBarren(), eae.getTurner().getWertungen().getReck(), eae.getGesamt(), eae.getPlatzierung()));
+			list_einzel.add(new MannschaftsAuswertungEinzelBean(eae.getTurner().getName(), eae.getTurner().getVorname(), eae.getTurner().getMannschaft().getName(), eae.getTurner().getJahrgang(), eae.getTurner().getWertungen().getBoden(), eae.getTurner().getWertungen().getSeitpferd(), eae.getTurner().getWertungen().getRinge(), eae.getTurner().getWertungen().getSprung(), eae.getTurner().getWertungen().getBarren(), eae.getTurner().getWertungen().getReck(), eae.getGesamt(), eae.getPlatzierung()));
 		}
 
 		MannschaftsRundenAuswertungBean bean = new MannschaftsRundenAuswertungBean(w.getName(), w.getGeraeteText(), w.getTyp(), w.getJahrgaenge(), new JRBeanCollectionDataSource(list_einzel), new JRBeanCollectionDataSource(list_mannschaft), new JRBeanCollectionDataSource(tabelle));

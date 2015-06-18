@@ -16,13 +16,14 @@ import de.timherbst.wau.exceptions.HasMannschaftException;
 public class EinzelWettkampf extends Wettkampf implements Serializable {
 	private static final long serialVersionUID = 4554973205726013325L;
 
-	public EinzelWettkampf(String name) {
+	public EinzelWettkampf(String name, WettkampfTag wkt) {
 		this.setName(name);
+		setWkt(wkt);
 	}
 
 	public List<Turner> getTurner() {
 		List<Turner> l = new Vector<Turner>();
-		for (Turner t : WettkampfTag.get().getTurner())
+		for (Turner t : getWkt().getTurner())
 			if (this.equals(t.getWettkampf()))
 				l.add(t);
 		return l;

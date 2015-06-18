@@ -22,6 +22,7 @@ import de.timherbst.wau.domain.auswertung.MannschaftsAuswertung;
 import de.timherbst.wau.domain.auswertung.MannschaftsAuswertungEntry;
 import de.timherbst.wau.domain.wertungen.Wertung;
 import de.timherbst.wau.service.AuswertungService;
+import de.timherbst.wau.view.components.DecimalFormatRenderer;
 import de.timherbst.wau.view.wertungen.WertungCellRenderer;
 
 public class MannschaftsAuswertungWindow extends JFrame {
@@ -48,8 +49,11 @@ public class MannschaftsAuswertungWindow extends JFrame {
 		setTitle("Auswertung - " + auswertung.getWettkampf().getName());
 		this.auswertung = auswertung;
 		tableEinzel.setDefaultRenderer(Wertung.class, new WertungCellRenderer());
+		tableEinzel.setDefaultRenderer(Double.class, new DecimalFormatRenderer());
 		tableEinzel.setModel(getModelEinzel(auswertung.getWettkampf().getTurner(), einzelErgebnis));
 		tableMannschaften.setModel(getModelMannschaften(auswertung));
+		tableMannschaften.setDefaultRenderer(Double.class, new DecimalFormatRenderer());
+		//tableMannschaften.getColumnModel().getColumn(arg0)
 		wkName.setText(auswertung.getWettkampf().getName());
 		wkGeraete.setText(auswertung.getWettkampf().getGeraeteText());
 		wkKlasse.setText(auswertung.getWettkampf().getTyp());
@@ -208,8 +212,8 @@ public class MannschaftsAuswertungWindow extends JFrame {
 			public Class<?> getColumnClass(int columnIndex) {
 				if (columnIndex < 1)
 					return String.class;
-				if (columnIndex < 7)
-					return Wertung.class;
+				//if (columnIndex < 7)
+					//return Wertung.class;
 				if (columnIndex < 8)
 					return Double.class;
 				return Integer.class;
@@ -219,6 +223,8 @@ public class MannschaftsAuswertungWindow extends JFrame {
 			public String getColumnName(int column) {
 				return Arrays.asList("Mannschaft", "Boden", "Seitpferd", "Ringe", "Sprung", "Barren", "Reck", "Gesamt", "Platz").get(column);
 			}
+			
+		
 		};
 		return t;
 	}

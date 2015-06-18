@@ -87,11 +87,11 @@ public class RiegenView extends JPanel {
 	}
 
 	public void newEinzelriege() {
-		WettkampfTag.get().addRiege(new EinzelRiege("Riege " + (WettkampfTag.get().getRiegen().size() + 1)));
+		WettkampfTag.get().addRiege(new EinzelRiege("Riege " + (WettkampfTag.get().getRiegen().size() + 1), WettkampfTag.get()));
 	}
 
 	public void newMannschaftsriege() {
-		WettkampfTag.get().addRiege(new MannschaftsRiege("Riege " + (WettkampfTag.get().getRiegen().size() + 1)));
+		WettkampfTag.get().addRiege(new MannschaftsRiege("Riege " + (WettkampfTag.get().getRiegen().size() + 1), WettkampfTag.get()));
 	}
 
 	public void deleteRiege() {

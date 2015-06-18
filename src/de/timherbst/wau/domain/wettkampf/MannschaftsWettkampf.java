@@ -16,8 +16,9 @@ public class MannschaftsWettkampf extends Wettkampf implements Serializable {
 	Integer turnerProGeraet = 5;
 	Integer gewerteteTurnerProGeraet = 3;
 
-	public MannschaftsWettkampf(String name) {
+	public MannschaftsWettkampf(String name, WettkampfTag wkt) {
 		setName(name);
+		setWkt(wkt);
 	}
 
 	public Integer getTurnerProGeraet() {
@@ -38,7 +39,7 @@ public class MannschaftsWettkampf extends Wettkampf implements Serializable {
 
 	public List<Mannschaft> getMannschaften() {
 		List<Mannschaft> l = new Vector<Mannschaft>();
-		for (Mannschaft m : WettkampfTag.get().getMannschaften())
+		for (Mannschaft m : getWkt().getMannschaften())
 			if (this.equals(m.getWettkampf()))
 				l.add(m);
 		return l;

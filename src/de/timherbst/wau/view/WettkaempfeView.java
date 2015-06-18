@@ -111,11 +111,11 @@ public class WettkaempfeView extends JPanel {
 	}
 
 	public void newEinzelwettkampf() {
-		WettkampfTag.get().addWettkampf(new EinzelWettkampf("Wettkampf " + (WettkampfTag.get().getWettkaempfe().size() + 1)));
+		WettkampfTag.get().addWettkampf(new EinzelWettkampf("Wettkampf " + (WettkampfTag.get().getWettkaempfe().size() + 1), WettkampfTag.get()));
 	}
 
 	public void newMannschaftswettkampf() {
-		WettkampfTag.get().addWettkampf(new MannschaftsWettkampf("Wettkampf " + (WettkampfTag.get().getWettkaempfe().size() + 1)));
+		WettkampfTag.get().addWettkampf(new MannschaftsWettkampf("Wettkampf " + (WettkampfTag.get().getWettkaempfe().size() + 1), WettkampfTag.get()));
 	}
 
 	public void deleteWettkampf() {

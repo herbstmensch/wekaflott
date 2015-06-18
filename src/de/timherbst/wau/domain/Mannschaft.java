@@ -21,11 +21,14 @@ public class Mannschaft implements Serializable {
 	private String verein = "Verein";
 	private String name;
 
+	private WettkampfTag wkt;
+
 	private MannschaftsWettkampf wettkampf;
 	private Riege riege;
 
-	public Mannschaft(String name) {
+	public Mannschaft(String name, WettkampfTag wkt) {
 		setName(name);
+		setWkt(wkt);
 	}
 
 	public String getVerein() {
@@ -44,9 +47,17 @@ public class Mannschaft implements Serializable {
 		this.name = name;
 	}
 
+	public WettkampfTag getWkt() {
+		return wkt;
+	}
+
+	public void setWkt(WettkampfTag wkt) {
+		this.wkt = wkt;
+	}
+
 	public List<Turner> getTurner() {
 		List<Turner> l = new Vector<Turner>();
-		for (Turner t : WettkampfTag.get().getTurner())
+		for (Turner t : getWkt().getTurner())
 			if (this.equals(t.getMannschaft()))
 				l.add(t);
 		return l;
@@ -55,7 +66,8 @@ public class Mannschaft implements Serializable {
 	public void addTurner(Turner t) throws HasWettkampfException {
 		AxtresLogger.info("Adding Turner " + t + " to Mannschaft " + this);
 		if (t.getMannschaft() != null) {
-			AxtresLogger.info("Turner " + t + " already had Mannschaft: " + t.getMannschaft());
+			AxtresLogger.info("Turner " + t + " already had Mannschaft: "
+					+ t.getMannschaft());
 			t.getMannschaft().removeTurner(t);
 		}
 		if (t.getWettkampf() != null)
@@ -85,7 +97,8 @@ public class Mannschaft implements Serializable {
 
 	@Override
 	public String toString() {
-		return getName() + (wettkampf != null ? " (" + wettkampf.getName() + ")" : "");
+		return getName()
+				+ (wettkampf != null ? " (" + wettkampf.getName() + ")" : "");
 	}
 
 	public MannschaftsWettkampf getWettkampf() {

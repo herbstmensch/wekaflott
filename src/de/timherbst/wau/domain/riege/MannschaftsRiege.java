@@ -15,15 +15,16 @@ import de.timherbst.wau.events.EventDispatcher;
 @XStreamAlias("MannschaftsRiege")
 public class MannschaftsRiege extends Riege implements Serializable {
 
-	public MannschaftsRiege(String name) {
+	public MannschaftsRiege(String name, WettkampfTag wkt) {
 		setName(name);
+		setWkt(wkt);
 	}
 
 	private static final long serialVersionUID = 3774432493979662197L;
 
 	public List<Mannschaft> getMannschaften() {
 		List<Mannschaft> l = new Vector<Mannschaft>();
-		for (Mannschaft m : WettkampfTag.get().getMannschaften())
+		for (Mannschaft m : getWkt().getMannschaften())
 			if (this.equals(m.getRiege()))
 				l.add(m);
 		return l;

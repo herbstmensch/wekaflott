@@ -18,6 +18,7 @@ import de.timherbst.wau.domain.auswertung.EinzelAuswertung;
 import de.timherbst.wau.domain.auswertung.EinzelAuswertungEntry;
 import de.timherbst.wau.domain.wertungen.Wertung;
 import de.timherbst.wau.service.AuswertungService;
+import de.timherbst.wau.view.components.DecimalFormatRenderer;
 import de.timherbst.wau.view.wertungen.WertungCellRenderer;
 
 public class EinzelAuswertungWindow extends JFrame {
@@ -43,6 +44,7 @@ public class EinzelAuswertungWindow extends JFrame {
 		setTitle("Auswertung - " + auswertung.getWettkampf().getName());
 		this.auswertung = auswertung;
 		table.setDefaultRenderer(Wertung.class, new WertungCellRenderer());
+		table.setDefaultRenderer(Double.class, new DecimalFormatRenderer());
 		table.setModel(getModel(auswertung));
 		wkName.setText(auswertung.getWettkampf().getName());
 		wkGeraete.setText(auswertung.getWettkampf().getGeraeteText());

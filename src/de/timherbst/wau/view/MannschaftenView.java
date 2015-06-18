@@ -96,7 +96,7 @@ public class MannschaftenView extends JPanel {
 	}
 
 	public void newMannschaft() {
-		WettkampfTag.get().addMannschaft(new Mannschaft("Mannschaft " + (WettkampfTag.get().getMannschaften().size() + 1)));
+		WettkampfTag.get().addMannschaft(new Mannschaft("Mannschaft " + (WettkampfTag.get().getMannschaften().size() + 1), WettkampfTag.get()));
 	}
 
 	public void deleteMannschaft() {
