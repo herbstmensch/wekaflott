@@ -54,6 +54,9 @@
 		<copy todir="${dist}/WeKaFlott" file="application.properties" />
 		<copy todir="${dist}/WeKaFlott" file="build/res/WeKaFlott.ini" />
 		<copy todir="${dist}/WeKaFlott" file="build/res/WeKaFlott.exe" />
+		<copy todir="${dist}/WeKaFlott" file="build/res/WeKaFlott64.ini" />
+		<copy todir="${dist}/WeKaFlott" file="build/res/WeKaFlott64.exe" />
+		<copy todir="${dist}/WeKaFlott" file="build/res/registerFileExtension.bat" />
 
 		<replaceregexp file="${dist}/WeKaFlott/application.properties" match="STD_AUTOSAVE_PATH=.*" replace="STD_AUTOSAVE_PATH=%HOMEPATH%\\\\Wettkampf Auswertungen" byline="true" />
 		<replaceregexp file="${dist}/WeKaFlott/application.properties" match="OUTPUT_PATH=.*" replace="OUTPUT_PATH=%HOMEPATH%\\\\Wettkampf Auswertungen" byline="true" />
