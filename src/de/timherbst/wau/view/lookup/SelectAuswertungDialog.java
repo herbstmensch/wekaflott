@@ -22,6 +22,7 @@ import org.javabuilders.swing.SwingJavaBuilder;
 
 import de.axtres.logging.main.AxtresLogger;
 import de.timherbst.wau.application.Application;
+import de.timherbst.wau.domain.Mannschaft;
 import de.timherbst.wau.domain.WettkampfTag;
 
 @SuppressWarnings("serial")
@@ -34,7 +35,7 @@ public class SelectAuswertungDialog extends JDialog {
 		SwingJavaBuilder.build(this, loadYaml(), new ResourceBundle[0]);
 		setTitle("Bitte auswählen");
 		setModal(true);
-		typ.setModel(new DefaultComboBoxModel(new Vector<String>(Arrays.asList("Riegen", "Wettkämpfe", "Mannschaften"))));
+		typ.setModel(new DefaultComboBoxModel<String>(new Vector<String>(Arrays.asList("Riegen", "Wettkämpfe", "Mannschaften"))));
 		fillAuswahl();
 		typ.addItemListener(new ItemListener() {
 

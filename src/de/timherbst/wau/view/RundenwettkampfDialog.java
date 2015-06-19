@@ -70,6 +70,7 @@ public class RundenwettkampfDialog extends JDialog {
 
 		tableWettkaempfe.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 
+			@SuppressWarnings("unchecked")
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
 				if (tableWettkaempfe.getSelectedColumns().length > 0) {
