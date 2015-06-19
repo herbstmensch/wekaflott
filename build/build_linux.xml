@@ -3,10 +3,12 @@
         simple example build file
     </description>
 	<!-- set global properties for this build -->
+	<property name="version" value="1.0_rc1" />
 	<property name="src" location="src" />
 	<property name="res" location="res" />
 	<property name="bin" location="bin" />
 	<property name="dist" location="build/out/Linux" />
+	<property name="release" location="release/Linux" />
 	<property name="main.class" value="de.timherbst.wau.application.Application" />
 
 	<path id="class.path">
@@ -77,6 +79,10 @@
 				<attribute name="Main-Class" value="${main.class}" />
 			</manifest>
 		</jar>
+		
+		<zip destfile="${release}/wekaflott_${version}.zip"
+		       basedir="${dist}"
+		  />
 	</target>
 
 	<target name="clean" description="clean up">
