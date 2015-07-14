@@ -499,7 +499,7 @@ public class AuswertungService {
 
 				MannschaftsAuswertungEntry e = a.getEntrysMannschaft().get(m);
 				t.setVeranstaltung(veranstaltung);
-				t.setWettkampf(a.getWettkampf().getTyp() + " " + a.getWettkampf().getJahrgaenge());
+				t.setWettkampf(a.getWettkampf().getName()+"\n"+a.getWettkampf().getTyp() + " " + a.getWettkampf().getJahrgaenge());
 				t.setPunkte(t.getPunkte() + e.getErgebnis().getGesamt());
 				t.setTabellenPunkte(t.getTabellenPunkte() + getTabellenPunkte(a.getWettkampf().getMannschaften().size(), e.getPlatzierung(), a.getEntrysMannschaft().values()));
 				t.setGegenPunkte(t.getGegenPunkte() + getGegenPunkte(a.getWettkampf().getMannschaften().size(), e.getPlatzierung(), a.getEntrysMannschaft().values()));
@@ -589,12 +589,12 @@ public class AuswertungService {
 		File f = new File(getOutputFolder() + "urkunden");
 		if (!f.exists())
 			f.mkdirs();
-		JasperExportManager.exportReportToPdfFile(jp, getOutputFolder() + "urkunden/" + WettkampfTag.get().getName() + " - " + tabelle.iterator().next().getWettkampf() + ".pdf");
+		JasperExportManager.exportReportToPdfFile(jp, getOutputFolder() + "urkunden/" + WettkampfTag.get().getName() + " - " + tabelle.iterator().next().getWettkampf().replace("\n", " ") + ".pdf");
 
-		AxtresLogger.debug("Opening Auswertun: " + getOutputFolder() + "urkunden/" + WettkampfTag.get().getName() + " - " + tabelle.iterator().next().getWettkampf() + ".pdf");
+		AxtresLogger.debug("Opening Auswertun: " + getOutputFolder() + "urkunden/" + WettkampfTag.get().getName() + " - " + tabelle.iterator().next().getWettkampf().replace("\n", " ") + ".pdf");
 
 		if (Desktop.isDesktopSupported()) {
-			Desktop.getDesktop().open(new File(getOutputFolder() + "urkunden/" + WettkampfTag.get().getName() + " - " + tabelle.iterator().next().getWettkampf() + ".pdf"));
+			Desktop.getDesktop().open(new File(getOutputFolder() + "urkunden/" + WettkampfTag.get().getName() + " - " + tabelle.iterator().next().getWettkampf().replace("\n", " ") + ".pdf"));
 		} else {
 			AxtresLogger.info("Desktop API is not supported.");
 		}
