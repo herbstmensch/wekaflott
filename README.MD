@@ -3,12 +3,12 @@ Tool zur Auswertung von Wettkämpfen im Bereich Geräteturnen männlich.
 
 ##Installation
 * Windows 
-  1. Download der aktuellen Version ([download](https://github.com/herbstmensch/wekaflott/blob/master/release/Windows/WeKaFlott_1.0_RC1.zip?raw=true))
+  1. Download der aktuellen Version ([download](https://github.com/rellit/wekaflott/blob/master/release/Windows/WeKaFlott_1.0_RC1.zip?raw=true))
   2. Entpacken Sie das Zip an der gewünschten Stelle
   3. Starten Sie die Anwendung mit WeKaFlott.exe (32bit) oder WeKaFlott64.exe (64bit).
 
 * Linux
-  1. Download der aktuellen Version ([download](https://github.com/herbstmensch/wekaflott/blob/master/release/Linux/wekaflott_1.0_rc1.zip?raw=true))
+  1. Download der aktuellen Version ([download](https://github.com/rellit/wekaflott/blob/master/release/Linux/wekaflott_1.0_rc1.zip?raw=true))
   2. Entpacken Sie das Zip an einer beliebigen Stelle
   3. Starten Sie die Installation:
     1. Wechseln Sie in das entpackte Verzeichnis (cd)
